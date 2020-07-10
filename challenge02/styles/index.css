@@ -7,7 +7,7 @@
 }
 
 body {
-    background: rgb(207, 204, 204);
+    background: rgb(241, 239, 239);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -23,13 +23,13 @@ header div a {
     margin: 0 30px;
     text-decoration: none;
     font-size: 18px;
-    background-color: rgb(75, 75, 247);
+    background-color: rgb(113, 89, 193);
     padding: 8px;
     color: white;
     border-radius: 5px;
 }
 
 header div a:hover {
-    background: rgb(2, 2, 100);
+    background: rgb(67, 53, 116);
     transition: 1s;
 }

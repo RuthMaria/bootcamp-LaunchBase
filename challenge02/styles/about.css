@@ -1,0 +1,59 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+:root {
+    --green-color: #50f17b;  
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.content {
+    text-align: center;
+    margin: 32px;
+}
+
+.content img {
+    border-radius: 50%;
+    height: 250px;
+    border: 4px solid var(--green-color);
+}
+
+.content h1 {
+    margin: 15px;
+    font-size: 34px;
+}
+
+.content p {
+    font-size: 24px;
+    max-width: 600px;
+    margin: 15px auto;
+    line-height: 34px;
+}
+
+.content ul {
+    font-size: 20px;    
+    list-style: none;
+}
+
+.content ul li {
+    padding: 3px;
+}
+
+.content header {
+    margin: 15px;
+}
+
+.content header a {
+    padding: 8px;
+    font-size: 21px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid var(--green-color);
+    font-weight: bold;
+}
+
+.content header a:hover {
+    color: var(--green-color);
+}
