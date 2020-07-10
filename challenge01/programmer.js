@@ -1,9 +1,3 @@
-/*Crie um programa com um objeto para armazenar dados de um programmer como name, age e technologies que trabalha.
-Um programmer pode trabalhar com várias technologies, por isso armazene essas technologies em um array.
-As technologies também devem ser objetos contendo name e specialty
-
-Saída:
-O usuário Carlos tem 32 anos e usa a tecnologia C++ com specialty em Desktop */
 
 const programmer = {
     name: 'Ruth',

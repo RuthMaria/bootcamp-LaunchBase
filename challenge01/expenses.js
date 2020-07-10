@@ -1,21 +1,3 @@
-/*Crie um programa que calcula a sum de revenue e expenses de usuários e no fim retorna o balance (revenue - expenses).
-Utilize o array de usuários dado abaixo.
-
-Percorra o array de usuários e para cada usuário chame uma função chamada calculateBalance que recebe como parâmetro as revenue e 
-expenses do usuário.
-
-Crie uma segunda função que recebe como parâmetro um array de números e retorna a sum deles e use-a para calcular a sum de 
-revenue e expenses dentro da função calculateBalance.
-
-A função calculateBalance deve utilizar a função sumNumbers para calcular a sum de revenue e expenses e no fim retornar o balance do 
-usuário, ou seja revenue - expenses.
-
-No fim exiba todos usuários em telas, seu respectivo balance e SE o balance é POSITIVO ou NEGATIVO:
-
-Saída: 
-Fulano possui balance POSITIVO de 43.3
-Sicrano possui balance NEGATIVO de -90.3
-*/
 
 const users = [
     {

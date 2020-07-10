@@ -1,17 +1,3 @@
-/*Crie um programa que armazena dados da company Rocketseat dentro de um objeto chamado company. Os dados a serem armazenados são:
-
-    name: Rocketseat
-
-    color: Roxo
-
-    focus: Programação
-
-    Endereço:
-        street: street Guilherme Gembala
-        Número: 260
-
-    saída: A company Rocketseat está localizada em street Guilherme Gembala, 260
- */
 
 const user = {
     name: "Diego",
