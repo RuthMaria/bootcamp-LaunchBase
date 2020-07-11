@@ -93,7 +93,9 @@ Para fechar a semana 01, foi desenvolvido esse site que aborda todos os conceito
 
 - Menu do site
 - Página sobre
-- Página portfólio
+- Página aula
+- Modal
+
 
 <a id="Licença"></a><br>
 

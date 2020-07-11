@@ -1,0 +1,67 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; /*dá um espaço entre os elementos do grid*/
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: var(--purple-color);
+}
+
+.card_image-container img{
+    width: 100%;
+}
+
+.card_content,
+.card_info {
+    padding: 24px;
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_price {
+    background-color: var(--purple-color);
+    filter: brightness(90%);
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+.modal_overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer; /* Faz aparecer a mãozinha do mouse*/
+}
+
+.modal_overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
