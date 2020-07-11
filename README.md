@@ -6,6 +6,7 @@
   <a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana01">Semana 01</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana02">Semana 02</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#site">Site</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#licença">Licença</a>
 </p>
 
@@ -20,17 +21,17 @@
 ## :books: Sobre
 
 <p align="justify">
-O LaunchBase é um treinamento no formato de bootcamp online que tem duração de 6 semanas. É ofertado pela Rocketseat e tem o objetivo de guiar o aluno pelas ferramentas e conceitos mais modernos de desenvolvimento que permitirá construir as melhores aplicações e avançar na direção certa no desenvolvimento web.
+O LaunchBase 2.0 é um treinamento no formato de bootcamp online que tem duração de 6 semanas. É ofertado pela Rocketseat e tem o objetivo de guiar o aluno pelas ferramentas e conceitos mais modernos de desenvolvimento que permitirá construir as melhores aplicações e avançar na direção certa no desenvolvimento web.
 </p>
 
 
-<a id="semana1"></a><br>
+<a id="semana01"></a><br>
 
-## :iphone: Semana 01
+## :date: Semana 01
 <br>
 <p align="justify">
 Na primeira semana foram abordados conceitos de introdução a programação, iniciando com front-end e iniciando com back-end.
-</p><br>
+</p>
 
 ### Introdução a programação 
 
@@ -52,21 +53,21 @@ O [desafio 01](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge0
 
 - [Questão 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [cálculo do IMC](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/IMC.js).
 
-- [Questão 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [calculadora de aposentadoria](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/retirement.js)
+- [Questão 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [calculadora de aposentadoria](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/retirement.js).
 
-- [Questão 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-2-lidando-com-objetos-e-vetores.md), [criação de objeto](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/company.js) 
+- [Questão 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-2-lidando-com-objetos-e-vetores.md), [criação de objeto](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/company.js) .
 
-- [Questão 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [usuário e tecnologia](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/technology.js)
+- [Questão 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [usuário e tecnologia](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/technology.js).
 
-- [Questão 05](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [Soma de despesas e receitas](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/expenses.js)
+- [Questão 05](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [soma de despesas e receitas](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/expenses.js).
 
-- [Questão 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md), [operações bancárias](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/bankingOperations.js)
+- [Questão 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md), [operações bancárias](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/bankingOperations.js).
 
 <br>
 
 ### Iniciando com front-end
 
-Abordou as principais tags [HTML](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/html.pdf) e as principais propriedades de estilização [CSS](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/css.pdf). 
+Abordou os principais elementos do [HTML](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/html.pdf) e as principais propriedades de estilização [CSS](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/css.pdf). 
 
 O [desafio 02](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02) consistia em 4 partes, onde eram propostos desafios.
 
@@ -75,23 +76,33 @@ O [desafio 02](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge0
 - [Parte 3]()
 - [Parte 4]()
 
-
+<br>
 
 ### Iniciando com back-end
 
 <a id="semana02"></a><br>
 
-## :anchor: Semana 02
+## :date: Semana 02
 
+
+<a id="site"></a><br>
+
+## :date: Site
+
+Para fechar a semana 01, foi desenvolvido esse site que aborda todos os conceitos ensinados.
+
+- Menu do site
+- Página sobre
+- Página portfólio
 
 <a id="Licença"></a><br>
 
 ## :memo: Licença
 
-Este projeto está sobre a a licença MIT. Veja o arquivo[LICENSE](LICENSE.md) para mais detalhes.
+Este projeto está sobre a a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ---
 
 <h4 align="center">
-    Feito com 💜 por <a href="https://www.linkedin.com/in/ruth-maria-9b256071/" target="_blank">Ruth Maria</a>
+    Feito com 💜 by <a href="https://www.linkedin.com/in/ruth-maria-9b256071/" target="_blank">Ruth Maria</a>
 </h4>
