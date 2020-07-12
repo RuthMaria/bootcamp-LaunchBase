@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/index.css">
-    
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/content.css">
+
     <title>Conteúdo</title>
 </head>
 <body>
     <header>
         <nav class="links">                
-            <a href="index.html"> Sobre </a>
+            <a href="../index.html"> Sobre </a>
             <a href="views/content.html"> Conteúdos </a>
             <a href="https://discordapp.com/invite/gCRAFhc"> Comunidade </a>
             <a href="mailto:ruthmariia01@gmail.com"> E-mail </a>
@@ -19,5 +20,68 @@
         </nav>
     </header>
    
+    <section class="cards">
+
+        <div class="card" id="starter">      
+            <span class="card_numbers" id="card_number_01">01</span>     
+
+            <div class="card_image">
+                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg" alt="Curso starter">
+            </div>
+            
+            <div class="card_content">
+                <p><span id="purple_color">Torne-se um programador desejado</span> no mercado com esses cursos gratuitos</p>
+            </div>
+
+            <div class="card-modules">
+                <p>05 módulos</p>
+                <a href="" class="card-price" id="price_starter">Free</a>
+            </div>
+        </div>
+
+        <div class="card" id="launchbase">       
+            <span class="card_numbers" id="card_number_02">02</span>   
+
+            <div class="card_image">
+                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg" alt="Curso Launchbase">
+            </div>
+            
+            <div class="card_content">
+                <p><span id="orange_color">Domine programação do zero</span> e tenha acesso ás melhores oportunidades do mercado</p>
+            </div>
+            
+            <div class="card-modules">
+                <p>08 módulos</p>
+                <p class="card-price" id="price_launchbase">R$ 1.900,00</p>
+            </div>
+
+            <div class="card_info" id="orange_info">
+                <a href=""><span>Garanta sua vaga</span> para a próxima turma!</a>
+            </div>
+            
+        </div>
+
+        <div class="card" id="goStack"> 
+            <span class="card_numbers" id="card_number_03">03</span> 
+
+            <div class="card_image">
+                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg" alt="Curso GoStack">
+            </div>
+            
+            <div class="card_content">
+                <p><span id="green_color">Treinamento imersivo</span> nas tecnologias mais modernas de desenvolvimento web e mobile</p>
+            </div>
+
+            <div class="card-modules">
+                <p>06 módulos</p>
+                <p class="card-price" id="price_goStack">R$ 2.900,00</p>
+            </div>
+
+            <div class="card_info" id="green_info">
+                <a href=""><span>Garanta sua vaga</span> para a próxima turma!</a>
+            </div>
+        </div>
+
+    </section>
 </body>
 </html>

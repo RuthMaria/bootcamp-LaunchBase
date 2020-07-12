@@ -81,27 +81,12 @@ O [desafio 02](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge0
 #### Resultado do desafio 02
 
 ![Página sobre rocketseat](https://github.com/RuthMaria/launchBase2.0/blob/master/git/about-rocketseat.png) <br>
-![Página conteúdo](https://github.com/RuthMaria/launchBase2.0/blob/master/git/content.png) <br>
+![Página conteúdo](https://github.com/RuthMaria/launchBase2.0/blob/master/git/content-rocketseat.png) <br>
 ![modal](https://github.com/RuthMaria/launchBase2.0/blob/master/git/modal-rocketseat.png) <br>
 
 ### Iniciando com back-end
 
 <br>
-
-<a id="site"></a><br>
-
-## :date: Site
-
-Para fechar a semana 01, foi desenvolvido esse site que aborda todos os conceitos ensinados.
-
-- Menu do site
-- Página sobre
-- Página aula
-- Modal
-
-![Página sobre](https://github.com/RuthMaria/launchBase2.0/blob/master/git/about.png)
-![Página aula](https://github.com/RuthMaria/launchBase2.0/blob/master/git/classes.png)
-![Modal](https://github.com/RuthMaria/launchBase2.0/blob/master/git/modal.png)
 
 <a id="semana02"></a><br>
 

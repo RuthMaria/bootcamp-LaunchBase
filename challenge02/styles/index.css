@@ -7,8 +7,9 @@
 }
 
 :root {
-    --green-color: #50f17b;  
-    --purple-color: #7159c1;
+    --green-color: rgb(4, 211, 97);  
+    --purple-color: rgb(113, 89, 193);
+    --orange-color:rgb(253, 149, 31);
 }
 
 body {
@@ -64,7 +65,7 @@ header {
 }
 
 #wrapper .technology {
-    color: rgb(253, 149, 31);
+    color: var(--orange-color);
     margin-top: 40px;
 }
 
