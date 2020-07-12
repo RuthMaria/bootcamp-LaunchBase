@@ -73,17 +73,20 @@ O [desafio 02](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge0
 
 - [Parte 1](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md), criação do menu.
 - [Parte 2](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md), página de descrição da Rocketseat.
-- [Parte 3]()
+- [Parte 3](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md), página de cursos e iframes
 - [Parte 4]()
 
 <br>
 
+#### Resultado do desafio 02
+
+![Página sobre rocketseat](https://github.com/RuthMaria/launchBase2.0/blob/master/git/about-rocketseat.png) <br>
+![Página conteúdo](https://github.com/RuthMaria/launchBase2.0/blob/master/git/content.png) <br>
+![modal](https://github.com/RuthMaria/launchBase2.0/blob/master/git/modal-rocketseat.png) <br>
+
 ### Iniciando com back-end
 
-<a id="semana02"></a><br>
-
-## :date: Semana 02
-
+<br>
 
 <a id="site"></a><br>
 
@@ -96,6 +99,13 @@ Para fechar a semana 01, foi desenvolvido esse site que aborda todos os conceito
 - Página aula
 - Modal
 
+![Página sobre](https://github.com/RuthMaria/launchBase2.0/blob/master/git/about.png)
+![Página aula](https://github.com/RuthMaria/launchBase2.0/blob/master/git/classes.png)
+![Modal](https://github.com/RuthMaria/launchBase2.0/blob/master/git/modal.png)
+
+<a id="semana02"></a><br>
+
+## :date: Semana 02
 
 <a id="Licença"></a><br>
 

@@ -29,7 +29,7 @@
 
 .card_price {
     background-color: var(--purple-color);
-    filter: brightness(90%);
+    filter: brightness(90%); /*Dá intensidade a cor*/
     border-radius: 20px;
     text-align: center;
     padding: 5px;
@@ -64,4 +64,11 @@
 .modal_overlay.active {
     opacity: 1;
     visibility: visible;
+}
+
+iframe{
+    width: 100%;
+    height: 90%; 
+    position: absolute;
+    top: 5%;
 }
