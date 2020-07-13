@@ -6,7 +6,6 @@
   <a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana01">Semana 01</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana02">Semana 02</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#site">Site</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#licença">Licença</a>
 </p>
 
@@ -69,20 +68,25 @@ O [desafio 01](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge0
 
 Abordou os principais elementos do [HTML](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/html.pdf) e as principais propriedades de estilização [CSS](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/css.pdf). 
 
-O [desafio 02](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02) consistia em 4 partes, onde eram propostos desafios.
+O [desafio 02](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02) consistia em 4 partes, onde era proposto desafios. As partes 1, 2 e 3 eram pra criar uma página de apresentação da Rocketseat, onde o layout era livre e o aluno poderia exercitar a sua criatividade, apenas tinha que seguir algumas instruções. 
+Já a parte 4 era dado um layout pronto do Foodfy para ser seguido a risca.
 
 - [Parte 1](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md), criação do menu.
 - [Parte 2](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md), página de descrição da Rocketseat.
-- [Parte 3](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md), página de cursos e iframes
-- [Parte 4]()
+- [Parte 3](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md), página de cursos da rocketseat e iframes
 
 <br>
 
-#### Resultado do desafio 02
+#### Resultado
 
 ![Página sobre rocketseat](https://github.com/RuthMaria/launchBase2.0/blob/master/git/about-rocketseat.png) <br>
 ![Página conteúdo](https://github.com/RuthMaria/launchBase2.0/blob/master/git/content-rocketseat.png) <br>
 ![modal](https://github.com/RuthMaria/launchBase2.0/blob/master/git/modal-rocketseat.png) <br>
+![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video.gif)
+
+- [Parte 4](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md), construir o Foodfy<br>
+
+#### Resultado
 
 ### Iniciando com back-end
 
