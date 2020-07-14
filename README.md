@@ -62,14 +62,14 @@ O [desafio 01](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge0
 
 - [Questão 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md), [operações bancárias](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/bankingOperations.js).
 
-<br>
 
 ### Iniciando com front-end
 
 Abordou os principais elementos do [HTML](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/html.pdf) e as principais propriedades de estilização [CSS](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/css.pdf). 
 
 O [desafio 02](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02) consistia em 4 partes, onde eram propostos desafios. Nas partes 1, 2 e 3 tínhamos que criar uma página de apresentação da Rocketseat, onde o layout era livre e o aluno poderia exercitar a sua criatividade, apenas tinha que seguir algumas instruções. 
-Na parte 4 era dado o layout do Foodfy para ser seguido na íntegra.
+Na parte 4 era dado o layout para construção de um site completo para uma empresa de receitas chamada Foodfy.
+
 
 - [Parte 1](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md), criação do menu;
 - [Parte 2](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md), página de descrição da Rocketseat;
@@ -81,9 +81,7 @@ Na parte 4 era dado o layout do Foodfy para ser seguido na íntegra.
 
 <br>
 
-- [Parte 4](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md), construir o Foodfy.
-
-<br>
+- [Parte 4](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md), site do Foodfy.
 
 #### Resultado
 
