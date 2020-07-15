@@ -40,6 +40,12 @@ nav .logo {
     margin-right: 30px;
 }
 
+.menu a:hover {
+    border-bottom: 4px solid #FBDFDB;
+    transition: 200ms;
+    font-weight: bold;
+}
+
 .jumbotron {
     background: #FBDFDB;
     border-radius: 30px;

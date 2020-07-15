@@ -1,0 +1,17 @@
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.first_title{
+    margin-top: 50px;
+}
+
+p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    text-align: justify;
+    margin-bottom: 30px;
+    text-indent: 40px;
+}
