@@ -84,7 +84,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 - [Parte 4](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md), site do Foodfy.
 
 #### Resultado
-
+![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video-foodfy.gif)
 
 <br>
 
