@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/classes.css">
+{% extends 'layout.njk' %}
 
-    <title>Aulas</title>
-</head>
-<body>
-    <header>
-        <div class="links">
-            <a href="../"> Sobre </a>
-            <a href="classes.html"> Aulas</a>
-        </div>        
-    </header>
+{% block head %}
+<title>Aulas - Mayk Brito</title>
+<link rel="stylesheet" href="styles/portfolio.css">
+{% endblock %}
+
+{% block content %}    
 
     <div id="wrapper">
         <h1> Aulas </h1>
@@ -125,6 +116,6 @@
         </div>
     </div>
 
-    <script src="../scripts/classes.js"></script>
-</body>
-</html>
+    <script src="scripts/portfolio.js"></script>
+    
+{% endblock %}
