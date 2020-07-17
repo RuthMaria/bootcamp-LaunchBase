@@ -5,22 +5,22 @@
 {% endblock %}
 
 {% block content %}
-<div id="wrapper" style>
-    <img src="https://avatars1.githubusercontent.com/u/18095161?s=400&u=d5b33e364d59a7de87e0245bd81a453be3050b9b&v=4" alt="Ruth Maria">
-    <h1> Ruth Maria </h1>
-    <h2> Bacharel em Ciência da Computação - UFAL </h2>
-    <h2> Técnica em informática - IFAL </h2>
-    <h2> Junior web developer </h2>
-        
-    <p>
-        Entusiasta das melhores tecnologias de desenvolvimento back-end e front-end <br>
-        Apaixonada por livros, boas séries e escrever sobre as tecnologias que aprende <br>            
-    </p>
-</div>
-
-<div id="links-footer" class="links">
-    <a href="https://www.linkedin.com/in/ruth-maria-9b256071/" target="_blank"> Linkedin </a>
-    <a href="https://github.com/RuthMaria" target="_blank"> GitHub </a>
-    <a href="https://www.facebook.com/ruth.maria.1829" target="_blank"> Facebook </a>
-</div> 
+    
+    <div id="wrapper" style>
+        <img src="{{data.avatar_url}}" alt="Ruth Maria">
+        <h1> {{ data.name }} </h1>
+        <h2> {{ data.role1 }} </h2>
+        <h2> {{ data.role2 }} </h2>
+        <h2> {{ data.role3 }} </h2>
+            
+        <p> {{ data.description }} </p>
+    </div>
+    
+       
+    <div id="links-footer" class="links">
+        {% for link in data.links %} 
+            <a href="{{ link.url }} " target="_blank"> {{ link.name }} </a>
+        {% endfor %}
+     </div> 
+    
  {% endblock %}

@@ -11,6 +11,7 @@
 
 .card {
     background-color: var(--purple-color);
+    display: grid;
 }
 
 .card_image-container img{
@@ -24,7 +25,8 @@
 
 .card_info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;    
+    align-items: center;
 }
 
 .card_price {

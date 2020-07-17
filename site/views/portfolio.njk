@@ -13,95 +13,23 @@
     
     <section class="cards">
 
-        <div class="card" id="GykTLqODQuU">
-            <div class="card_image-container">
-                <img src="https://img.youtube.com/vi/GykTLqODQuU/maxresdefault.jpg" alt="video aula">
-            </div>
+        {% for item in items %}        
+            <div class="card" id="{{item.id}}">
+                <div class="card_image-container">
+                    <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="imagem de {{item.title}}">
+                </div>
 
-            <div class="card_content">
-                <p>Formulário animado com JS puro e CSS Animation</p>
-            </div>
+                <div class="card_content">
+                    <p>{{item.title}}</p>
+                </div>
 
-            <div class="card_info">
-                <p>57 min</p>
-                <p class="card_price">Price</p>
+                <div class="card_info">
+                    <p>{{item.duration}}</p>
+                    <p class="card_price">{{item.price}}</p>
+                </div>
             </div>
-        </div>
+        {% endfor %}
 
-        <div class="card" id="ghTrp1x_1As">
-            <div class="card_image-container">
-                <img src="https://img.youtube.com/vi/ghTrp1x_1As/maxresdefault.jpg" alt="video aula">
-            </div>
-
-            <div class="card_content">
-                <p>O que é API Rest? Rest e Restfull</p>
-            </div>
-
-            <div class="card_info">
-                <p>33:57 min</p>
-                <p class="card_price">Price</p>
-            </div>
-        </div>
-
-        <div class="card" id="GSqR2i-Pq6o">
-            <div class="card_image-container">
-                <img src="https://img.youtube.com/vi/GSqR2i-Pq6o/maxresdefault.jpg" alt="video aula">
-            </div>
-
-            <div class="card_content">
-                <p>Desvendando a variável this no JavaScript</p>
-            </div>
-
-            <div class="card_info">
-                <p>57 min</p>
-                <p class="card_price">Price</p>
-            </div>
-        </div>
-
-        <div class="card" id="vqrjFnq3-uo">
-            <div class="card_image-container">
-                <img src="https://img.youtube.com/vi/vqrjFnq3-uo/maxresdefault.jpg" alt="video aula">
-            </div>
-
-            <div class="card_content">
-                <p>Criando player de audio com JavaScript</p>
-            </div>
-
-            <div class="card_info">
-                <p>1:45:44 min</p>
-                <p class="card_price">Price</p>
-            </div>
-        </div>
-
-        <div class="card" id="HN1UjzRSdBk">
-            <div class="card_image-container">
-                <img src="https://img.youtube.com/vi/HN1UjzRSdBk/maxresdefault.jpg" alt="video aula">
-            </div>
-
-            <div class="card_content">
-                <p>Desvendando o CSS GRID na prática</p>
-            </div>
-
-            <div class="card_info">
-                <p>36:17 min</p>
-                <p class="card_price">Price</p>
-            </div>
-        </div>
-
-        <div class="card" id="2alg7MQ6_sI">
-            <div class="card_image-container">
-                <img src="https://img.youtube.com/vi/2alg7MQ6_sI/maxresdefault.jpg" alt="video aula">
-            </div>
-
-            <div class="card_content">
-                <p>Como usar Git e GitHub na prática: Guia para iniciantes</p>
-            </div>
-
-            <div class="card_info">
-                <p>57 min</p>
-                <p class="card_price">Price</p>
-            </div>
-        </div>
     </section>
 
     <div class="modal_overlay">

@@ -60,17 +60,17 @@ O [desafio 01](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge0
 
 - [Questão 05](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [soma de despesas e receitas](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/expenses.js).
 
-- [Questão 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md), [operações bancárias](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/bankingOperations.js).
+- [Questão 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md), [operações bancárias](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/bankingOperations.js).<br>
 
 
 ### Iniciando com front-end
 
 Abordou os principais elementos do [HTML](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/html.pdf) e as principais propriedades de estilização [CSS](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/css.pdf). 
 
-O desafio 02 consistia em 4 partes, onde eram propostos desafios. Nas partes 1, 2 e 3 tínhamos que criar uma página de apresentação da Rocketseat, onde o layout era livre e o aluno poderia exercitar a sua criatividade, apenas tinha que seguir algumas instruções. 
-Na parte 4 era dado o layout para construção de um site completo para uma empresa de receitas chamada Foodfy.
+<p>O <strong>desafio 02</strong> consistia em 4 partes, onde eram propostos desafios. Nas partes 1, 2 e 3 tínhamos que criar uma página de apresentação da Rocketseat, onde o layout era livre e o aluno poderia exercitar a sua criatividade, apenas tinha que seguir algumas instruções. 
+Na parte 4 era dado o layout para construção de um site completo para uma empresa de receitas chamada Foodfy.<p>
 
-[Desafio 02-1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02.1)
+[Desafio 02.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02.1) - Site da Rocketseat
 
 - [Parte 1](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md), criação do menu;
 - [Parte 2](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md), página de descrição da Rocketseat;
@@ -83,9 +83,9 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-[Desafio 02-2](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02.2)
+[Desafio 02.2](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02.2) - Site Foodfy
 
-- [Parte 4](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md), site do Foodfy.
+- [Parte 4](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md), criação do layout do Foodfy.
 
 #### Resultado
 
@@ -95,15 +95,25 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 ### Iniciando com back-end
 
-[Desafio 03](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03) consistia em 3 partes, onde era feita a conexão do front-end com o back-end.
+<br>
 
-[Parte 1](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md), foi trabalhado o site de apresentação da rocketseat (desafio 02-1). Onde foi realizado:
-- Criação do servidor
-- Definição de rotas
-- Instalação e configuração do Nunjucks
-- Trazendo o front-end do site para o servidor
-- Criação de páginas dinâmicas com Nunjuck
-- Configurando arquivos .njk
+<p> <strong>Desafio 03 </strong> consistia em 3 partes, onde era realizada a refatoração do código.</p>
+
+[Desafio 03.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.1), refatoração do site da rocketseat (desafio 02.1).
+
+- [Parte 1](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md):
+  - Criação do servidor
+  - Definição de rotas
+  - Instalação e configuração do Nunjucks
+  - Trazendo o front-end do site para o servidor
+  - Criação de páginas dinâmicas com Nunjuck
+  - Configurando arquivos .njk
+
+- [Parte 2](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-2-nunjucks-e-dados-dinamicos.md):
+  - Exportando e importando JavaScript
+  - Passando dados do Back-end para o front-end
+  - Alinhando elementos com CSS Grid
+  - Atualizando página cursos e sobre
 
 <br>
 
