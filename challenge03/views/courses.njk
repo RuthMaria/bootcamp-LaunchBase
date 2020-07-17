@@ -1,0 +1,89 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <link rel="stylesheet" href="styles/courses.css">
+    <title>Conteúdo</title>
+{% endblock head %}
+    
+{% block content %}
+    <section class="cards">
+
+        <div class="card" id="starter">      
+            <span class="card_numbers" id="card_number_01">01</span>     
+
+            <div class="card_image">
+                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg" alt="Curso starter">
+            </div>
+            
+            <div class="card_content">
+                <p><span id="purple_color">Torne-se um programador desejado</span> no mercado com esses cursos gratuitos</p>
+            </div>
+
+            <div class="card-modules">
+                <p>05 módulos</p>
+                <p class="card-price" id="price_starter">Free</p>
+            </div>
+        </div>
+
+        <div class="card" id="launchbase">       
+            <span class="card_numbers" id="card_number_02">02</span>   
+
+            <div class="card_image">
+                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg" alt="Curso Launchbase">
+            </div>
+            
+            <div class="card_content">
+                <p><span id="orange_color">Domine programação do zero</span> e tenha acesso ás melhores oportunidades do mercado</p>
+            </div>
+            
+            <div class="card-modules">
+                <p>08 módulos</p>
+                <p class="card-price" id="price_launchbase">R$ 1.900,00</p>
+            </div>
+
+            <div class="card_info" id="orange_info">
+                <p><span>Garanta sua vaga</span> para a próxima turma!</p>
+            </div>
+            
+        </div>
+
+        <div class="card" id="gostack"> 
+            <span class="card_numbers" id="card_number_03">03</span> 
+
+            <div class="card_image">
+                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg" alt="Curso GoStack">
+            </div>
+            
+            <div class="card_content">
+                <p><span id="green_color">Treinamento imersivo</span> nas tecnologias mais modernas de desenvolvimento web e mobile</p>
+            </div>
+
+            <div class="card-modules">
+                <p>06 módulos</p>
+                <p class="card-price" id="price_gostack">R$ 2.900,00</p>
+            </div>
+
+            <div class="card_info" id="green_info">
+                <p><span>Garanta sua vaga</span> para a próxima turma!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal_overlay">
+       <div class="modal" class="maximize">
+            <a id="max-modal">
+               <i class="material-icons">check_box_outline_blank</i>
+            </a>
+
+            <a id="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/courses.js"></script>
+{% endblock content %}
