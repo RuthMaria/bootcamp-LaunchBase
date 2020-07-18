@@ -97,7 +97,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-<p> <strong>Desafio 03 </strong> consistia em 4 partes, onde foi realizado a refatoração do código.</p>
+<p> <strong>Desafio 03 </strong> consistia em 4 partes, onde foi realizado a refatoração do código do site da Rocketseat e do Foodfy.</p>
 
 [Desafio 03.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.1), refatoração do site da rocketseat (desafio 02.1).
 
@@ -115,7 +115,12 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
   - Atualizando página cursos e sobre
 
 - [Parte 3](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-3-pagina-descricao-curso.md):
-  - 
+  - Passando dados do Front-end para o Back-end com Query Strings
+  - Filtrando elementos do array de vídeos
+  - Estruturando a página de vídeo único
+  - Reconfigurando o iframe
+  - Redirecionando URL com JavaScript
+
 <br>
 
 <a id="semana02"></a><br>

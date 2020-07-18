@@ -1,0 +1,32 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>{{video.title}} - Mayk Brito</title>
+    <link rel="stylesheet" href="styles/portfolio.css">    
+    <link rel="stylesheet" href="styles/video.css">
+{% endblock %}
+
+{% block content %}    
+
+    <div id="wrapper" >
+        <h1> {{video.title}} </h1>
+    </div>
+    
+    <section class="videos">     
+        <div class="card" id="{{video.id}}">
+            <div class="card_video-container">
+                <iframe src="https://www.youtube.com/embed/{{video.id}}" frameborder="0"></iframe>                
+            </div>
+
+            <div class="card_content">
+                <p>{{video.title}}</p>
+            </div>
+
+            <div class="card_info">
+                <p>{{video.duration}}</p>
+                <p class="card_price">{{video.price}}</p>
+            </div>
+        </div>
+    </section>
+   
+{% endblock %}

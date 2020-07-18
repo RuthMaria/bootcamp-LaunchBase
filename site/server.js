@@ -11,7 +11,8 @@ server.set('view engine', 'njk')
 
 nunjucks.configure('site/views', {
     express: server,
-    autoescape: false   /* serve para o nunjuck aceitar tags HTML*/
+    autoescape: false,   /* serve para o nunjuck aceitar tags HTML*/
+    noCache: true
 })
 
 server.get('/', (req, res) => {
@@ -34,6 +35,20 @@ server.get('/', (req, res) => {
 
 server.get('/portfolio', (req, res) => {
     return res.render('portfolio', { items: videos })
+})
+
+server.get('/video', (req, res) => {
+    const id = req.query.id  /* Pega o id do front-end */
+
+    const video = videos.find( video => {
+        return  (video.id == id)
+    })
+
+    if (!video) {
+        return res.send('Video not found!')
+    }
+   
+    return res.render('video', { video })
 })
 
 server.listen(PORT, function () {
