@@ -113,6 +113,10 @@
     color: var(--green-color);
 }
 
+#info {
+    display: none;
+}
+
 .card .card_info {
     font-size: 15px;
     margin-top: 35px;

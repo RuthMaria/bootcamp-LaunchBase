@@ -7,66 +7,28 @@
     
 {% block content %}
     <section class="cards">
+        {% for course in courses %}        
+            <div class="card" id="{{course.id_01}}">      
+                <span class="card_numbers" id="{{course.id_02}}">{{course.course_number}}</span>     
 
-        <div class="card" id="starter">      
-            <span class="card_numbers" id="card_number_01">01</span>     
+                <div class="card_image">
+                    <img src="{{course.imagem_url}}" alt="Curso {{course.id_01}}">
+                </div>
+                
+                <div class="card_content">
+                    <p>{{course.content}}</p>
+                </div>
 
-            <div class="card_image">
-                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg" alt="Curso starter">
-            </div>
-            
-            <div class="card_content">
-                <p><span id="purple_color">Torne-se um programador desejado</span> no mercado com esses cursos gratuitos</p>
-            </div>
+                <div class="card-modules">
+                    <p> {{course.modules}} </p>
+                    <p class="card-price" id="{{course.id_04}}">{{course.price}}</p>
+                </div>
 
-            <div class="card-modules">
-                <p>05 módulos</p>
-                <p class="card-price" id="price_starter">Free</p>
+                <div class="card_info" id="{{course.id_05}}">
+                    <p>{{course.class}}</p>
+                </div>
             </div>
-        </div>
-
-        <div class="card" id="launchbase">       
-            <span class="card_numbers" id="card_number_02">02</span>   
-
-            <div class="card_image">
-                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg" alt="Curso Launchbase">
-            </div>
-            
-            <div class="card_content">
-                <p><span id="orange_color">Domine programação do zero</span> e tenha acesso ás melhores oportunidades do mercado</p>
-            </div>
-            
-            <div class="card-modules">
-                <p>08 módulos</p>
-                <p class="card-price" id="price_launchbase">R$ 1.900,00</p>
-            </div>
-
-            <div class="card_info" id="orange_info">
-                <p><span>Garanta sua vaga</span> para a próxima turma!</p>
-            </div>
-            
-        </div>
-
-        <div class="card" id="gostack"> 
-            <span class="card_numbers" id="card_number_03">03</span> 
-
-            <div class="card_image">
-                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg" alt="Curso GoStack">
-            </div>
-            
-            <div class="card_content">
-                <p><span id="green_color">Treinamento imersivo</span> nas tecnologias mais modernas de desenvolvimento web e mobile</p>
-            </div>
-
-            <div class="card-modules">
-                <p>06 módulos</p>
-                <p class="card-price" id="price_gostack">R$ 2.900,00</p>
-            </div>
-
-            <div class="card_info" id="green_info">
-                <p><span>Garanta sua vaga</span> para a próxima turma!</p>
-            </div>
-        </div>
+        {% endfor %}
     </section>
 
     <div class="modal_overlay">

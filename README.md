@@ -97,7 +97,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-<p> <strong>Desafio 03 </strong> consistia em 3 partes, onde era realizada a refatoração do código.</p>
+<p> <strong>Desafio 03 </strong> consistia em 4 partes, onde foi realizado a refatoração do código.</p>
 
 [Desafio 03.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.1), refatoração do site da rocketseat (desafio 02.1).
 
@@ -112,9 +112,10 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 - [Parte 2](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-2-nunjucks-e-dados-dinamicos.md):
   - Exportando e importando JavaScript
   - Passando dados do Back-end para o front-end
-  - Alinhando elementos com CSS Grid
   - Atualizando página cursos e sobre
 
+- [Parte 3](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-3-pagina-descricao-curso.md):
+  - 
 <br>
 
 <a id="semana02"></a><br>
