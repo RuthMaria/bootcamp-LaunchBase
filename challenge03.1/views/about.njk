@@ -1,0 +1,33 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Sobre</title>
+{% endblock head %}
+
+{% block content %}
+    <div id="wrapper">
+        <img class="logo" src="{{data.image_url}}" alt="Logo da {{data.title}}">
+        <h1> {{data.title}} </h1>
+        <p> {{data.description}}</p>
+        
+        <p class="technology">{{data.title2}}</p>
+
+        <div class="technologies">
+            {% for technology in data.technologies %}           
+                <figure>
+                    <img src="{{technology.url}}" alt="{{technology.name}}">
+                    <figcaption>{{technology.name}}</figcaption>
+                </figure>
+             {% endfor %}
+        </div>   
+    </div>
+
+    <div id="links-footer" class="links">
+        <a href="https://github.com/Rocketseat" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.instagram.com/rocketseat_oficial/?hl=pt-br" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/rocketseat/" target="_blank" rel="noopener noreferrer">Facebook</a>
+    </div>
+{% endblock content %}     
+    
+</body>
+</html>

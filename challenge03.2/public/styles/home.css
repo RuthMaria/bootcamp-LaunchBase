@@ -1,0 +1,126 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #111111 ;
+}
+
+.page-index {
+    width: 65%;    
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    padding: 36px 0;
+}
+
+nav .logo {
+    width: 90.6px;
+    height: 26.9px;
+}
+
+.menu {
+    margin-left: 122.4px;
+    font-size: 16px;   
+}
+
+.menu a {
+    margin-right: 30px;
+}
+
+.menu a:hover {
+    border-bottom: 4px solid #FBDFDB;
+    transition: 200ms;
+    font-weight: bold;
+}
+
+.jumbotron {
+    background: #FBDFDB;
+    border-radius: 30px;
+    width: 940px;
+    height: 366px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.jumbotron .jumbotron_content {
+    position: absolute;
+    align-items: center;
+    margin: 117px 60px 211px;
+}
+
+.jumbotron h1 {    
+    margin-bottom: 10px;
+}
+
+.jumbotron p {
+    opacity: 0.7;
+    font-size: 18px;
+    line-height: 28px;    
+    width: 316px;
+    height: 84px;
+}
+
+.jumbotron img {
+    position: absolute;
+    right: 100px;
+    top: 66px;
+}
+
+.section_title {
+    font-size: 24px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 0;
+}
+
+.card img {
+    width: 300px;
+    height: 140px;
+    margin:20px 0;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.card img:hover {
+    border: 4px solid #f35e47;
+    cursor: pointer;
+}
+
+.card p {
+    font-size: 18px;
+    margin-bottom: 5px;   
+}
+
+.card .author {
+    font-size: 14px;
+    color: #777777;
+}
+
+
+footer {
+    background-color: #EEEEEE;
+    height: 62px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    padding: 23px 0;
+}

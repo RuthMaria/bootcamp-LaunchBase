@@ -106,8 +106,8 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
   - Definição de rotas
   - Instalação e configuração do Nunjucks
   - Trazendo o front-end do site para o servidor
-  - Criação de páginas dinâmicas com Nunjuck
-  - Configurando arquivos .njk
+  - Tornar todas as páginas dinâmicas com Nunjuck
+  - Criação da página de erro 404
 
 - [Parte 2](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-2-nunjucks-e-dados-dinamicos.md):
   - Exportando e importando JavaScript
@@ -115,16 +115,38 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
   - Atualizando página cursos e sobre
 
 - [Parte 3](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-3-pagina-descricao-curso.md):
-  - Passando dados do Front-end para o Back-end com params
+  - Pegando o id do curso via route params
   - Filtrando elementos do array de courses
   - Estruturando a página de cursos
-  - Criação da página de cada curso
+  - Criação da página de descrição de cada curso
   - Reconfigurando o iframe
   - Redirecionando URL com JavaScript
 
+  #### Resultado
+
+![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video-video-challenge03.1.gif)
+
+<br>
+
+[Desafio 03.2](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.2), refatoração do site do foodfy (desafio 02.2). 
+
+- [Parte 4](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-refatorando-foodfy.md):
+  - Criação do servidor
+  - Criação das rotas
+  - Tornando os dados mais dinâmico
+  - Criação da página de descrição das receitas
+
 #### Resultado
 
-![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video-desafio3.3.gif)
+![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video-challenge03.gif)
+
+<br>
+
+<p><strong> Site de apresentação de portfólio </strong></p>
+
+#### Resultado
+
+![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/site.gif)
 
 <br>
 
