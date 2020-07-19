@@ -115,11 +115,16 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
   - Atualizando página cursos e sobre
 
 - [Parte 3](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-3-pagina-descricao-curso.md):
-  - Passando dados do Front-end para o Back-end com Query Strings
-  - Filtrando elementos do array de vídeos
-  - Estruturando a página de vídeo único
+  - Passando dados do Front-end para o Back-end com params
+  - Filtrando elementos do array de courses
+  - Estruturando a página de cursos
+  - Criação da página de cada curso
   - Reconfigurando o iframe
   - Redirecionando URL com JavaScript
+
+#### Resultado
+
+![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video-desafio3.3.gif)
 
 <br>
 

@@ -1,0 +1,16 @@
+.course {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.course iframe {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+
+a {
+    display: none;
+}

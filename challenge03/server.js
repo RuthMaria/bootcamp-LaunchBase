@@ -11,7 +11,8 @@ server.set('view engine', 'njk')
 
 nunjucks.configure('challenge03/views', {
     express: server,
-    autoescape: false
+    autoescape: false,
+    noCache: true
 })
 
 server.get('/', (req, res) => {
@@ -34,6 +35,20 @@ server.get('/about', (req, res) => {
     }
     return res.render('about', { data })
 })
+
+server.get("/courses/:id", (req, res) => {
+    const id = req.params.id;
+    
+    const found_course = courses.find( course => {
+        return (course.id_01 == id)
+    })
+
+    if (!found_course) {
+        return res.send('Página não encontrada')
+    }
+     
+    return res.render('course_description', {found_course})
+});
 
 server.use(function(req, res) {
     res.status(404).render("not-found");
