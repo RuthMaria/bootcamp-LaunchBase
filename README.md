@@ -124,7 +124,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
   #### Resultado
 
-![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video-video-challenge03.1.gif)
+![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video-challenge03.1.gif)
 
 <br>
 
@@ -138,7 +138,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 #### Resultado
 
-![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video-challenge03.gif)
+![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video-challenge03.2.gif)
 
 <br>
 

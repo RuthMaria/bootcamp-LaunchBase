@@ -1,13 +1,13 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
-//const courses = require('./data')
+const recipes = require('./data')
 
 const server = express()
 const PORT = 5000
 
 server.use(express.static(__dirname + '/public'))
 
-server.set('view engine', 'html')
+server.set('view engine', 'njk')
 
 nunjucks.configure('challenge03.2/views', {
     express: server,
@@ -16,7 +16,7 @@ nunjucks.configure('challenge03.2/views', {
 })
 
 server.get('/', ( req, res ) => {
-    return res.render('home')
+    return res.render('home', { recipes })
 })
 
 server.get('/about', ( req, res ) => {
@@ -24,7 +24,16 @@ server.get('/about', ( req, res ) => {
 })
 
 server.get('/recipes', ( req, res ) => {
-    return res.render('recipes')
+    return res.render('recipes', { recipes })
+})
+
+server.get('/recipes/:index', ( req, res ) => {
+
+    const recipeIndex = req.params.index;
+
+    const recipe = recipes[recipeIndex]
+
+return res.render('recipe_description', {recipe})
 })
 
 server.listen(PORT, function () {
