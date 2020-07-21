@@ -160,7 +160,7 @@ Nesta semana foi desenvolvido um site de aulas particulares, onde o desenvolvime
 </p><br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md):
-  - Criação de um header com dois links: Teachers e Students
+  - Criação de um header com dois links: teachers e students.
 
 - [Parte 02]():
   - 
