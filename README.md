@@ -72,9 +72,9 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 [Desafio 02.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02.1) - Site da Rocketseat
 
-- [Parte 1](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md), criação do menu;
-- [Parte 2](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md), página de descrição da Rocketseat;
-- [Parte 3](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md), página de cursos da rocketseat e iframes.
+- [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md), criação do menu;
+- [Parte 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md), página de descrição da Rocketseat;
+- [Parte 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md), página de cursos da rocketseat e iframes.
 
 
 #### Resultado 
@@ -85,7 +85,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 [Desafio 02.2](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02.2) - Site Foodfy
 
-- [Parte 4](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md), criação do layout do Foodfy.
+- [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md), criação do layout do Foodfy.
 
 #### Resultado
 
@@ -101,7 +101,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 [Desafio 03.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.1), refatoração do site da rocketseat (desafio 02.1).
 
-- [Parte 1](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md):
+- [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md):
   - Criação do servidor
   - Definição de rotas
   - Instalação e configuração do Nunjucks
@@ -109,12 +109,12 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
   - Tornar todas as páginas dinâmicas com Nunjuck
   - Criação da página de erro 404
 
-- [Parte 2](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-2-nunjucks-e-dados-dinamicos.md):
+- [Parte 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-2-nunjucks-e-dados-dinamicos.md):
   - Exportando e importando JavaScript
   - Passando dados do Back-end para o front-end
   - Atualizando página cursos e sobre
 
-- [Parte 3](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-3-pagina-descricao-curso.md):
+- [Parte 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-3-pagina-descricao-curso.md):
   - Pegando o id do curso via route params
   - Filtrando elementos do array de courses
   - Estruturando a página de cursos
@@ -130,7 +130,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 [Desafio 03.2](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.2), refatoração do site do foodfy (desafio 02.2). 
 
-- [Parte 4](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-refatorando-foodfy.md):
+- [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-refatorando-foodfy.md):
   - Criação do servidor
   - Criação das rotas
   - Tornando os dados mais dinâmico
@@ -142,7 +142,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-<p><strong> Site de apresentação de portfólio </strong></p>
+[Site de apresentação de portfólio](https://github.com/RuthMaria/launchBase2.0/tree/master/portfolio)
 
 #### Resultado
 
@@ -152,7 +152,27 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <a id="semana02"></a><br>
 
+
 ## :date: Semana 02
+<br>
+<p align="justify">
+Nesta semana foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
+</p><br>
+
+- [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md):
+  - Criação de um header com dois links: Teachers e Students
+
+- [Parte 02]():
+  - 
+
+
+
+<br>
+
+## :date: Semana 03
+<br>
+<p align="justify">
+</p>
 
 <a id="Licença"></a><br>
 

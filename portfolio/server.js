@@ -9,7 +9,7 @@ server.use(express.static(`${__dirname}/public`))
 
 server.set('view engine', 'njk')
 
-nunjucks.configure('site/views', {
+nunjucks.configure('portfolio/views', {
     express: server,
     autoescape: false,   /* serve para o nunjuck aceitar tags HTML*/
     noCache: true

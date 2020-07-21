@@ -33,7 +33,7 @@ server.get('/recipes/:index', ( req, res ) => {
 
     const recipe = recipes[recipeIndex]
 
-return res.render('recipe_description', {recipe})
+return res.render('recipe_description', { recipe })
 })
 
 server.listen(PORT, function () {
