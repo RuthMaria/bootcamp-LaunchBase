@@ -13,14 +13,14 @@
 }
 
 body {
-    background-color: white;
+    background-color: #333544;
     font-family: 'Roboto', sans-serif;
     color: white;
 }
 
 header {
     padding: 32px;
-    background-color: #333544;
+    background-color: var(--purple-color);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     width: 100%;
     box-sizing: border-box;
