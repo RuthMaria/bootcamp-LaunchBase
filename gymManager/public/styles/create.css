@@ -1,0 +1,28 @@
+input {
+    width: 100%;
+    outline: none; /* tira a corda do input quando selecionado*/
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*pega apenas o o imput do tipo radio e faz ele ter a largura inicial*/
+input[type="radio"] {
+    width: initial; 
+    margin-right: 4px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    padding: 8px 32px;
+    background-color: var(--purple-color);
+    color: white;
+    border-radius: 4px;
+    margin-top: 32px;
+    width: 100%;
+    font-size: 16px;
+}
