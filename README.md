@@ -166,6 +166,10 @@ Nesta semana foi desenvolvido um site de aulas particulares, onde o desenvolvime
   - Utilizar o browser-sync
   - criar um card para apresentação das informações do professor
 
+- [Parte 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-3-form-and-routes-teacher.md):
+  - Criar um formulário de cadastro do professor
+  - Criar uma rota do tipo post que realiza as validações e salva os dados enviados.
+
 
 
 <br>

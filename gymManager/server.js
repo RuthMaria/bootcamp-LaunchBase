@@ -5,7 +5,7 @@ const routes = require('./routes')
 const server = express()
 const PORT = 5000
 
-server.use(express.urlencoded({ extented: true }))
+server.use(express.urlencoded({ extented: true })) /* para usar o req.body */
 server.use(express.static(`${__dirname}/public`))
 server.use(routes)  /* middleware que está configurado para usar o arquivo de rotas */
 

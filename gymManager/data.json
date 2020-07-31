@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://google.com",
+      "name": "Ruth Maria da silva",
+      "birth": 1594080000000,
+      "gender": "F",
+      "services": "crossfit",
+      "created_at": 1596219283761
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://youtube.com",
+      "name": "Hercilio",
+      "birth": 1594080000000,
+      "gender": "F",
+      "services": "crossfit",
+      "created_at": 1596219312549
+    }
+  ]
+}
