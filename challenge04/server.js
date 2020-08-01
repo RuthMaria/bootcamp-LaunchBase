@@ -4,7 +4,7 @@ const routes = require('./routes')
 
 const server = express()
 const PORT = 5000
-
+server.use(express.urlencoded ( { extended: true }))
 server.use(express.static(__dirname + '/public'))
 
 server.set('view engine', 'njk')

@@ -1,0 +1,24 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://google.com",
+      "fullname": "ruth",
+      "birth": "2020-07-07",
+      "education_level": "Ensino Superior Completo",
+      "classes": "Presencial",
+      "occupation_area": "professor",
+      "created_at": 1596240763092
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://youtube.com",
+      "fullname": "naelson",
+      "birth": "2020-07-07",
+      "education_level": "Mestrado",
+      "classes": "Presencial",
+      "occupation_area": "aluno",
+      "created_at": 1596240790628
+    }
+  ]
+}

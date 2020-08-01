@@ -101,7 +101,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 [Desafio 03.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.1), refatoração do site da rocketseat (desafio 02.1).
 
-- [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md):
+- [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md)
   - Criação do servidor
   - Definição de rotas
   - Instalação e configuração do Nunjucks
@@ -109,12 +109,12 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
   - Tornar todas as páginas dinâmicas com Nunjuck
   - Criação da página de erro 404
 
-- [Parte 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-2-nunjucks-e-dados-dinamicos.md):
+- [Parte 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-2-nunjucks-e-dados-dinamicos.md)
   - Exportando e importando JavaScript
   - Passando dados do Back-end para o front-end
   - Atualizando página cursos e sobre
 
-- [Parte 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-3-pagina-descricao-curso.md):
+- [Parte 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-3-pagina-descricao-curso.md)
   - Pegando o id do curso via route params
   - Filtrando elementos do array de courses
   - Estruturando a página de cursos
@@ -130,7 +130,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 [Desafio 03.2](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.2), refatoração do site do foodfy (desafio 02.2). 
 
-- [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-refatorando-foodfy.md):
+- [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-refatorando-foodfy.md)
   - Criação do servidor
   - Criação das rotas
   - Tornando os dados mais dinâmico
@@ -157,16 +157,16 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 <br>
 <p align="justify">
 Nesta semana foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
-</p><br>
+</p>
 
-- [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md):
+- [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md)
   - Criação de um header com dois links: teachers e students.
 
-- [Parte 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-2-card-teacher.md):
+- [Parte 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-2-card-teacher.md)
   - Utilizar o browser-sync
   - criar um card para apresentação das informações do professor
 
-- [Parte 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-3-form-and-routes-teacher.md):
+- [Parte 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-3-form-and-routes-teacher.md)
   - Criar um formulário de cadastro do professor
   - Criar uma rota do tipo post que realiza as validações e salva os dados enviados.
 
