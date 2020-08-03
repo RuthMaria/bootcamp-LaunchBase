@@ -2,21 +2,39 @@
   "instructors": [
     {
       "id": 1,
-      "avatar_url": "https://google.com",
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
       "name": "Ruth Maria da silva",
       "birth": 1594080000000,
       "gender": "F",
-      "services": "crossfit",
+      "services": "crossfit, natação, musculação",
       "created_at": 1596219283761
     },
     {
       "id": 2,
-      "avatar_url": "https://youtube.com",
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
       "name": "Hercilio",
       "birth": 1594080000000,
-      "gender": "F",
+      "gender": "M",
       "services": "crossfit",
       "created_at": 1596219312549
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "Amanda",
+      "birth": 1596758400000,
+      "gender": "F",
+      "services": "musculação, crossfit",
+      "created_at": 1596316691145
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "sergio",
+      "birth": 673056000000,
+      "gender": "M",
+      "services": "musculação, crossfit",
+      "created_at": 1596316845287
     }
   ]
 }

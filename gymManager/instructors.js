@@ -1,5 +1,29 @@
 const fs = require('fs') //trabalha com arquivos do sistema
 const data = require(__dirname+"/data.json")
+const { age, date } = require(__dirname+"/util")
+
+// show
+exports.show = function ( req, res ) {
+    
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function ( instructor ) {
+        return instructor.id == id
+    })
+
+    if ( !foundInstructor ) {
+        return res.send(" Instructos not found! ")
+    }
+
+    const instructor = {
+        ...foundInstructor, // coloca todos os campos, exceto os que foram corrigidos abaixo
+        age: age(foundInstructor.birth),
+        services: foundInstructor.services.split(","), // quebra a string quando encontra uma virgula, colocando em uma posição do array
+        created_at: new Intl.DateTimeFormat('en-US').format(foundInstructor.created_at)
+    }
+
+    return res.render("instructors/show", { instructor })
+}
 
 // create
 exports.post = function( req, res ) {
@@ -39,3 +63,24 @@ exports.post = function( req, res ) {
     }) 
 
 } 
+
+// edit
+exports.edit = function ( req, res ) {
+
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function ( instructor ) {
+        return instructor.id == id
+    })
+
+    if ( !foundInstructor ) {
+        return res.send(" Instructos not found! ")
+    }
+
+    const instructor = {
+        ...foundInstructor,
+        birth: date(foundInstructor.birth)
+    }
+    return res.render('instructors/edit', { instructor })
+
+}

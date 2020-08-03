@@ -1,0 +1,19 @@
+.edit {
+    padding: 8px 32px;
+    background-color: var(--purple-color);
+    color: white;
+    border-radius: 4px;
+    margin-top: 32px;
+    width: 100%;
+    font-size: 16px;
+    display: block;
+    box-sizing: border-box; /*para respeitar o tamanho/limite da caixa */
+    text-align: center;
+    text-decoration: none;
+}
+
+.edit:hover {
+    background-color: #6346c4;
+    cursor: pointer;
+
+}

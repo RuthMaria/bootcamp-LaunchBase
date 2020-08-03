@@ -2,23 +2,13 @@
   "teachers": [
     {
       "id": 1,
-      "avatar_url": "https://google.com",
-      "fullname": "ruth",
-      "birth": "2020-07-07",
-      "education_level": "Ensino Superior Completo",
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "fullname": "ruth maria",
+      "birth": 673056000000,
+      "education_level": "master",
       "classes": "Presencial",
-      "occupation_area": "professor",
-      "created_at": 1596240763092
-    },
-    {
-      "id": 2,
-      "avatar_url": "https://youtube.com",
-      "fullname": "naelson",
-      "birth": "2020-07-07",
-      "education_level": "Mestrado",
-      "classes": "Presencial",
-      "occupation_area": "aluno",
-      "created_at": 1596240790628
+      "occupation_area": "professor, matematica, fisica",
+      "created_at": 1596413854581
     }
   ]
 }

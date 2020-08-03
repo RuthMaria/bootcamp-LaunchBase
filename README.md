@@ -70,7 +70,7 @@ Abordou os principais elementos do [HTML](https://github.com/Rocketseat/bootcamp
 <p>O <strong>desafio 02</strong> consistia em 4 partes, onde eram propostos desafios. Nas partes 1, 2 e 3 tínhamos que criar uma página de apresentação da Rocketseat, onde o layout era livre e o aluno poderia exercitar a sua criatividade, apenas tinha que seguir algumas instruções. 
 Na parte 4 era dado o layout para construção de um site completo para uma empresa de receitas chamada Foodfy.<p>
 
-[Desafio 02.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02.1) - Site da Rocketseat
+[Desafio 02.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02.1) - <strong>Site da Rocketseat</strong>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md), criação do menu;
 - [Parte 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md), página de descrição da Rocketseat;
@@ -83,7 +83,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-[Desafio 02.2](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02.2) - Site Foodfy
+[Desafio 02.2](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02.2) - <strong>Site Foodfy</strong>
 
 - [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md), criação do layout do Foodfy.
 
@@ -99,7 +99,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <p> <strong>Desafio 03 </strong> consistia em 4 partes, onde foi realizado a refatoração do código do site da Rocketseat e do Foodfy.</p>
 
-[Desafio 03.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.1), refatoração do site da rocketseat (desafio 02.1).
+[Desafio 03.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.1) - <strong>Refatoração do site da rocketseat (desafio 02.1)</strong>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md)
   - Criação do servidor
@@ -128,7 +128,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-[Desafio 03.2](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.2), refatoração do site do foodfy (desafio 02.2). 
+[Desafio 03.2](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.2) - <strong>Refatoração do site do foodfy (desafio 02.2)</strong>
 
 - [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-refatorando-foodfy.md)
   - Criação do servidor
@@ -152,7 +152,6 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <a id="semana02"></a><br>
 
-
 ## :date: Semana 02
 <br>
 <p align="justify">
@@ -170,9 +169,23 @@ Nesta semana foi desenvolvido um site de aulas particulares, onde o desenvolvime
   - Criar um formulário de cadastro do professor
   - Criar uma rota do tipo post que realiza as validações e salva os dados enviados.
 
+- [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-4-show-edit-format-teacher.md)
+  - Criar duas rotas: uma para apresentar os dados do professor (show) e outra para a edição dos dados cadastrados (edit).
+  - Formatar os dados cadastrados para a correta exibição no HTML.
+
+- [Parte 05]()
+  -
+
+- [Parte 06]()
+  -
+
+- [Parte 07]()
+  -
 
 
 <br>
+
+<a id="semana03"></a><br>
 
 ## :date: Semana 03
 <br>

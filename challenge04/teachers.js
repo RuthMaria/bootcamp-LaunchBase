@@ -1,7 +1,31 @@
 const fs = require("fs")
-const data = require(__dirname+"/data.json")
+const { age, graduation } = require("../challenge04/util")
+const data = require("../challenge04/data.json")
 
-exports.post = function ( req, res ) {    
+exports.show = ( req, res ) => {
+    
+    const { id } =  req.params
+
+    const foundTeacher = data.teachers.find( teacher => {
+        return teacher.id == id
+    })
+
+    if ( !foundTeacher ) {
+        return res.send (" Teacher not found! ")
+    }
+
+    const teacher = {
+        ...foundTeacher,        
+        age: age(foundTeacher.birth),
+        occupation_area: foundTeacher.occupation_area.split(","),
+        created_at: new Intl.DateTimeFormat('en-US').format(foundTeacher.created_at),
+        education_level: graduation(foundTeacher.education_level)
+    }
+
+    return res.render("teachers/show", { teacher })
+}
+
+exports.post = ( req, res )=> {    
     
     const keys = Object.keys(req.body)
 
@@ -11,8 +35,9 @@ exports.post = function ( req, res ) {
         }
     }
 
-    const { avatar_url, fullname, birth, education_level, classes, occupation_area } = req.body
-    req.body.birth = Date.parse(birth)
+    let { avatar_url, fullname, birth, education_level, classes, occupation_area } = req.body
+
+    birth = Date.parse(birth)
     const id = Number(data.teachers.length + 1)
     const created_at = Date.now()
     
@@ -27,7 +52,7 @@ exports.post = function ( req, res ) {
         created_at
     })
 
-    fs.writeFile("challenge04/data.json", JSON.stringify(data, null, 2), function (err) {
+    fs.writeFile("challenge04/data.json", JSON.stringify(data, null, 2), err => {
         if (err) {
             return res.send("Write file error!")
         }
