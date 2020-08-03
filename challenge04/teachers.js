@@ -1,5 +1,5 @@
 const fs = require("fs")
-const { age, graduation } = require("../challenge04/util")
+const { age, graduation, date } = require("../challenge04/util")
 const data = require("../challenge04/data.json")
 
 exports.show = ( req, res ) => {
@@ -59,5 +59,26 @@ exports.post = ( req, res )=> {
 
         return res.redirect("/teachers")
     })
+
+}
+
+exports.edit = ( req, res ) => {
+
+    const { id } = req.params
+
+    const foundTeacher = data.teachers.find( teacher => {
+        return teacher.id == id
+    })
+
+    if ( !foundTeacher ) {
+        return res.send(" Teacher not found! ")
+    }
+
+    const teacher = {
+        ...foundTeacher,
+        birth: date(foundTeacher.birth)
+    }
+
+    return res.render("teachers/edit", { teacher })
 
 }

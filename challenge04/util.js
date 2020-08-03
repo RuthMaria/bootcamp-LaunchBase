@@ -1,3 +1,5 @@
+const { date } = require("../gymManager/util")
+
 module.exports = {
     age( timestamp ) {
         const today = new Date()
@@ -30,5 +32,16 @@ module.exports = {
         }
 
         return formation
+    },
+
+    date( timestamp ){
+
+        const birthDate = new Date(timestamp)
+
+        const year = birthDate.getUTCFullYear()
+        const month = `0${birthDate.getUTCMonth() + 1}`.slice(-2)
+        const day = `0${birthDate.getUTCDate()}`.slice(-2)
+
+        return `${year}-${month}-${day}`
     }
 }
