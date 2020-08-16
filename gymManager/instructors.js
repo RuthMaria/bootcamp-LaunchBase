@@ -2,6 +2,10 @@ const fs = require('fs') //trabalha com arquivos do sistema
 const data = require(__dirname+"/data.json")
 const { age, date } = require(__dirname+"/util")
 
+exports.index = function( req, res) {
+
+    return res.render('instructors/index', { instructors: data.instructors })
+}
 
 exports.show = function ( req, res ) {
      
@@ -107,7 +111,8 @@ exports.put = function ( req, res) {
     const instructor = {
         ...foundInstructor,
         ...req.body,
-        birth: Date.parse(birth) 
+        birth: Date.parse(birth),
+        id: Number(id)
     }
 
     data.instructors[index] = instructor
@@ -139,3 +144,4 @@ exports.delete = function ( req, res) {
         return res.redirect("/instructors")
     })
 }
+
