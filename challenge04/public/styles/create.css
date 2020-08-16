@@ -29,6 +29,7 @@ select {
     font-size: 16px;
     padding: 8px 32px;    
     margin-top: 20px;
+    transition: background-color 0.2s;
 }
 
 .button:hover {
@@ -36,16 +37,17 @@ select {
     cursor: pointer;
 }
 
+.buttons_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+}
+
+
 #delete {
     background-color: rgb(241, 52, 52);
 }
 
 #delete:hover {
     background-color: rgb(241, 38, 38);
-}
-
-.buttons_form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 16px;
 }

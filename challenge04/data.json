@@ -1,24 +1,23 @@
 {
   "teachers": [
     {
-      "id": "2",
-      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
-      "fullname": "fernanda maria",
-      "birth": 673056000000,
-      "education_level": "Mestrado",
-      "classes": "Distância",
-      "occupation_area": "garçom, garçonete, fisica",
-      "created_at": "8/2/2020",
-      "age": 29
-    },
-    {
       "id": "3",
       "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
-      "fullname": "Maria aparecida da silva",
+      "fullname": "Maria aparecida",
       "birth": 673056000000,
-      "education_level": "master",
+      "education_level": "medium",
       "classes": "Distância",
-      "occupation_area": "garçom, garçonete, fisica",
+      "occupation_area": "garçom, garçonete",
+      "created_at": 1596420098383
+    },
+    {
+      "id": "4",
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "fullname": "Maria aparecida",
+      "birth": 673056000000,
+      "education_level": "medium",
+      "classes": "Distância",
+      "occupation_area": "garçom, garçonete",
       "created_at": 1596420098383
     }
   ]

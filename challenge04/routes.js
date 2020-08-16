@@ -22,6 +22,8 @@ routes.get('/teachers/:id/edit', teachers.edit)
 
 routes.put('/teachers', teachers.update)
 
+routes.delete('/teachers', teachers.delete)
+
 routes.get('/students', ( req, res ) => {
     return res.send('students')
 })
