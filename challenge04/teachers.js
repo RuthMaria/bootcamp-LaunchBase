@@ -82,3 +82,36 @@ exports.edit = ( req, res ) => {
     return res.render("teachers/edit", { teacher })
 
 }
+
+exports.update = ( req, res ) => {   
+
+    const { id, birth } = req.body
+    let index = 0
+
+    const foundTeacher = data.teachers.find(( teacher, foundIndex ) => {
+        if ( teacher.id == id ) {
+            index = foundIndex
+            return true
+        }
+    })
+
+    if( !foundTeacher ){
+        return res.send("Teacher not found!")
+    }
+
+    const teacher = {
+        ...foundTeacher,
+        ...req.body,
+        birth: Date.parse(birth)
+    }
+
+    data.teachers[index] = teacher
+
+    fs.writeFile("challenge04/data.json", JSON.stringify(data, null, 2), err => {
+        if (err) {
+            return res.send("Write file error!")
+        }
+        return res.redirect(`/teachers/${id}`)
+    })
+}
+

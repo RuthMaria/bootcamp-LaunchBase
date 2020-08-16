@@ -30,5 +30,15 @@ button[type="submit"] {
 button:hover {
     background-color: #6346c4;
     cursor: pointer;
+}
 
+#form_delete button[type="submit"] {
+    margin-top: 8px;
+    background-color: rgb(240, 128, 128);
+}
+
+
+#form_delete button[type="submit"]:hover {
+    background-color: rgb(240, 101, 101);
+    cursor: pointer;
 }

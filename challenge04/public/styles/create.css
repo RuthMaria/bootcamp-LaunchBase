@@ -35,3 +35,17 @@ select {
     background-color: #6346c4;
     cursor: pointer;
 }
+
+#delete {
+    background-color: rgb(241, 52, 52);
+}
+
+#delete:hover {
+    background-color: rgb(241, 38, 38);
+}
+
+.buttons_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+}

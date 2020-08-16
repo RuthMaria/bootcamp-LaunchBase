@@ -173,8 +173,8 @@ Nesta semana foi desenvolvido um site de aulas particulares, onde o desenvolvime
   - Criar duas rotas: uma para apresentar os dados do professor (show) e outra para a edição dos dados cadastrados (edit).
   - Formatar os dados cadastrados para a correta exibição no HTML.
 
-- [Parte 05]()
-  -
+- [Parte 05](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-5-put-delete-teacher.md)
+  - Implementar duas rotas: PUT e DELETE para a atualização e remoção, respectivamente, dos dados cadastrados de um professor.
 
 - [Parte 06]()
   -
