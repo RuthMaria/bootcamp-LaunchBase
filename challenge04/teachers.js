@@ -2,6 +2,10 @@ const fs = require("fs")
 const { age, graduation, date } = require("../challenge04/util")
 const data = require("../challenge04/data.json")
 
+exports.index = ( req, res ) => {
+    return res.render('teachers/index', { teachers: data.teachers })
+}
+
 exports.show = ( req, res ) => {
     
     const { id } =  req.params

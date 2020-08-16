@@ -96,6 +96,7 @@ th {
     color: #777;
     font-size: 14px;
 }
+
 tbody tr:last-child td {
     border-bottom: none;
 }

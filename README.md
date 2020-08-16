@@ -176,8 +176,8 @@ Nesta semana foi desenvolvido um site de aulas particulares, onde o desenvolvime
 - [Parte 05](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-5-put-delete-teacher.md)
   - Implementar duas rotas: PUT e DELETE para a atualização e remoção, respectivamente, dos dados cadastrados de um professor.
 
-- [Parte 06]()
-  -
+- [Parte 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-6-list-teachers.md)
+  - Listar todos os professores salvos no arquivo json e apresentá-los em formato de tabela.
 
 - [Parte 07]()
   -

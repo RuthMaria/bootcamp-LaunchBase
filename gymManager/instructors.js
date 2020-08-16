@@ -3,7 +3,6 @@ const data = require(__dirname+"/data.json")
 const { age, date } = require(__dirname+"/util")
 
 exports.index = function( req, res) {
-
     return res.render('instructors/index', { instructors: data.instructors })
 }
 
