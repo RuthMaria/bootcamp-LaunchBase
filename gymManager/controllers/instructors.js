@@ -1,9 +1,13 @@
 const fs = require('fs') //trabalha com arquivos do sistema
-const data = require(__dirname+"/data.json")
-const { age, date } = require(__dirname+"/util")
+const data = require("../data.json")
+const { age, date } = require("../util")
 
 exports.index = function( req, res) {
     return res.render('instructors/index', { instructors: data.instructors })
+}
+
+exports.create = function ( req, res ) {
+    return res.render('instructors/create')
 }
 
 exports.show = function ( req, res ) {
@@ -29,7 +33,6 @@ exports.show = function ( req, res ) {
     return res.render("instructors/show", { instructor })
 }
 
-// create
 exports.post = function( req, res ) {
     
     // req.body pega os dados do formulário

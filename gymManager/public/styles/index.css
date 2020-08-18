@@ -117,7 +117,8 @@ tbody tr td:first-child span {
     border: 2px solid white;
 }
 
-tbody tr td:last-child a {
+tbody tr td:last-child a,
+.table-container > a {  
     background-color: var(--purple-color);
     padding: 8px 16px;
     text-decoration: none;
@@ -128,7 +129,14 @@ tbody tr td:last-child a {
     transition: background-color 0.2s;
 }
 
-tbody tr td:last-child a:hover {
+/* a tag '>' significa que será aplicado a todo a*/
+.table-container > a {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+tbody tr td:last-child a:hover,
+.table-container > a:hover {
     background-color: var(--purple-dark--color);
 }
 

@@ -28,9 +28,7 @@ exports.show = ( req, res ) => {
     
     const { id } =  req.params
 
-    const foundTeacher = data.teachers.find( teacher => {
-        return teacher.id == id
-    })
+    const foundTeacher = data.teachers.find( teacher => teacher.id == id )
 
     if ( !foundTeacher ) {
         return res.send (" Teacher not found! ")
@@ -47,7 +45,7 @@ exports.show = ( req, res ) => {
     return res.render("teachers/show", { teacher })
 }
 
-exports.post = ( req, res )=> {    
+exports.post = ( req, res ) => {    
     
     const keys = Object.keys(req.body)
 
@@ -88,9 +86,7 @@ exports.edit = ( req, res ) => {
 
     const { id } = req.params
 
-    const foundTeacher = data.teachers.find( teacher => {
-        return teacher.id == id
-    })
+    const foundTeacher = data.teachers.find( teacher => teacher.id == id )
 
     if ( !foundTeacher ) {
         return res.send(" Teacher not found! ")
@@ -141,9 +137,7 @@ exports.update = ( req, res ) => {
 exports.delete = ( req, res) => {
     const { id } = req.body
     
-    const filteredTeacher = data.teachers.filter( teacher => {
-        return teacher.id != id
-    })
+    const filteredTeacher = data.teachers.filter( teacher => teacher.id != id )
 
     data.teachers = filteredTeacher    
     
