@@ -3,7 +3,25 @@ const { age, graduation, date } = require("../challenge04/util")
 const data = require("../challenge04/data.json")
 
 exports.index = ( req, res ) => {
-    return res.render('teachers/index', { teachers: data.teachers })
+
+    const teachers = []
+
+    for( teacher of data.teachers ){
+        teachers.push(
+            {
+                id: teacher.id,
+                avatar_url: teacher.avatar_url, 
+                fullname: teacher.fullname, 
+                birth: teacher.birth, 
+                education_level: teacher.education_level, 
+                classes: teacher.classes, 
+                occupation_area: teacher.occupation_area,
+                created_at: teacher.created_at,
+                occupation_area: teacher.occupation_area.split(",")
+            })        
+    }
+
+    return res.render('teachers/index', { teachers })
 }
 
 exports.show = ( req, res ) => {

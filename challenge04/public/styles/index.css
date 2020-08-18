@@ -46,7 +46,8 @@
     font-size: 18px;
 }
 
-.item span {
+.item span,
+.occupation_area {
     background-color: var(--orange-color);
     padding: 5px 15px;
     border-radius: 16px;
@@ -75,8 +76,7 @@
     border-spacing: 0;
 }
 
-.table-container thead tr th {
-    text-align: left;
+.table-container thead tr th {    
     text-transform: uppercase;
     color: #777;
     font-size: 14px;
@@ -85,16 +85,18 @@
 th, td {
     border-bottom: 1px solid #d9d9d9;
     padding: 16px;
+    text-align: center;
 }
 
 tbody tr:last-child td {
     border-bottom: none;
 }
 
-tbody tr td:first-child{
+tbody tr td:first-child {
     display: grid;
     grid-template-columns: 64px 1fr;
     align-items: center;
+    text-align: left;
 }
 
 tbody tr td:first-child span {
@@ -109,7 +111,7 @@ tbody tr td:first-child span {
 
 tbody tr td:last-child a {
     text-decoration: none;
-    background-color: var(--orange-color);
+    background-color: var(--purple-color);
     padding: 8px 16px;
     border-radius: 4px;
     font-size: 12px;
@@ -119,7 +121,7 @@ tbody tr td:last-child a {
 }
 
 tbody tr td:last-child a:hover {
-    background-color: rgb(250, 135, 3);
+    background-color: #5f41c4;
     box-shadow: 3px 2px 7px -5px black;
 }
 
@@ -127,3 +129,5 @@ tbody tr td:last-child a:hover {
 td:last-child {
     text-align: center;
 }
+
+
