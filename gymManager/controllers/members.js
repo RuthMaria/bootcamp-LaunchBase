@@ -1,6 +1,6 @@
 const fs = require('fs') //trabalha com arquivos do sistema
 const data = require("../data.json")
-const { age, date } = require("../util")
+const { date } = require("../util")
 
 exports.index = function( req, res) {
     return res.render('members/index', { members: data.members })
@@ -9,6 +9,48 @@ exports.index = function( req, res) {
 exports.create = function ( req, res ) {
     return res.render('members/create')
 }
+
+exports.post = function( req, res ) {
+    
+    const keys = Object.keys(req.body)    
+
+    for (let key of keys) {
+        if (req.body[key] == "") { 
+            return res.send('Please, fill all fields')
+        }
+    }
+    
+    let { avatar_url, birth, name, email, gender, blood, weight, height } = req.body 
+
+    birth = Date.parse(birth) 
+    
+    const lastMember = data.members[data.members.length - 1]
+    let id = 1
+
+    if ( lastMember ) {
+        id = lastMember.id + 1    
+    } 
+
+    data.members.push( {
+        id,
+        avatar_url,         
+        birth, 
+        name, 
+        email, 
+        gender, 
+        blood, 
+        weight, 
+        height
+    }) 
+
+    fs.writeFile("gymManager/data.json", JSON.stringify(data, null, 2), function (err) {
+        if (err) {
+            return res.send("Write file error!")
+        }
+
+        return res.redirect("/members")
+    }) 
+} 
 
 exports.show = function ( req, res ) {
      
@@ -24,45 +66,11 @@ exports.show = function ( req, res ) {
 
     const member = {
         ...foundmember, 
-        age: age(foundmember.birth)
+        birth: date(foundmember.birth).birthDay
     }
 
     return res.render("members/show", { member })
 }
-
-exports.post = function( req, res ) {
-    
-    const keys = Object.keys(req.body)    
-
-    for (let key of keys) {
-        if (req.body[key] == "") { 
-            return res.send('Please, fill all fields')
-        }
-    }
-    
-    let { avatar_url, birth, name, services, gender } = req.body 
-    birth = Date.parse(birth)    
-    const created_at = Date.now()
-    const id = Number(data.members.length + 1)  
-
-    data.members.push( {
-        id, 
-        avatar_url, 
-        name, 
-        birth, 
-        gender,
-        services, 
-        created_at
-    }) 
-
-    fs.writeFile("gymManager/data.json", JSON.stringify(data, null, 2), function (err) {
-        if (err) {
-            return res.send("Write file error!")
-        }
-
-        return res.redirect("/members")
-    }) 
-} 
 
 exports.edit = function ( req, res ) {
 
@@ -78,7 +86,7 @@ exports.edit = function ( req, res ) {
 
     const member = {
         ...foundmember,
-        birth: date(foundmember.birth)
+        birth: date(foundmember.birth).iso
     }
     return res.render('members/edit', { member })
 

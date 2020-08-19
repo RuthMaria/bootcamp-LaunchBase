@@ -10,29 +10,6 @@ exports.create = function ( req, res ) {
     return res.render('instructors/create')
 }
 
-exports.show = function ( req, res ) {
-     
-    /* req.params pega os dados da URL */
-    const { id } = req.params 
-
-    const foundInstructor = data.instructors.find(function ( instructor ) {
-        return instructor.id == id
-    })
-
-    if ( !foundInstructor ) {
-        return res.send(" Instructos not found! ")
-    }
-
-    const instructor = {
-        ...foundInstructor, // coloca todos os campos, exceto os que foram corrigidos abaixo
-        age: age(foundInstructor.birth),
-        services: foundInstructor.services.split(","), // quebra a string quando encontra uma virgula, colocando em uma posição do array
-        created_at: new Intl.DateTimeFormat('en-US').format(foundInstructor.created_at)
-    }
-
-    return res.render("instructors/show", { instructor })
-}
-
 exports.post = function( req, res ) {
     
     // req.body pega os dados do formulário
@@ -72,6 +49,29 @@ exports.post = function( req, res ) {
 
 } 
 
+exports.show = function ( req, res ) {
+     
+    /* req.params pega os dados da URL */
+    const { id } = req.params 
+
+    const foundInstructor = data.instructors.find(function ( instructor ) {
+        return instructor.id == id
+    })
+
+    if ( !foundInstructor ) {
+        return res.send(" Instructos not found! ")
+    }
+
+    const instructor = {
+        ...foundInstructor, // coloca todos os campos, exceto os que foram corrigidos abaixo
+        age: age(foundInstructor.birth),
+        services: foundInstructor.services.split(","), // quebra a string quando encontra uma virgula, colocando em uma posição do array
+        created_at: new Intl.DateTimeFormat('en-US').format(foundInstructor.created_at)
+    }
+
+    return res.render("instructors/show", { instructor })
+}
+
 exports.edit = function ( req, res ) {
 
     const { id } = req.params
@@ -86,8 +86,9 @@ exports.edit = function ( req, res ) {
 
     const instructor = {
         ...foundInstructor,
-        birth: date(foundInstructor.birth)
+        birth: date(foundInstructor.birth).iso
     }
+
     return res.render('instructors/edit', { instructor })
 
 }

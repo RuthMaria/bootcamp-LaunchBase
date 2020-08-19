@@ -179,9 +179,12 @@ Nesta semana foi desenvolvido um site de aulas particulares, onde o desenvolvime
 - [Parte 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-6-list-teachers.md)
   - Listar todos os professores salvos no arquivo json e apresentá-los em formato de tabela.
 
-- [Parte 07]()
-  -
+- [Parte 07](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-7-students.md)
+  - Criar toda a estrutura de estudantes, baseado na estrutura de professores.
 
+#### Resultado 
+
+![Video executando](git/.gif)
 
 <br>
 

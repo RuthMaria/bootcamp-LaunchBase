@@ -1,4 +1,4 @@
-input {
+input, select {
     width: 100%;
     outline: none; /* tira a corda do input quando selecionado*/
     color: #555;
@@ -42,3 +42,4 @@ button:hover {
     background-color: rgb(240, 101, 101);
     cursor: pointer;
 }
+

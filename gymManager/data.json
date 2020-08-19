@@ -1,5 +1,28 @@
 {
-  "members": [],  
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=343&q=80",
+      "birth": 673056000000,
+      "name": "Ruth Maria Silva",
+      "email": "ruthmariia01@gmail.com",
+      "gender": "F",
+      "blood": "O-",
+      "weight": "67",
+      "height": "167"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1525571453712-090270b8354f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+      "birth": 957225600000,
+      "name": "maria joaquina",
+      "email": "maria@joaquina.com.br",
+      "gender": "F",
+      "blood": "A+",
+      "weight": "60",
+      "height": "150"
+    }
+  ],
   "instructors": [
     {
       "id": 2,
