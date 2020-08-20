@@ -2,34 +2,53 @@
   "students": [
     {
       "id": 1,
-      "avatar_url": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=343&q=80",
-      "fullname": "Ruth Maria da Silva",
-      "email": "ruthmariia01@gmail.com",
-      "birth": 673056000000,
-      "school_year": "1 high school",
-      "weekly_workload": "6"
+      "avatar_url": "https://images.unsplash.com/photo-1596495578076-0c3a2be70d43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+      "fullname": "Pedro augusto soares",
+      "email": "pedro@gmail.com",
+      "birth": 957139200000,
+      "school_year": "9 elementary School",
+      "weekly_workload": "3"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1526781480235-d79b4866aa9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "fullname": "Maria eduarda oliveira",
+      "email": "maria@gmail.com",
+      "birth": 775785600000,
+      "school_year": "3 high school",
+      "weekly_workload": "4"
     }
   ],
   "teachers": [
     {
       "id": 1,
-      "avatar_url": "https://images.unsplash.com/photo-1525571453712-090270b8354f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
-      "fullname": "Ruth Maria Silva",
+      "avatar_url": "https://images.unsplash.com/photo-1583468991267-3f068b607ae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=613&q=80",
+      "fullname": "Joana aparecida da Silva",
       "birth": 673056000000,
-      "education_level": "medium",
+      "education_level": "graduation",
       "classes": "Distância",
-      "occupation_area": "Física, Química",
+      "occupation_area": "física, Matemática",
       "created_at": 1596420098383
     },
     {
       "id": 2,
       "avatar_url": "https://images.unsplash.com/photo-1544168190-79c17527004f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
-      "fullname": "Evaristo",
+      "fullname": "Evaristo soares neto",
       "birth": 673056000000,
-      "education_level": "medium",
+      "education_level": "master",
       "classes": "Distância",
-      "occupation_area": "Matemática, geografia",
+      "occupation_area": "Matemática, física",
       "created_at": 1596420098383
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/10697959?s=460&u=3f493c6c586f256d6edbb694257ae97371588e4f&v=4",
+      "fullname": "Mayara rysia da silva",
+      "birth": 799372800000,
+      "education_level": "medium",
+      "classes": "Presencial",
+      "occupation_area": "Química, Geografia",
+      "created_at": 1597946868941
     }
   ]
 }

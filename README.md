@@ -155,7 +155,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 ## :date: Semana 02
 <br>
 <p align="justify">
-No <strong>desafio 4</strong> foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
+No [desafio 4](challenge04) foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
 </p>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md)
@@ -184,7 +184,7 @@ No <strong>desafio 4</strong> foi desenvolvido um site de aulas particulares, on
 
 #### Resultado 
 
-![Video executando](git/.gif)
+![Video executando](git/video-challenge04.gif)
 
 <br>
 
