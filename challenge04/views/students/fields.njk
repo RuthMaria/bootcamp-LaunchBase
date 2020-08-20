@@ -1,0 +1,43 @@
+<div class="item">
+    <div>Avatar</div>
+    <div><input type="url" name="avatar_url"  placeholder="https://" value = "{{ student.avatar_url }}"></div>
+</div>
+
+<div class="item">
+    <div>Nome completo</div>
+    <div><input type="text" name="fullname" placeholder="Nome completo do aluno"  value = "{{ student.fullname }}"></div>
+</div>
+
+<div class="item">
+    <div>E-mail </div>
+    <div><input type="email" name="email" placeholder="name@mail.com" value = "{{ student.email }}"></div>
+</div>
+
+<div class="item">
+    <div>Data de nascimento</div>
+    <div><input type="date" name="birth"  value = "{{ student.birth }}"></div>
+</div>
+
+<div class="item">
+    <div>Ano escolar</div>
+    <div>
+        <select name="school_year">
+            <option value="5 elementary School"> Selecione uma opção... </option>
+            <option value="5 elementary School"> 5º ano do ensino fundamental </option>
+            <option value="6 elementary School"> 6º ano do ensino fundamental </option>
+            <option value="7 elementary School"> 7º ano do ensino fundamental </option>
+            <option value="8 elementary School"> 8º ano do ensino fundamental </option>
+            <option value="9 elementary School"> 9º ano do ensino fundamental </option>
+            <option value="1 high school"> 1º ano do ensino médio  </option>
+            <option value="2 high school"> 2º ano do ensino médio  </option>
+            <option value="3 high school"> 3º ano do ensino médio  </option>
+        </select>
+    </div>
+</div>
+
+<div class="item">
+    <div>Carga horária semanal </div>
+    <div><input type="number" name="weekly_workload" placeholder="Quantidade de horas de aulas particulares" value = "{{ student.email }}"></div>
+</div>
+
+<button type="submit" class="button" id="save"> Salvar </button>

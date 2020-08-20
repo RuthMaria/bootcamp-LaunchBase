@@ -109,7 +109,8 @@ tbody tr td:first-child span {
     border: 2px solid white;
 }
 
-tbody tr td:last-child a {
+tbody tr td:last-child a,
+.table-container > a {
     text-decoration: none;
     background-color: var(--purple-color);
     padding: 8px 16px;
@@ -120,8 +121,20 @@ tbody tr td:last-child a {
     transition: background-color 0.2s;
 }
 
+.table-container > a {
+    background-color: var(--blue-color);
+    margin-bottom: 16px;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+.table-container > a:hover {
+    background-color: var(--blue-dark-color);
+    box-shadow: 3px 2px 7px -5px black;
+}
+
 tbody tr td:last-child a:hover {
-    background-color: #5f41c4;
+    background-color: var(--purple-dark-color);
     box-shadow: 3px 2px 7px -5px black;
 }
 

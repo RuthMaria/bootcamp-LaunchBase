@@ -10,6 +10,9 @@
     --green-color: rgb(4, 211, 97);  
     --orange-color:rgb(253, 149, 31);
     --purple-color: #7159c1;
+    --purple-dark-color: #5f41c4;
+    --blue-color: rgb(17, 85, 204);
+    --blue-dark-color: rgba(4, 77, 204, 0.952);
 }
 
 body {

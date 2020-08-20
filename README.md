@@ -79,7 +79,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 #### Resultado 
 
-![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video.gif)
+![Video executando](git/video.gif)
 
 <br>
 
@@ -89,7 +89,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 #### Resultado
 
-![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video-foodfy.gif)
+![Video executando](git/video-foodfy.gif)
 
 <br>
 
@@ -124,7 +124,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
   #### Resultado
 
-![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video-challenge03.1.gif)
+![Video executando](/git/video-challenge03.1.gif)
 
 <br>
 
@@ -138,7 +138,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 #### Resultado
 
-![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/video-challenge03.2.gif)
+![Video executando](git/video-challenge03.2.gif)
 
 <br>
 
@@ -146,7 +146,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 #### Resultado
 
-![Video executando](https://github.com/RuthMaria/launchBase2.0/blob/master/git/site.gif)
+![Video executando](git/site.gif)
 
 <br>
 
@@ -155,7 +155,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 ## :date: Semana 02
 <br>
 <p align="justify">
-Nesta semana foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
+No <strong>desafio 4</strong> foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
 </p>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md)
