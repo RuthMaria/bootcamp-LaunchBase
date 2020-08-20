@@ -1,5 +1,5 @@
 const fs = require("fs")
-const { age, graduation, date } = require("../util")
+const { age, graduation, date, grade } = require("../util")
 const data = require("../data.json")
 
 exports.index = ( req, res ) => {
@@ -14,7 +14,7 @@ exports.index = ( req, res ) => {
                 fullname: student.fullname, 
                 email: student.email, 
                 birth: student.birth,
-                school_year: student.school_year, 
+                school_year: grade(student.school_year), 
                 weekly_workload: student.weekly_workload
             })        
     }
@@ -28,7 +28,7 @@ exports.create = ( req, res ) => {
 
 exports.show = ( req, res ) => {
     
-    const { id } =  req.params
+    const { id} =  req.params
 
     const foundstudent = data.students.find( student => student.id == id )
 
@@ -37,11 +37,9 @@ exports.show = ( req, res ) => {
     }
 
     const student = {
-        ...foundstudent,        
-        age: age(foundstudent.birth),
-        occupation_area: foundstudent.occupation_area.split(","),
-        created_at: new Intl.DateTimeFormat('en-US').format(foundstudent.created_at),
-        education_level: graduation(foundstudent.education_level)
+        ...foundstudent,
+        birth: date(foundstudent.birth).birthDay,
+        school_year: grade(foundstudent.school_year)
     }
 
     return res.render("students/show", { student })
@@ -100,7 +98,7 @@ exports.edit = ( req, res ) => {
 
     const student = {
         ...foundstudent,
-        birth: date(foundstudent.birth)
+        birth: date(foundstudent.birth).iso
     }
 
     return res.render("students/edit", { student })

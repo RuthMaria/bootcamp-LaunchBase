@@ -23,21 +23,44 @@
     <div>
         <select name="school_year">
             <option value="5 elementary School"> Selecione uma opção... </option>
-            <option value="5 elementary School"> 5º ano do ensino fundamental </option>
-            <option value="6 elementary School"> 6º ano do ensino fundamental </option>
-            <option value="7 elementary School"> 7º ano do ensino fundamental </option>
-            <option value="8 elementary School"> 8º ano do ensino fundamental </option>
-            <option value="9 elementary School"> 9º ano do ensino fundamental </option>
-            <option value="1 high school"> 1º ano do ensino médio  </option>
-            <option value="2 high school"> 2º ano do ensino médio  </option>
-            <option value="3 high school"> 3º ano do ensino médio  </option>
+            <option value="5 elementary School" {% if student.school_year == "5 elementary School" %} selected {% endif %}> 
+                5º ano do ensino fundamental 
+            </option>
+
+            <option value="6 elementary School" {% if student.school_year == "6 elementary School" %} selected {% endif %}> 
+                6º ano do ensino fundamental 
+            </option>
+
+            <option value="7 elementary School" {% if student.school_year == "7 elementary School" %} selected {% endif %}> 
+                7º ano do ensino fundamental 
+            </option>
+
+            <option value="8 elementary School" {% if student.school_year == "8 elementary School" %} selected {% endif %}> 
+                8º ano do ensino fundamental 
+            </option>
+
+            <option value="9 elementary School" {% if student.school_year == "9 elementary School" %} selected {% endif %}> 
+                9º ano do ensino fundamental 
+            </option>
+
+            <option value="1 high school" {% if student.school_year == "1 high school" %} selected {% endif %}> 
+                1º ano do ensino médio  
+            </option>
+
+            <option value="2 high school" {% if student.school_year == "2 high school" %} selected {% endif %}> 
+                2º ano do ensino médio  
+            </option>
+
+            <option value="3 high school" {% if student.school_year == "3 high school" %} selected {% endif %}> 
+                3º ano do ensino médio 
+            </option>
         </select>
     </div>
 </div>
 
 <div class="item">
     <div>Carga horária semanal </div>
-    <div><input type="number" name="weekly_workload" placeholder="Quantidade de horas de aulas particulares" value = "{{ student.email }}"></div>
+    <div><input type="number" name="weekly_workload" placeholder="Quantidade de horas de aulas particulares" value = "{{ student.weekly_workload }}"></div>
 </div>
 
 <button type="submit" class="button" id="save"> Salvar </button>

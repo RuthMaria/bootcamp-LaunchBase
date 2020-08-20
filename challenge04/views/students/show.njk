@@ -8,47 +8,36 @@
 
 {% block content %}
     <div class="card">
-        <section class="avatar" style="background: url({{ teacher.avatar_url }}) no-repeat center center / cover"></section>
+        <section class="avatar" style="background: url({{ student.avatar_url }}) no-repeat center center / cover"></section>
        
         <section class="details">
 
             <div class="item">
                 <div>Nome completo</div>
-                <div> {{ teacher.fullname }} </div>
+                <div> {{ student.fullname }} </div>
             </div>
 
             <div class="item">
-                <div>Idade</div>
-                <div> {{ teacher.age }} </div>
+                <div>E-mail</div>
+                <div> {{ student.email }} </div>
             </div>
 
             <div class="item">
-                <div>Grau de escolaridade</div>
-                <div> {{ teacher.education_level }} </div>
+                <div>Aniversário</div>
+                <div>{{ student.birth }}</div>
             </div>
 
             <div class="item">
-                <div>Tipo de aula</div>
-                <div>
-                    {{ teacher.classes }}
-                </div>
+                <div>Ano escolar </div>
+                <div>{{ student.school_year}}</div>               
             </div>
 
             <div class="item">
-                <div>Acompanhamento </div>
-                <div>
-                    {% for occupation_area in teacher.occupation_area %}  
-                        <span> {{ occupation_area }} </span>
-                    {% endfor %}
-                </div>               
+                <div>Carga horária semanal</div>
+                <div>{{ student.weekly_workload }}</div>
             </div>
 
-            <div class="item">
-                <div>Desde</div>
-                <div>{{ teacher.created_at }}</div>
-            </div>
-
-            <a href="/teachers/{{ teacher.id }}/edit" class="button"> Editar </a>
+            <a href="/students/{{ student.id }}/edit" class="button"> Editar </a>
         </section>
     </div>
 {% endblock content %}
