@@ -6,6 +6,7 @@
   <a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana01">Semana 01</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana02">Semana 02</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#semana03">Semana 03</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#licença">Licença</a>
 </p>
 
@@ -155,7 +156,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 ## :date: Semana 02
 <br>
 <p align="justify">
-No [desafio 4](challenge04) foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
+No [desafio 04](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge04) foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
 </p>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md)
@@ -191,6 +192,16 @@ No [desafio 4](challenge04) foi desenvolvido um site de aulas particulares, onde
 <a id="semana03"></a><br>
 
 ## :date: Semana 03
+<br>
+<p align="justify">
+No desafio 05 foi realizado a persistência dos dados da aplicação, este desafio foi dividido em 4 partes.
+</p>
+
+<br>
+
+<a id="semana04"></a><br>
+
+## :date: Semana 04
 <br>
 <p align="justify">
 </p>

@@ -26,7 +26,13 @@ exports.post = function( req, res ) {
     birth = Date.parse(birth)
      // transforma a data em milissegundos, para ficar igual a created_at
     const created_at = Date.now() /* cria um atributo com a data de hoje */
-    const id = Number(data.instructors.length + 1)  
+    
+    const lastInstructor = data.instructors[data.instructors.length - 1]
+    let id = 1
+
+    if ( lastInstructor ) {
+        id = lastInstructor.id + 1    
+    }   
 
     data.instructors.push( {
         id, 

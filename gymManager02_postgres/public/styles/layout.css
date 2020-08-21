@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400,700&display=swap');
+
+:root {
+    --purple-color: #7159c1;
+    --purple-dark--color: #6143c4;
+    --yellow-color: #F7DF1E;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    background-color: var(--purple-color);
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 32px;
+    box-sizing: border-box; /*para o padding, border e margin respeitar o limite largura da largura*/
+}
+
+.links {
+    font-size: 22px;
+}
+
+.links a + a { /* só será aplicado ao segundo a */
+    margin-left: 32px;
+    text-decoration: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: #777;
+    position: relative;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: var(--purple-color);
+}
+
+.links a:hover {
+    color: var(--purple-color);
+}
+
+.links a::after { /* Adiciona um pseudo elemento ao passar o mouse por cima */
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--purple-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after { 
+    width: 100%;
+    transition: width 200ms ease-in-out; /*onde será aplicado (nome da propriedade) | duração | como irá percorrer (se devagar ou rápido)*/
+}

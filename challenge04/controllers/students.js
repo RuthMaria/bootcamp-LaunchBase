@@ -59,8 +59,8 @@ exports.post = ( req, res ) => {
 
     birth = Date.parse(birth)
     let id = 1
-    const number_of_students = data.students.length - 1
-    const lastStudent = data.students[number_of_students]
+    const lastIndex = data.students.length - 1
+    const lastStudent = data.students[lastIndex]
 
     if ( lastStudent ) {
         id = lastStudent.id + 1
