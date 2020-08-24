@@ -155,9 +155,8 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 ## :date: Semana 02
 <br>
-<p align="justify">
-No [desafio 04](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge04) foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
-</p>
+
+No [desafio 04](challenge04) foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md)
   - Criação de um header com dois links: teachers e students.
@@ -193,9 +192,11 @@ No [desafio 04](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge
 
 ## :date: Semana 03
 <br>
-<p align="justify">
-No desafio 05 foi realizado a persistência dos dados da aplicação, este desafio foi dividido em 4 partes.
-</p>
+
+No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio 04](challengde04), este desafio foi dividido em 4 partes.
+
+- [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/blob/master/desafios/05-1-refatorando-aplicacao.md)
+  -  Refator o código da aplicação e preparar o ambiente para trabalhar com banco de dados.
 
 <br>
 

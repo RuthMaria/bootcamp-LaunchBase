@@ -1,0 +1,18 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/create.css">
+    <title>Home</title>
+{% endblock head %}
+
+{% block content %}
+    <form class="card" action="/students" method="post">
+        <section class="avatar" style="background: url(student.avatar_url) no-repeat center center / cover"></section>
+       
+        <section class="details">
+           {% include 'students/fields.njk' %}           
+            <button type="submit" class="button"> Salvar </button>
+        </section>
+    </form>
+{% endblock content %}

@@ -1,0 +1,53 @@
+input, select {
+    color: #555;
+    font-size: 18px;
+    outline: none;
+    font-weight: bold;
+    width: 100%;
+}
+
+input[type="radio"] {
+    width: initial;
+    margin-right: 4px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+select {
+    color: #555;
+    font-size: 15px;
+}
+
+.button {
+    width: 100%;
+    background-color: var(--purple-color);
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px 32px;    
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #6346c4;
+    cursor: pointer;
+}
+
+.buttons_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+}
+
+
+#delete {
+    background-color: rgb(241, 52, 52);
+}
+
+#delete:hover {
+    background-color: rgb(241, 38, 38);
+}
