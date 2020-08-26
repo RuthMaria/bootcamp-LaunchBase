@@ -3,7 +3,6 @@
 </h1><br>
 
 <p align="center">
-  <a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana01">Semana 01</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana02">Semana 02</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana03">Semana 03</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -12,6 +11,8 @@
 
 <p align="center">
  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=7159c1&labelColor=000000" alt="PRs welcome!" />
+
+  <img alt="License" src="https://img.shields.io/badge/Made%20by-Ruth%20Maria-blueviolet">
 
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=7159c1&labelColor=000000">
 </p>
@@ -22,8 +23,16 @@
 
 <p align="justify">
 O LaunchBase 2.0 é um treinamento no formato de bootcamp online que tem duração de 6 semanas. É ofertado pela Rocketseat e tem o objetivo de guiar o aluno pelas ferramentas e conceitos mais modernos de desenvolvimento que permitirá construir as melhores aplicações e avançar na direção certa no desenvolvimento web.
-</p>
+</p><br>
 
+## ⚒️ Tecnologias utilizadas
+ * HTML5
+ * CSS3
+ * JavaScript
+ * Node.JS
+ * Express
+ * Postgres
+ * SQL
 
 <a id="semana01"></a><br>
 
@@ -49,19 +58,19 @@ Na primeira semana foram abordados conceitos de introdução a programação, in
     - Padronização
     - Escrita.
 
-O [desafio 01](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge01) consistia em aplicar todos esses conceitos em questões que foram elaboradas pela Rocketseat. A cada término de um conceito, tinha um desafio para praticá-lo. Ao todo foram 6 questões.
+O [desafio 01](challenge01) consistia em aplicar todos esses conceitos em questões que foram elaboradas pela Rocketseat. A cada término de um conceito, tinha um desafio para praticá-lo. Ao todo foram 6 questões.
 
-- [Questão 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [cálculo do IMC](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/IMC.js).
+- [Questão 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [cálculo do IMC](challenge01/IMC.js).
 
-- [Questão 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [calculadora de aposentadoria](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/retirement.js).
+- [Questão 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [calculadora de aposentadoria](challenge01/retirement.js).
 
-- [Questão 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-2-lidando-com-objetos-e-vetores.md), [criação de objeto](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/company.js) .
+- [Questão 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-2-lidando-com-objetos-e-vetores.md), [criação de objeto](challenge01/company.js) .
 
-- [Questão 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [usuário e tecnologia](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/technology.js).
+- [Questão 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [usuário e tecnologia](challenge01/technology.js).
 
-- [Questão 05](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [soma de despesas e receitas](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/expenses.js).
+- [Questão 05](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [soma de despesas e receitas](challenge01/expenses.js).
 
-- [Questão 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md), [operações bancárias](https://github.com/RuthMaria/launchBase2.0/blob/master/challenge01/bankingOperations.js).<br>
+- [Questão 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md), [operações bancárias](challenge01/bankingOperations.js).<br>
 
 
 ### Iniciando com front-end
@@ -71,7 +80,7 @@ Abordou os principais elementos do [HTML](https://github.com/Rocketseat/bootcamp
 <p>O <strong>desafio 02</strong> consistia em 4 partes, onde eram propostos desafios. Nas partes 1, 2 e 3 tínhamos que criar uma página de apresentação da Rocketseat, onde o layout era livre e o aluno poderia exercitar a sua criatividade, apenas tinha que seguir algumas instruções. 
 Na parte 4 era dado o layout para construção de um site completo para uma empresa de receitas chamada Foodfy.<p>
 
-[Desafio 02.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02.1) - <strong>Site da Rocketseat</strong>
+[Desafio 02.1](challenge02.1) - <strong>Site da Rocketseat</strong>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md), criação do menu;
 - [Parte 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md), página de descrição da Rocketseat;
@@ -84,7 +93,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-[Desafio 02.2](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge02.2) - <strong>Site Foodfy</strong>
+[Desafio 02.2](challenge02.2) - <strong>Site Foodfy</strong>
 
 - [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md), criação do layout do Foodfy.
 
@@ -100,7 +109,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <p> <strong>Desafio 03 </strong> consistia em 4 partes, onde foi realizado a refatoração do código do site da Rocketseat e do Foodfy.</p>
 
-[Desafio 03.1](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.1) - <strong>Refatoração do site da rocketseat (desafio 02.1)</strong>
+[Desafio 03.1](challenge03.1) - <strong>Refatoração do site da rocketseat (desafio 02.1)</strong>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md)
   - Criação do servidor
@@ -125,11 +134,11 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
   #### Resultado
 
-![Video executando](/git/video-challenge03.1.gif)
+![Video executando](git/video-challenge03.1.gif)
 
 <br>
 
-[Desafio 03.2](https://github.com/RuthMaria/launchBase2.0/tree/master/challenge03.2) - <strong>Refatoração do site do foodfy (desafio 02.2)</strong>
+[Desafio 03.2](challenge03.2) - <strong>Refatoração do site do foodfy (desafio 02.2)</strong>
 
 - [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-refatorando-foodfy.md)
   - Criação do servidor
@@ -143,7 +152,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-[Site de apresentação de portfólio](https://github.com/RuthMaria/launchBase2.0/tree/master/portfolio)
+[Site de apresentação de portfólio](portfolio)
 
 #### Resultado
 
@@ -193,7 +202,7 @@ No [desafio 04](challenge04) foi desenvolvido um site de aulas particulares, ond
 ## :date: Semana 03
 <br>
 
-No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio 04](challengde04), este desafio foi dividido em 4 partes.
+No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio 04](challenge04), este desafio foi dividido em 4 partes.
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/blob/master/desafios/05-1-refatorando-aplicacao.md)
   -  Refator o código da aplicação e preparar o ambiente para trabalhar com banco de dados.
@@ -204,7 +213,7 @@ No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio
 
 ## :date: Semana 04
 <br>
-<p align="justify">
+
 </p>
 
 <a id="Licença"></a><br>

@@ -23,7 +23,7 @@ header {
     width: 100%;
     text-align: center;
     padding: 32px;
-    box-sizing: border-box; /*para o padding, border e margin respeitar o limite largura da largura*/
+    box-sizing: border-box; /*para o padding, border e margin respeitar o limite de largura da caixa*/
 }
 
 .links {
