@@ -1,18 +1,19 @@
 const { age, date } = require("../../lib/util")
-
+const Member = require('../models/Member')
 
 module.exports = {
 
     index ( req, res) {
-        return res.render('members/index')
+        Member.all(function (members) {
+            return res.render("members/index", { members })
+        })
     },
 
     create ( req, res ) {
         return res.render('members/create')
     },
 
-    post ( req, res ) {
-    
+    post ( req, res ) {    
         // req.body pega os dados do formulário
         const keys = Object.keys(req.body) // cria um array com os names dos inputs    
 
@@ -21,23 +22,34 @@ module.exports = {
                 return res.send('Please, fill all fields')
             }
         }        
-
-        let { avatar_url, birth, name, services, gender } = req.body // desestruturação do objeto, pegando só o que será utilizado
         
-        return
+        Member.create(req.body, function (member) { 
+            return res.redirect(`/members/${member.id}`)
+        })
     }, 
 
     show ( req, res ) {
-     
-        return
+        
+        Member.find(req.params.id, function (member) {            
+            if ( !member ) return res.send("member not found!") 
+
+            member.birth = date(member.birth).birthDay
+
+            return res.render("members/show", { member })
+        })
     },
 
     edit ( req, res ) {
 
-        return
+        Member.find(req.params.id, function (member) {            
+            if ( !member ) return res.send("member not found!") 
+
+            member.birth = date(member.birth).iso
+
+            return res.render("members/edit", { member })
+        })
     },
 
-// alterar
     put ( req, res) {
         
         const keys = Object.keys(req.body)     
@@ -48,12 +60,14 @@ module.exports = {
             }
         }        
 
-        let { avatar_url, birth, name, services, gender } = req.body 
-
-        return
+        Member.update(req.body, function () {
+            return res.redirect(`/members/${req.body.id}`)
+        })
     },
 
     delete ( req, res) {
-        return   
+        Member.delete(req.body.id, function () {
+            return res.redirect(`/members`)
+        })  
     }
 }
