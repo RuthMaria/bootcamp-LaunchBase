@@ -42,7 +42,7 @@ O LaunchBase 2.0 é um treinamento no formato de bootcamp online que tem duraç�
 Na primeira semana foram abordados conceitos de introdução a programação, iniciando com front-end e iniciando com back-end.
 </p>
 
-### Introdução a programação 
+### 🌟 Introdução a programação 
 
 - Conceitos abordados:
     - Variáveis
@@ -73,7 +73,7 @@ O [desafio 01](challenge01) consistia em aplicar todos esses conceitos em quest�
 - [Questão 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md), [operações bancárias](challenge01/bankingOperations.js).<br>
 
 
-### Iniciando com front-end
+### 🎨 Iniciando com front-end
 
 Abordou os principais elementos do [HTML](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/html.pdf) e as principais propriedades de estilização [CSS](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/css.pdf). 
 
@@ -82,9 +82,12 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 [Desafio 02.1](challenge02.1) - <strong>Site da Rocketseat</strong>
 
-- [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md), criação do menu;
-- [Parte 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md), página de descrição da Rocketseat;
-- [Parte 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md), página de cursos da rocketseat e iframes.
+- [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md)
+  -  Criação do menu;
+- [Parte 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md)
+  - Página de descrição da Rocketseat;
+- [Parte 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md)
+  - Página de cursos da rocketseat e iframes.
 
 
 #### Resultado 
@@ -95,7 +98,8 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 [Desafio 02.2](challenge02.2) - <strong>Site Foodfy</strong>
 
-- [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md), criação do layout do Foodfy.
+- [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md)
+  - Criação do layout do Foodfy.
 
 #### Resultado
 
@@ -103,7 +107,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-### Iniciando com back-end
+### 🗃️ Iniciando com back-end
 
 <br>
 
@@ -206,6 +210,15 @@ No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/blob/master/desafios/05-1-refatorando-aplicacao.md)
   -  Refator o código da aplicação e preparar o ambiente para trabalhar com banco de dados.
+
+- [Parte 02](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-05/blob/master/desafios/05-2-interagindo-bd.md)
+  -  Refatorar os CRUDs dos professores e estudantes para que eles utilizem o banco de dados.
+
+- [Parte 03]()
+  - 
+
+- [Parte 04]()
+  - 
 
 <br>
 

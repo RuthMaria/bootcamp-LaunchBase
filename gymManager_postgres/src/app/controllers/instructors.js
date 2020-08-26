@@ -3,7 +3,7 @@ const { age, date } = require("../../lib/util")
 
 module.exports = {
 
-    index ( req, res) {
+    index ( req, res ) {
         Instructor.all(function (instructors) {
             return res.render("instructors/index", { instructors })
         })
