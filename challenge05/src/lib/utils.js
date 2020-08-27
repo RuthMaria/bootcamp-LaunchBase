@@ -81,5 +81,15 @@ module.exports = {
         }
         
         return formation
+    },
+
+    checkEmptyFields(currentUser){
+        
+        const keys = Object.keys(currentUser)
+
+        for (let key of keys) {
+            if(currentUser[key] == "") 
+                return true
+        }
     }
 }

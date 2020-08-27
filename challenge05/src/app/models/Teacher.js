@@ -1,6 +1,5 @@
 const { date } = require("../../lib/utils")
 const db = require('../../config/db')
-const { find } = require("../../../../gymManager_postgres/src/app/models/Instructor")
 
 module.exports = {
 
@@ -9,9 +8,10 @@ module.exports = {
         const query = 'SELECT * FROM teachers ORDER BY fullname ASC'
 
         db.query(query, (err, results) => {
-            if (err) throw `Database error! ${err}`
+            if (err) 
+                throw `Database error! ${err}`
 
-            return callback(results.rows)
+            callback(results.rows)
         })
     },
 
@@ -43,32 +43,66 @@ module.exports = {
         ]
 
         db.query(query, values, (err, results) => {
-            if (err) {
+            if (err) 
                 throw `Database error! ${err}`
-            }
 
-            callback()
+            callback(results.rows[0])
         })
     },
 
-    find(id, callback){
-
+    find(id, callback) {
         const query = 'SELECT * FROM teachers WHERE id = $1'
 
         db.query(query, [id], (err, results) => {
-            if(err) throw `Database error! ${err}`
+            if(err) 
+                throw `Database Error! ${err}`
 
             return callback(results.rows[0])
         })
     },
 
-    update(data,callback){
-        const { avatar_url, fullname, birth, education_level, classes, occupation_area } = data
+    update(data, callback){
+        const { avatar_url, fullname, birth, education_level, classes, occupation_area, id } = data
 
         const query = `
-            UPDATE 
+            UPDATE teachers SET 
+                avatar_url = ($1), 
+                fullname = ($2), 
+                birth = ($3),
+                education_level = ($4), 
+                classes = ($5), 
+                occupation_area = ($6)
+            WHERE id = ($7)
+            RETURNING id
         `
+
+        const values = [
+            avatar_url, 
+            fullname, 
+            date(birth).iso, 
+            education_level, 
+            classes,
+            occupation_area, 
+            id 
+        ]
+
+        db.query(query, values, (err, results) => {
+            if(err)
+                throw `Database error! ${err}`
+
+            callback(results.rows[0])
+        })        
     },
 
-    _delete(){}
+    _delete(id, callback){
+
+        const query = 'DELETE FROM teachers WHERE id = $1'
+
+        db.query(query, [id], (err, results) => {
+            if(err)
+                throw `Database error! ${err}`
+
+            return callback()
+        })
+    }
 }

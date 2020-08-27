@@ -6,6 +6,8 @@
   <a href="#semana01">Semana 01</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana02">Semana 02</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana03">Semana 03</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#executar">Como executar o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
   <a href="#licença">Licença</a>
 </p>
 
@@ -40,9 +42,11 @@ O LaunchBase 2.0 é um treinamento no formato de bootcamp online que tem duraç�
 <br>
 <p align="justify">
 Na primeira semana foram abordados conceitos de introdução a programação, iniciando com front-end e iniciando com back-end.
-</p>
+</p><br>
 
 ### 🌟 Introdução a programação 
+
+<br>
 
 - Conceitos abordados:
     - Variáveis
@@ -58,7 +62,11 @@ Na primeira semana foram abordados conceitos de introdução a programação, in
     - Padronização
     - Escrita.
 
+<br>
+
 O [desafio 01](challenge01) consistia em aplicar todos esses conceitos em questões que foram elaboradas pela Rocketseat. A cada término de um conceito, tinha um desafio para praticá-lo. Ao todo foram 6 questões.
+
+<br>
 
 - [Questão 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [cálculo do IMC](challenge01/IMC.js).
 
@@ -70,15 +78,17 @@ O [desafio 01](challenge01) consistia em aplicar todos esses conceitos em quest�
 
 - [Questão 05](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [soma de despesas e receitas](challenge01/expenses.js).
 
-- [Questão 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md), [operações bancárias](challenge01/bankingOperations.js).<br>
+- [Questão 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md), [operações bancárias](challenge01/bankingOperations.js).<br><br><br>
 
 
 ### 🎨 Iniciando com front-end
 
+<br>
+
 Abordou os principais elementos do [HTML](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/html.pdf) e as principais propriedades de estilização [CSS](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/materiais/css.pdf). 
 
 <p>O <strong>desafio 02</strong> consistia em 4 partes, onde eram propostos desafios. Nas partes 1, 2 e 3 tínhamos que criar uma página de apresentação da Rocketseat, onde o layout era livre e o aluno poderia exercitar a sua criatividade, apenas tinha que seguir algumas instruções. 
-Na parte 4 era dado o layout para construção de um site completo para uma empresa de receitas chamada Foodfy.<p>
+Na parte 4 era dado o layout para construção de um site completo para uma empresa de receitas chamada Foodfy.<p><br>
 
 [Desafio 02.1](challenge02.1) - <strong>Site da Rocketseat</strong>
 
@@ -89,31 +99,36 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 - [Parte 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md)
   - Página de cursos da rocketseat e iframes.
 
+<br>
 
 #### Resultado 
 
 ![Video executando](git/video.gif)
 
-<br>
+<br><br>
 
-[Desafio 02.2](challenge02.2) - <strong>Site Foodfy</strong>
+[Desafio 02.2](challenge02.2) - <strong>Site do Foodfy</strong>
 
 - [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md)
   - Criação do layout do Foodfy.
+
+<br>
 
 #### Resultado
 
 ![Video executando](git/video-foodfy.gif)
 
-<br>
+<br><br>
 
 ### 🗃️ Iniciando com back-end
 
 <br>
 
-<p> <strong>Desafio 03 </strong> consistia em 4 partes, onde foi realizado a refatoração do código do site da Rocketseat e do Foodfy.</p>
+<p> <strong>Desafio 03 </strong> consistia em 4 partes, onde foi realizado a refatoração do código do site da Rocketseat e do Foodfy.</p><br>
 
-[Desafio 03.1](challenge03.1) - <strong>Refatoração do site da rocketseat (desafio 02.1)</strong>
+[Desafio 03.1](challenge03.1) - <strong>Refatoração do site da rocketseat (desafio 02.1)</strong><br>
+
+<br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md)
   - Criação do servidor
@@ -136,13 +151,17 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
   - Reconfigurando o iframe
   - Redirecionando URL com JavaScript
 
+<br>
+
   #### Resultado
 
 ![Video executando](git/video-challenge03.1.gif)
 
-<br>
+<br><br>
 
-[Desafio 03.2](challenge03.2) - <strong>Refatoração do site do foodfy (desafio 02.2)</strong>
+[Desafio 03.2](challenge03.2) - <strong>Refatoração do site do foodfy (desafio 02.2)</strong><br>
+
+<br>
 
 - [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-refatorando-foodfy.md)
   - Criação do servidor
@@ -150,13 +169,17 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
   - Tornando os dados mais dinâmico
   - Criação da página de descrição das receitas
 
+<br>
+
 #### Resultado
 
 ![Video executando](git/video-challenge03.2.gif)
 
-<br>
+<br><br>
 
 [Site de apresentação de portfólio](portfolio)
+
+<br>
 
 #### Resultado
 
@@ -170,6 +193,8 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 <br>
 
 No [desafio 04](challenge04) foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
+
+<br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md)
   - Criação de um header com dois links: teachers e students.
@@ -195,6 +220,8 @@ No [desafio 04](challenge04) foi desenvolvido um site de aulas particulares, ond
 - [Parte 07](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-7-students.md)
   - Criar toda a estrutura de estudantes, baseado na estrutura de professores.
 
+<br>
+
 #### Resultado 
 
 ![Video executando](git/video-challenge04.gif)
@@ -207,6 +234,8 @@ No [desafio 04](challenge04) foi desenvolvido um site de aulas particulares, ond
 <br>
 
 No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio 04](challenge04), este desafio foi dividido em 4 partes.
+
+<br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/blob/master/desafios/05-1-refatorando-aplicacao.md)
   -  Refator o código da aplicação e preparar o ambiente para trabalhar com banco de dados.
@@ -228,6 +257,86 @@ No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio
 <br>
 
 </p>
+
+
+<a id="executar"></a><br>
+
+## 🚀 Como executar o projeto
+
+<br>
+
+- Clone este repositório
+
+```
+git clone https://github.com/RuthMaria/launchBase2.0.git
+```
+
+- Vá para a pasta do desafio que deseja executar
+
+```
+cd launchBase2.0/challenge01 ou 
+cd launchBase2.0/challenge02.1 ou
+cd launchBase2.0/challenge02.2 ou
+cd launchBase2.0/challenge03.1 ou
+cd launchBase2.0/challenge03.2 ou
+cd launchBase2.0/challenge04 ou
+cd launchBase2.0/challenge05
+```
+
+- Instale todas as dependências do projeto
+
+```
+npm install 
+```
+
+<br>
+
+### Executando os projetos
+<br>
+
+Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master/package.json#L7) e [08](https://github.com/RuthMaria/launchBase2.0/blob/master/package.json#L8) do arquivo package.json pelas linhas seguintes, respectivamente:
+
+<br>
+
+- challenge02.2
+  
+```
+
+```
+
+- challenge03.1
+  
+```
+"nodemon": "nodemon challenge03.1/server.js",
+"browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
+```
+
+- challenge03.2
+  
+```
+"nodemon": "nodemon challenge03.2/server.js",
+"browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
+```
+
+- challenge05
+
+```
+"nodemon": "nodemon challenge05/src/server.js",
+"browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,src/app/views'"
+```
+
+```
+npm start
+```
+
+<a id="contribuir"></a><br>
+
+## 🎯 Como contribuir
+
+- Dê um Fork neste repositório,
+- Crie uma branch com sua feature: `git checkout -b my-feature`
+- Commit suas mudanças: `git commit -m 'feat: My new feature'`
+- Push sua branch: `git push origin my-feature`
 
 <a id="Licença"></a><br>
 
