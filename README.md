@@ -90,7 +90,7 @@ Abordou os principais elementos do [HTML](https://github.com/Rocketseat/bootcamp
 <p>O <strong>desafio 02</strong> consistia em 4 partes, onde eram propostos desafios. Nas partes 1, 2 e 3 tínhamos que criar uma página de apresentação da Rocketseat, onde o layout era livre e o aluno poderia exercitar a sua criatividade, apenas tinha que seguir algumas instruções. 
 Na parte 4 era dado o layout para construção de um site completo para uma empresa de receitas chamada Foodfy.<p><br>
 
-[Desafio 02.1](challenge02.1) - <strong>Site da Rocketseat</strong>
+[Desafio 02.1](challenge02.1) - <strong>Site da Rocketseat</strong><br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md)
   -  Criação do menu;
@@ -101,7 +101,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-#### Resultado 
+#### RESULTADO 
 
 ![Video executando](git/video.gif)
 
@@ -114,7 +114,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-#### Resultado
+#### RESULTADO 
 
 ![Video executando](git/video-foodfy.gif)
 
@@ -127,8 +127,6 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 <p> <strong>Desafio 03 </strong> consistia em 4 partes, onde foi realizado a refatoração do código do site da Rocketseat e do Foodfy.</p><br>
 
 [Desafio 03.1](challenge03.1) - <strong>Refatoração do site da rocketseat (desafio 02.1)</strong><br>
-
-<br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md)
   - Criação do servidor
@@ -153,7 +151,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-  #### Resultado
+  #### RESULTADO 
 
 ![Video executando](git/video-challenge03.1.gif)
 
@@ -171,7 +169,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-#### Resultado
+#### RESULTADO 
 
 ![Video executando](git/video-challenge03.2.gif)
 
@@ -181,7 +179,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br>
 
-#### Resultado
+#### RESULTADO 
 
 ![Video executando](git/site.gif)
 
@@ -222,7 +220,7 @@ No [desafio 04](challenge04) foi desenvolvido um site de aulas particulares, ond
 
 <br>
 
-#### Resultado 
+#### RESULTADO 
 
 ![Video executando](git/video-challenge04.gif)
 
@@ -271,18 +269,6 @@ No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio
 git clone https://github.com/RuthMaria/launchBase2.0.git
 ```
 
-- Vá para a pasta do desafio que deseja executar
-
-```
-cd launchBase2.0/challenge01 ou 
-cd launchBase2.0/challenge02.1 ou
-cd launchBase2.0/challenge02.2 ou
-cd launchBase2.0/challenge03.1 ou
-cd launchBase2.0/challenge03.2 ou
-cd launchBase2.0/challenge04 ou
-cd launchBase2.0/challenge05
-```
-
 - Instale todas as dependências do projeto
 
 ```
@@ -291,18 +277,26 @@ npm install
 
 <br>
 
-### Executando os projetos
+### :clapper: Executando os projetos
+
+<br>
+
+#### Challenge02.1 e challenge02.2 
+
+<br>
+
+- Baixar a extensão "watch in chrome" no Visual Studio Code e no Chrome
+- Abrir no VSCode o arquivo index do respectivo challenge
+- Pressione Ctrl + Shift + P no Visual Studio Code e selecione a opção "watch in chrome"
+<br><br>
+
+#### Challenge03.1, challenge03.2, challenge04 e challenge05
+
 <br>
 
 Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master/package.json#L7) e [08](https://github.com/RuthMaria/launchBase2.0/blob/master/package.json#L8) do arquivo package.json pelas linhas seguintes, respectivamente:
 
 <br>
-
-- challenge02.2
-  
-```
-
-```
 
 - challenge03.1
   
@@ -318,6 +312,13 @@ Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
 ```
 
+- challenge04
+  
+```
+"nodemon": "nodemon challenge04/server.js",
+"browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
+```
+
 - challenge05
 
 ```
@@ -325,6 +326,9 @@ Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,src/app/views'"
 ```
 
+<br>
+
+- Em seguida, rode o projeto
 ```
 npm start
 ```

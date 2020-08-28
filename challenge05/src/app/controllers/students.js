@@ -1,9 +1,21 @@
-const { age, graduation, date, grade } = require("../../lib/utils")
+const { date, grade, checkEmptyFields } = require("../../lib/utils")
+const { all, create, find, update, _delete } = require('../models/Student')
 
 module.exports = {
 
     index( req, res ) {
-        return res.render('students/index')
+
+        all( _students => {
+            const students = []
+
+            for(let student of _students){
+                students.push({
+                    ...student,
+                    school_year: grade(student.school_year)
+                })
+            }
+            return res.render('students/index', { students })
+        })
     },
 
     create( req, res ) {
@@ -11,42 +23,58 @@ module.exports = {
     },
 
     post( req, res ) {
-        const keys = Object.keys(req.body)
 
-        for (let key of keys) {
-            if (req.body[key] == "") {
-                return res.send("Please, fill all fields!")
-            }
-        }
+        if(checkEmptyFields(req.body))
+            return res.send("Please, fill all fields!")
 
-        let { avatar_url, fullname, email, birth, school_year, weekly_workload } = req.body
-        return 
+        create(req.body, () => {
+            return res.redirect('/students')
+        })
+        
     },
     
     show( req, res ) {
-        return
+        
+        find(req.params.id, student => {
+
+            if( !student )
+                return res.send('Student not found!')
+
+            student.school_year = grade(student.school_year)
+            student.birth = date(student.birth).birthDay
+
+            return res.render('students/show',  { student })
+        })
     },
 
     edit( req, res ) {
-        return
+       
+        find(req.params.id, student => {
+
+            if( !student )
+                return res.send('Student not found!')
+
+            student.birth = date(student.birth).iso
+
+            return res.render('students/edit',  { student })
+        })
     },
 
     update( req, res ) {
-        const keys = Object.keys(req.body)
 
-        for (let key of keys) {
-            if (req.body[key] == "") {
-                return res.send("Please, fill all fields!")
-            }
-        }
+        if(checkEmptyFields(req.body))
+            return res.send("Please, fill all fields!")
 
-        let { avatar_url, fullname, email, birth, school_year, weekly_workload } = req.body
-
-        return
+        update(req.body, student => {
+            return res.redirect(`/students/find/${student.id}`)
+        })
     },
     
     delete( req, res ) {
-        return
+        
+        _delete(req.body.id, () => {
+            return res.redirect("/students")
+        })
     },
 }
 
