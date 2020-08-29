@@ -42,7 +42,7 @@ O LaunchBase 2.0 é um treinamento no formato de bootcamp online que tem duraç�
 <br>
 <p align="justify">
 Na primeira semana foram abordados conceitos de introdução a programação, iniciando com front-end e iniciando com back-end.
-</p><br>
+</p>
 
 ### 🌟 Introdução a programação 
 
@@ -65,8 +65,6 @@ Na primeira semana foram abordados conceitos de introdução a programação, in
 <br>
 
 O [desafio 01](challenge01) consistia em aplicar todos esses conceitos em questões que foram elaboradas pela Rocketseat. A cada término de um conceito, tinha um desafio para praticá-lo. Ao todo foram 6 questões.
-
-<br>
 
 - [Questão 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [cálculo do IMC](challenge01/IMC.js).
 
@@ -175,7 +173,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br><br>
 
-[Site de apresentação de portfólio](portfolio)
+#### [Site de apresentação de um portfólio](portfolio)
 
 <br>
 
@@ -281,7 +279,7 @@ npm install
 
 <br>
 
-#### Challenge02.1 e challenge02.2 
+#### ✔️ Challenge02.1 ou challenge02.2 
 
 <br>
 
@@ -290,11 +288,11 @@ npm install
 - Pressione Ctrl + Shift + P no Visual Studio Code e selecione a opção "watch in chrome"
 <br><br>
 
-#### Challenge03.1, challenge03.2, challenge04 e challenge05
+#### ✔️ Challenge03.1, challenge03.2, challenge04 ou challenge05
 
 <br>
 
-Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master/package.json#L7) e [08](https://github.com/RuthMaria/launchBase2.0/blob/master/package.json#L8) do arquivo package.json pelas linhas seguintes, respectivamente:
+Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master/package.json#L7) e [08](https://github.com/RuthMaria/launchBase2.0/blob/master/package.json#L8) do arquivo package.json pelas linhas seguintes (referente ao challenge que deseja executar):
 
 <br>
 

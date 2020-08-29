@@ -1,5 +1,6 @@
 const db = require('../../config/db')
 const { date } = require("../../lib/util")
+const { query } = require('../../config/db')
 
 module.exports = {
 
@@ -13,7 +14,7 @@ module.exports = {
     },
 
     create(data, callback) {
-        const { name, avatar_url, gender, email, birth, blood, weight, height } = data
+        const { name, avatar_url, gender, email, birth, blood, weight, height, instructor } = data
         const todayDate = Date.now()
 
         const query = `
@@ -25,8 +26,9 @@ module.exports = {
                 birth,
                 blood,
                 weight,
-                height
-            ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+                height,
+                instructor_id
+            ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
             RETURNING id
         `
 
@@ -38,7 +40,8 @@ module.exports = {
             date(birth).iso,
             blood,
             weight,
-            height
+            height,
+            instructor
         ]
 
         db.query(query, values, function(err, results){       
@@ -50,7 +53,12 @@ module.exports = {
 
     find(id, callback) {
 
-        db.query('SELECT * FROM members WHERE id = $1', [id], function (err, results) {
+        const query = `SELECT members.*, instructors.name AS instructor_name 
+                       FROM members 
+                       LEFT JOIN instructors ON (members.instructor_id = instructors.id)
+                       WHERE members.id = $1`
+
+        db.query(query, [id], function (err, results) {
             if(err) throw `Database Error! ${err}`
 
             return callback(results.rows[0])
@@ -58,7 +66,7 @@ module.exports = {
     },
 
     update(data, callback) {
-        const { name, avatar_url, gender, email, birth, blood, weight, height, id } = data
+        const { name, avatar_url, gender, email, birth, blood, weight, height, id, instructor } = data
 
         const query = `
             UPDATE members SET 
@@ -69,8 +77,9 @@ module.exports = {
                 email = ($5),
                 blood = ($6),
                 weight = ($7),
-                height = ($8)
-            WHERE id = ($9)
+                height = ($8),
+                instructor_id = ($9)
+            WHERE id = ($10)
             `
 
         const values = [
@@ -82,7 +91,8 @@ module.exports = {
             blood,
             weight,
             height,
-            id 
+            instructor,
+            id
         ]
 
         db.query(query, values, function (err, results) {
@@ -100,4 +110,13 @@ module.exports = {
             return callback()
         })
     },
+
+    instructorsSelectOptions(callback) {
+        
+        db.query(`SELECT name, id FROM instructors`, function(err, results) {
+            if(err) throw `Database Error! ${err}`
+
+            return callback(results.rows)
+        })
+    }
 }

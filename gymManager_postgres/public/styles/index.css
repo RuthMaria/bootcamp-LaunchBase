@@ -37,6 +37,7 @@
 
 /* pega a primeira div*/
 .details h3,
+.table-container .header form input,
 .details .item div:nth-child(1){
     font-size: 14px;
     line-height: 24px;
@@ -117,7 +118,8 @@ tbody tr td:first-child span {
 }
 
 tbody tr td:last-child a,
-.table-container > a {  
+.table-container > a,
+.button {  
     background-color: var(--purple-color);
     padding: 8px 16px;
     text-decoration: none;
@@ -135,11 +137,36 @@ tbody tr td:last-child a,
 }
 
 tbody tr td:last-child a:hover,
-.table-container > a:hover {
+.table-container > a:hover,
+.button:hover {
     background-color: var(--purple-dark--color);
 }
 
 .table-container thead tr th:last-child,
 td:last-child {
     text-align: center;
+}
+
+.table-container .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.table-container .header a {
+    width: 120px;
+    text-align: center;
+}
+
+.table-container .header form {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    align-items: center;
+    grid-gap: 8px;
+}
+
+.table-container .header form input {
+    border: 1px solid #eee;
+    padding: 2px 8px;
 }
