@@ -61,6 +61,23 @@ module.exports = {
         })
     },
 
+    
+    findBy(filter, callback){
+
+        const query = `
+            SELECT *
+            FROM teachers
+            WHERE teachers.fullname ILIKE '%${filter}%'
+            OR teachers.occupation_area ILIKE '%${filter}%'
+        `
+
+        db.query(query, function (err, results) {
+            if(err) throw `Database Error! ${err}` 
+
+            callback(results.rows)
+        })
+    },
+
     update(data, callback){
         const { avatar_url, fullname, birth, education_level, classes, occupation_area, id } = data
 

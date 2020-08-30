@@ -1,23 +1,41 @@
 const { age, graduation, date, checkEmptyFields } = require("../../lib/utils")
-const { create, all, find, update, _delete } = require('../models/Teacher')
-const Instructor = require("../../../../gymManager_postgres/src/app/models/Instructor")
+const { create, all, find, update, _delete, findBy } = require('../models/Teacher')
 
 module.exports = {
 
     index( req, res ) {
 
-        all(_teachers => {            
-            const teachers = []
+        const { filter } = req.query
 
-            for( teacher of _teachers ){
-                teachers.push(
-                    {
-                        ...teacher,
-                        occupation_area: teacher.occupation_area.split(",")
-                    })        
-            }
-            return res.render('teachers/index', { teachers })
-        })
+        if (filter) {
+            
+            findBy(filter, _teachers => {
+                const teachers = []
+
+                for( teacher of _teachers ){
+                    teachers.push(
+                        {
+                            ...teacher,
+                            occupation_area: teacher.occupation_area.split(",")
+                        })        
+                }
+                return res.render('teachers/index', { teachers, filter })
+            })
+        } else {
+            
+            all(_teachers => {            
+                const teachers = []
+
+                for( teacher of _teachers ){
+                    teachers.push(
+                        {
+                            ...teacher,
+                            occupation_area: teacher.occupation_area.split(",")
+                        })        
+                }
+                return res.render('teachers/index', { teachers })
+            })
+        }
     },
 
     create( req, res ) {        
