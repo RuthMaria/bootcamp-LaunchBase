@@ -110,6 +110,8 @@ tbody tr td:first-child span {
 }
 
 tbody tr td:last-child a,
+.table-container .header a,
+.table-container .header button, 
 .table-container > a {
     text-decoration: none;
     background-color: var(--purple-color);
@@ -121,6 +123,8 @@ tbody tr td:last-child a,
     transition: background-color 0.2s;
 }
 
+.table-container .header a,
+.table-container .header button,
 .table-container > a {
     background-color: var(--blue-color);
     margin-bottom: 16px;
@@ -128,6 +132,17 @@ tbody tr td:last-child a,
     transition: background-color 0.2s;
 }
 
+.table-container .header button {
+    background-color: var(--green-color);
+    margin-bottom: 0;
+}
+
+.table-container .header button:hover {
+    background-color: var(--green-dark-color);
+    box-shadow: 3px 2px 7px -5px black;
+}
+
+.table-container .header a:hover, 
 .table-container > a:hover {
     background-color: var(--blue-dark-color);
     box-shadow: 3px 2px 7px -5px black;
@@ -143,4 +158,26 @@ td:last-child {
     text-align: center;
 }
 
+.table-container .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
 
+.table-container .header a {
+    width: 120px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.table-container .header form {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    align-items: center;
+    grid-gap: 8px;
+}
+
+.table-container .header form input {
+    border: 1px solid #eee;
+    padding: 2px 8px;
+}

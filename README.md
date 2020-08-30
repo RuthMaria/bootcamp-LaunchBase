@@ -42,7 +42,7 @@ O LaunchBase 2.0 é um treinamento no formato de bootcamp online que tem duraç�
 <br>
 <p align="justify">
 Na primeira semana foram abordados conceitos de introdução a programação, iniciando com front-end e iniciando com back-end.
-</p>
+</p><br>
 
 ### 🌟 Introdução a programação 
 
@@ -239,8 +239,9 @@ No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio
 - [Parte 02](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-05/blob/master/desafios/05-2-interagindo-bd.md)
   -  Refatorar os CRUDs dos professores e estudantes para que eles utilizem o banco de dados.
 
-- [Parte 03]()
-  - 
+- [Parte 03](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-05/blob/master/desafios/05-3-relacionamentos-filtros-bd.md)
+  - Criar um relacionamento entre professor e estudante
+  - Implementar filtros na listagem da tabela de professores.
 
 - [Parte 04]()
   - 

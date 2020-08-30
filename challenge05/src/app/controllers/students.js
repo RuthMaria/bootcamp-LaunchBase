@@ -1,5 +1,5 @@
 const { date, grade, checkEmptyFields } = require("../../lib/utils")
-const { all, create, find, update, _delete } = require('../models/Student')
+const { all, create, find, update, _delete, teachersSelectOptions } = require('../models/Student')
 
 module.exports = {
 
@@ -19,7 +19,10 @@ module.exports = {
     },
 
     create( req, res ) {
-        return res.render('students/create')
+
+        teachersSelectOptions( options => {
+            return res.render('students/create', { teacherOptions: options })
+        })
     },
 
     post( req, res ) {
@@ -54,9 +57,11 @@ module.exports = {
             if( !student )
                 return res.send('Student not found!')
 
-            student.birth = date(student.birth).iso
+            teachersSelectOptions( options => {
+                student.birth = date(student.birth).iso
 
-            return res.render('students/edit',  { student })
+                return res.render('students/edit',  { student,  teacherOptions: options })
+            })
         })
     },
 

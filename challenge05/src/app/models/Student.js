@@ -17,7 +17,7 @@ module.exports = {
     },
 
     create(data, callback){
-        const { avatar_url, fullname, email, birth, school_year, weekly_workload } = data
+        const { avatar_url, fullname, email, birth, school_year, weekly_workload, teacher } = data
 
         const query = `
             INSERT INTO students (
@@ -26,8 +26,9 @@ module.exports = {
                 email, 
                 birth, 
                 school_year, 
-                weekly_workload
-            ) VALUES ( $1, $2, $3, $4, $5, $6 )
+                weekly_workload,
+                teacher_id
+            ) VALUES ( $1, $2, $3, $4, $5, $6, $7 )
         `
         
         const values = [
@@ -36,7 +37,8 @@ module.exports = {
             email, 
             birth, 
             school_year, 
-            weekly_workload
+            weekly_workload,
+            teacher
         ]
 
         db.query(query, values, (err, results) => {
@@ -49,7 +51,10 @@ module.exports = {
     },
 
     find(id, callback){
-        const query = 'SELECT * FROM students WHERE id = $1'
+        const query = `SELECT students.*, teachers.fullname AS teacher_name
+                        FROM students
+                        LEFT JOIN teachers ON (students.teacher_id = teachers.id) 
+                        WHERE students.id = $1`
 
         db.query(query, [id], (err,results) => {
             if(err)
@@ -104,4 +109,16 @@ module.exports = {
             callback()
         })
     },
+
+    teachersSelectOptions(callback){
+
+        const query = `SELECT fullname, id FROM teachers`
+
+        db.query(query, (err, results) => {
+            if(err)
+                throw `Database error! ${err}`
+
+            callback(results.rows)
+        })
+    }
 }

@@ -59,6 +59,20 @@
 </div>
 
 <div class="item">
+    <div>Teacher </div>
+    <div>
+        <select name="teacher">
+            <option value="option"> Selecione uma opção... </option>
+            {% for teacher in teacherOptions %}
+                <option value={{teacher.id}} {% if student.teacher_id == teacher.id %} selected {% endif %}> 
+                    {{teacher.fullname}}
+                </option>
+            {% endfor %}
+        </select>
+    </div>
+</div>
+
+<div class="item">
     <div>Carga horária semanal </div>
     <div><input type="number" name="weekly_workload" placeholder="Quantidade de horas de aulas particulares" value = "{{ student.weekly_workload }}"></div>
 </div>
