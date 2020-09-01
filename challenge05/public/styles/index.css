@@ -160,6 +160,7 @@ td:last-child {
 
 .table-container .header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 32px;
 }
@@ -175,10 +176,13 @@ td:last-child {
     grid-template-columns: 1fr 120px;
     justify-content: space-between;
     align-items: center;
-    grid-gap: 8px;
+    grid-gap: 5px;
 }
 
 .table-container .header form input {
     border: 1px solid #eee;
-    padding: 2px 8px;
+    padding: 6px 8px;
+    margin-right: 7px;
+    width: 100%;
+    box-sizing: border-box;
 }
