@@ -8,8 +8,8 @@ module.exports = {
         let { filter, page, limit } = req.query
 
         page = page || 1
-        limit = limit || 2
-        let offset = limit * (page - 1)
+        limit = limit || 2               // quantidade de registro que será exibido na página
+        let offset = limit * (page - 1) // calcula o deslocamento, vai mostrar o registro a partir do valor definido
 
         const params = {
             filter,
@@ -20,12 +20,11 @@ module.exports = {
             callback(instructors) {
 
                 const pagination = {
-                    filter,
-                    total,
+                    total: Math.ceil(instructors[0].total / limit), // ceil sempre arrendonda para cima
                     page
                 }
 
-                return res.render("instructors/index", { instructors, pagination })    
+                return res.render("instructors/index", { instructors, pagination, filter })    
             }
         }
 
