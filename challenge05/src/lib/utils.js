@@ -91,5 +91,19 @@ module.exports = {
             if(currentUser[key] == "") 
                 return true
         }
+    },
+
+    ArraysTeachers(_teachers){
+        const teachers = []
+
+            for( teacher of _teachers ){
+                teachers.push(
+                    {
+                        ...teacher,
+                        occupation_area: teacher.occupation_area.split(",")
+                    })        
+            }
+
+            return teachers
     }
 }

@@ -1,41 +1,36 @@
-const { age, graduation, date, checkEmptyFields } = require("../../lib/utils")
-const { create, all, find, update, _delete, findBy } = require('../models/Teacher')
+const { age, graduation, date, checkEmptyFields, ArraysTeachers } = require("../../lib/utils")
+const { create, find, update, _delete, paginate } = require('../models/Teacher')
 
 module.exports = {
 
     index( req, res ) {
 
-        const { filter } = req.query
+        let { filter, page, limit } = req.query
 
-        if (filter) {
-            
-            findBy(filter, _teachers => {
-                const teachers = []
+        page = page || 1
+        limit = limit || 2
+        let offset = limit * (page - 1)
 
-                for( teacher of _teachers ){
-                    teachers.push(
-                        {
-                            ...teacher,
-                            occupation_area: teacher.occupation_area.split(",")
-                        })        
+        const params = {
+            limit,
+            offset,
+            filter,
+
+            callback(_teachers){
+                
+                const teachers = ArraysTeachers(_teachers)
+
+                const pagination = {
+                    totalPages: Math.ceil(_teachers[0].total_teachers / limit),
+                    page
                 }
-                return res.render('teachers/index', { teachers, filter })
-            })
-        } else {
-            
-            all(_teachers => {            
-                const teachers = []
+                             
+                return res.render('teachers/index', { teachers, pagination, filter })
 
-                for( teacher of _teachers ){
-                    teachers.push(
-                        {
-                            ...teacher,
-                            occupation_area: teacher.occupation_area.split(",")
-                        })        
-                }
-                return res.render('teachers/index', { teachers })
-            })
+            }
         }
+
+        paginate(params)
     },
 
     create( req, res ) {        

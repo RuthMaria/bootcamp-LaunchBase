@@ -43,6 +43,14 @@
                     </tr>
                 {% endfor %}
             </tbody>
-        </table>        
+        </table>
+
+        <div class="pagination" 
+        data-page="{{pagination.page}}"
+        data-total="{{pagination.totalPages}}" 
+        data-filter={{filter}}>  
+        teste     
+        </div>
+
     </div>
 {% endblock content %}

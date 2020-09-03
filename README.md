@@ -6,7 +6,8 @@
   <a href="#semana01">Semana 01</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana02">Semana 02</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana03">Semana 03</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#executar">Como executar o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#semana04">Semana 04</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#executar">Como executar os projetos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
   <a href="#licença">Licença</a>
 </p>
@@ -124,7 +125,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <p> <strong>Desafio 03 </strong> consistia em 4 partes, onde foi realizado a refatoração do código do site da Rocketseat e do Foodfy.</p><br>
 
-[Desafio 03.1](challenge03.1) - <strong>Refatoração do site da rocketseat (desafio 02.1)</strong><br>
+[Desafio 03.1](challenge03.1) - <strong>Refatoração do site da rocketseat </strong><br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md)
   - Criação do servidor
@@ -155,7 +156,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br><br>
 
-[Desafio 03.2](challenge03.2) - <strong>Refatoração do site do foodfy (desafio 02.2)</strong><br>
+[Desafio 03.2](challenge03.2) - <strong>Refatoração do site do foodfy</strong><br>
 
 <br>
 
@@ -229,7 +230,9 @@ No [desafio 04](challenge04) foi desenvolvido um site de aulas particulares, ond
 ## :date: Semana 03
 <br>
 
-No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio 04](challenge04), este desafio foi dividido em 4 partes.
+No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio 04](challenge04) e adicionado o mecanismo de busca e a paginação. 
+
+Este desafio foi dividido em 4 partes:
 
 <br>
 
@@ -243,8 +246,14 @@ No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio
   - Criar um relacionamento entre professor e estudante
   - Implementar filtros na listagem da tabela de professores.
 
-- [Parte 04]()
-  - 
+- [Parte 04](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-05/blob/master/desafios/05-4-paginacao-bd.md)
+  - Implementar a lógica de paginação dos resultados do BD.
+
+<br>
+
+#### RESULTADO 
+
+![Video executando](git/video-challenge05.gif)
 
 <br>
 
@@ -253,7 +262,20 @@ No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio
 ## :date: Semana 04
 <br>
 
-</p>
+
+<br>
+
+<a id="semana05"></a><br>
+
+## :date: Semana 05
+<br>
+
+<br>
+
+<a id="semana06"></a><br>
+
+## :date: Semana 06
+<br>
 
 
 <a id="executar"></a><br>
@@ -280,7 +302,7 @@ npm install
 
 <br>
 
-#### ✔️ Challenge02.1 ou challenge02.2 
+#### ✔️ Challenge02.1, challenge02.2 ou portfolio
 
 <br>
 
@@ -324,10 +346,11 @@ Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master
 "nodemon": "nodemon challenge05/src/server.js",
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,src/app/views'"
 ```
+ Em seguida, crie o [banco de dados](challenge05/src/config/querysSql_db.js) no postgres e [configure a conexão](challenge05/src/config/db.js).
 
 <br>
 
-- Em seguida, rode o projeto
+- Rodar o projeto
 ```
 npm start
 ```
@@ -345,7 +368,7 @@ npm start
 
 ## :memo: Licença
 
-Este projeto está sobre a a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Este projeto está sobre a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ---
 
