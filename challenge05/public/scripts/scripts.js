@@ -14,11 +14,12 @@ function paginate(selectedPage, totalPages) {
 
     for( let currentPage = 1; currentPage <= totalPages; currentPage++ ){
 
-        const firstAndLastPage = currentPage == 1 || currentPage == totalPages
-        const pagesAfterSelectedPage = currentPage <= (selectedPage + 2)
-        const pagesBeforeSelectedPage = currentPage >= (selectedPage - 2)
+        const twoFirstsAndTwoLastPages = currentPage == 1 || currentPage == 2 || 
+                                         currentPage == totalPages - 1 || currentPage == totalPages
+        const pageAfterSelectedPage = currentPage <= (selectedPage + 1)
+        const pageBeforeSelectedPage = currentPage >= (selectedPage - 1)
 
-        if (firstAndLastPage || pagesBeforeSelectedPage && pagesAfterSelectedPage) {
+        if (twoFirstsAndTwoLastPages || pageBeforeSelectedPage && pageAfterSelectedPage) {
             
             if (oldPage && currentPage - oldPage > 2) {
                 pages.push("...")
@@ -40,8 +41,8 @@ function paginate(selectedPage, totalPages) {
 function createPagination(pagination) {
 
     const page = +pagination.dataset.page // o mais transforma em número, pois tá vindo como string
-    const totalPages = +pagination.dataset.totalPages
-    const filter = pagination.dataset.filter
+    const totalPages = +pagination.dataset.total
+    const filter = pagination.dataset.filter  
 
     const pages = paginate(page, totalPages)
 
@@ -68,6 +69,6 @@ function createPagination(pagination) {
 
 const pagination = document.querySelector('.pagination')
 
-if(pagination) {
+if(pagination) {    
     createPagination(pagination)
 }

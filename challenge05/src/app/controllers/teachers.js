@@ -24,7 +24,7 @@ module.exports = {
                     totalPages: Math.ceil(_teachers[0].total_teachers / limit),
                     page
                 }
-                             
+                          
                 return res.render('teachers/index', { teachers, pagination, filter })
 
             }

@@ -187,7 +187,6 @@ td:last-child {
     box-sizing: border-box;
 }
 
-
 .table-container {
     display: grid;
     grid-template: 64px 1fr 16px / 1fr; /* 3 linhas e uma coluna*/ 
@@ -212,6 +211,8 @@ td:last-child {
 }
 
 .pagination a:hover {
-    filter: brightness(0.3);
-    border-bottom: 1px solid var(--purple-color);
+    background-color: var(--purple-color);
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
 }

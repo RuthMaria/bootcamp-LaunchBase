@@ -99,23 +99,20 @@ module.exports = {
         const { limit, offset, filter, callback } = params
 
         let filterQuery = ""
-        let subQuery = '(SELECT COUNT(*) FROM teachers) AS total_teachers'
 
         if( filter ) {
-
             filterQuery = `WHERE teachers.fullname ILIKE '%${filter}%'
-                           OR teachers.occupation_area ILIKE '%${filter}%'`
-            
-            subQuery = `(SELECT COUNT(*) FROM teachers ${filterQuery}) AS total_teachers`
+                           OR teachers.occupation_area ILIKE '%${filter}%'`            
         } 
 
+        let subQuery = `(SELECT COUNT(*) FROM teachers ${filterQuery}) AS total_teachers`
+        
         const query = `SELECT teachers.*, ${subQuery}
                        FROM teachers
                        ${filterQuery}                        
                        ORDER BY teachers.fullname ASC
                        LIMIT $1 OFFSET $2
                        `
-        console.log(query)
         db.query(query, [limit, offset], (err, results) => {
             if(err)
                 throw `Database error! ${err}`
