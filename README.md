@@ -65,19 +65,19 @@ Na primeira semana foram abordados conceitos de introdução a programação, in
 
 <br>
 
-O [desafio 01](challenge01) consistia em aplicar todos esses conceitos em questões que foram elaboradas pela Rocketseat. A cada término de um conceito, tinha um desafio para praticá-lo. Ao todo foram 6 questões.
+O [desafio 01](challenge01_questoes) consistia em aplicar todos esses conceitos em questões que foram elaboradas pela Rocketseat. A cada término de um conceito, tinha um desafio para praticá-lo. Ao todo foram 6 questões.
 
-- [Questão 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [cálculo do IMC](challenge01/IMC.js).
+- [Questão 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [cálculo do IMC](challenge01_questoes/IMC.js).
 
-- [Questão 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [calculadora de aposentadoria](challenge01/retirement.js).
+- [Questão 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md), [calculadora de aposentadoria](challenge01_questoes/retirement.js).
 
-- [Questão 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-2-lidando-com-objetos-e-vetores.md), [criação de objeto](challenge01/company.js) .
+- [Questão 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-2-lidando-com-objetos-e-vetores.md), [criação de objeto](challenge01_questoes/company.js) .
 
-- [Questão 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [usuário e tecnologia](challenge01/technology.js).
+- [Questão 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [usuário e tecnologia](challenge01_questoes/technology.js).
 
-- [Questão 05](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [soma de despesas e receitas](challenge01/expenses.js).
+- [Questão 05](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md), [soma de despesas e receitas](challenge01_questoes/expenses.js).
 
-- [Questão 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md), [operações bancárias](challenge01/bankingOperations.js).<br><br><br>
+- [Questão 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md), [operações bancárias](challenge01_questoes/bankingOperations.js).<br><br><br>
 
 
 ### 🎨 Iniciando com front-end
@@ -89,7 +89,7 @@ Abordou os principais elementos do [HTML](https://github.com/Rocketseat/bootcamp
 <p>O <strong>desafio 02</strong> consistia em 4 partes, onde eram propostos desafios. Nas partes 1, 2 e 3 tínhamos que criar uma página de apresentação da Rocketseat, onde o layout era livre e o aluno poderia exercitar a sua criatividade, apenas tinha que seguir algumas instruções. 
 Na parte 4 era dado o layout para construção de um site completo para uma empresa de receitas chamada Foodfy.<p><br>
 
-[Desafio 02.1](challenge02.1) - <strong>Site da Rocketseat</strong><br>
+[Desafio 02.1](challenge02.1_rocketseat) - <strong>Site da Rocketseat</strong><br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md)
   -  Criação do menu;
@@ -106,7 +106,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br><br>
 
-[Desafio 02.2](challenge02.2) - <strong>Site do Foodfy</strong>
+[Desafio 02.2](challenge02.2_foodfy) - <strong>Site do Foodfy</strong>
 
 - [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md)
   - Criação do layout do Foodfy.
@@ -125,7 +125,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <p> <strong>Desafio 03 </strong> consistia em 4 partes, onde foi realizado a refatoração do código do site da Rocketseat e do Foodfy.</p><br>
 
-[Desafio 03.1](challenge03.1) - <strong>Refatoração do site da rocketseat </strong><br>
+[Desafio 03.1](challenge03.1_rocketseat) - <strong>Refatoração do site da rocketseat </strong><br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md)
   - Criação do servidor
@@ -156,7 +156,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br><br>
 
-[Desafio 03.2](challenge03.2) - <strong>Refatoração do site do foodfy</strong><br>
+[Desafio 03.2](challenge03.2_foodfy) - <strong>Refatoração do site do foodfy</strong><br>
 
 <br>
 
@@ -189,7 +189,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 ## :date: Semana 02
 <br>
 
-No [desafio 04](challenge04) foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
+No [desafio 04.1](challenge04.1_privateLessons) foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
 
 <br>
 
@@ -230,7 +230,7 @@ No [desafio 04](challenge04) foi desenvolvido um site de aulas particulares, ond
 ## :date: Semana 03
 <br>
 
-No [desafio 05](challenge05) foi realizado a persistência dos dados do [desafio 04](challenge04) e adicionado o mecanismo de busca e a paginação. 
+No [desafio 05.1](challenge05.1_privateLessons) foi realizado a persistência dos dados do [desafio 04.1](challenge04.1_privateLessons) e adicionado o mecanismo de busca e a paginação. 
 
 Este desafio foi dividido em 4 partes:
 
@@ -302,7 +302,7 @@ npm install
 
 <br>
 
-#### ✔️ Challenge02.1, challenge02.2 ou portfolio
+#### ✔️ Challenge02.1_rocketseat, challenge02.2_foodfy ou portfolio
 
 <br>
 
@@ -311,7 +311,7 @@ npm install
 - Pressione Ctrl + Shift + P no Visual Studio Code e selecione a opção "watch in chrome"
 <br><br>
 
-#### ✔️ Challenge03.1, challenge03.2, challenge04 ou challenge05
+#### ✔️ Challenge03.1_rocketseat, challenge03.2_foodfy, challenge04.1_privateLessons ou challenge05.1_privateLessons
 
 <br>
 
@@ -319,34 +319,34 @@ Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master
 
 <br>
 
-- challenge03.1
+- challenge03.1_rocketseat
   
 ```
-"nodemon": "nodemon challenge03.1/server.js",
+"nodemon": "nodemon challenge03.1_rocketseat/server.js",
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
 ```
 
-- challenge03.2
+- challenge03.2_foodfy
   
 ```
-"nodemon": "nodemon challenge03.2/server.js",
+"nodemon": "nodemon challenge03.2_foodfy/server.js",
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
 ```
 
-- challenge04
+- challenge04.1_privateLessons
   
 ```
-"nodemon": "nodemon challenge04/server.js",
+"nodemon": "nodemon challenge04.1_privateLessons/server.js",
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
 ```
 
-- challenge05
+- challenge05.1_privateLessons
 
 ```
-"nodemon": "nodemon challenge05/src/server.js",
+"nodemon": "nodemon challenge05.1_privateLessons/src/server.js",
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,src/app/views'"
 ```
- Em seguida, crie o [banco de dados](challenge05/src/config/querysSql_db.js) no postgres e [configure a conexão](challenge05/src/config/db.js).
+ Em seguida, crie o [banco de dados](challenge05.1_privateLessons/src/config/querysSql_db.js) no postgres e [configure a conexão](challenge05.1_privateLessons/src/config/db.js).
 
 <br>
 

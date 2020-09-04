@@ -4,18 +4,6 @@ const { date } = require("../../lib/utils")
 
 module.exports = {
 
-    all(callback){
-
-        const query = 'SELECT * FROM students'
-
-        db.query(query, (err, results) => {
-            if(err)
-                throw `Database error! ${err}`
-
-            callback(results.rows)
-        })
-    },
-
     create(data, callback){
         const { avatar_url, fullname, email, birth, school_year, weekly_workload, teacher } = data
 
@@ -119,6 +107,33 @@ module.exports = {
                 throw `Database error! ${err}`
 
             callback(results.rows)
+        })
+    },
+
+    paginate(params){
+
+        const { limit, offset, filter, callback } = params
+
+        let filterQuery = ""
+
+        if( filter ) {
+            filterQuery = `WHERE students.fullname ILIKE '%${filter}%'
+                           OR students.email ILIKE '%${filter}%'`            
+        } 
+
+        let subQuery = `(SELECT COUNT(*) FROM students ${filterQuery}) AS total_students`
+        
+        const query = `SELECT students.*, ${subQuery}
+                       FROM students
+                       ${filterQuery}                        
+                       ORDER BY students.fullname ASC
+                       LIMIT $1 OFFSET $2
+                       `
+        db.query(query, [limit, offset], (err, results) => {
+            if(err)
+                throw `Database error! ${err}`
+            
+                callback(results.rows)
         })
     }
 }

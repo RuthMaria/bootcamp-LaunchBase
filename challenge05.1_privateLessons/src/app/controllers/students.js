@@ -1,21 +1,36 @@
-const { date, grade, checkEmptyFields } = require("../../lib/utils")
-const { all, create, find, update, _delete, teachersSelectOptions } = require('../models/Student')
+const { date, grade, checkEmptyFields, ArraysStudents } = require("../../lib/utils")
+const { create, find, update, _delete, teachersSelectOptions, paginate } = require('../models/Student')
 
 module.exports = {
 
-    index( req, res ) {
+    index( req, res ) {        
+            
+        let { filter, page, limit } = req.query
 
-        all( _students => {
-            const students = []
+        page = page || 1
+        limit = limit || 3
+        let offset = limit * (page - 1)
 
-            for(let student of _students){
-                students.push({
-                    ...student,
-                    school_year: grade(student.school_year)
-                })
+        const params = {
+            limit,
+            offset,
+            filter,
+
+            callback(_students){
+                
+                const students = ArraysStudents(_students)
+
+                const pagination = {
+                    totalPages: Math.ceil(_students[0].total_students / limit),
+                    page
+                }
+                        
+                return res.render('students/index', { students, pagination, filter })
+
             }
-            return res.render('students/index', { students })
-        })
+        }
+
+        paginate(params)
     },
 
     create( req, res ) {
