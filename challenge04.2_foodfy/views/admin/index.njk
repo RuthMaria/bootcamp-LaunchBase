@@ -1,20 +1,26 @@
-{% extends 'layout.njk' %}
+{% extends 'layoutAdmin.njk' %}
 
 {% block head %}
-    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <title>Receitas</title>
 {% endblock head %}
 
 {% block content %}
 
-    <section class="cards">      
-        {% for recipe in recipes %}        
+    <div class="titles">
+        <h1>Gerenciar receitas</h1> 
+        <a href="#" class="newRecipes">Nova receita </a>
+    </div>   
+
+    <section class="cards">         
+        {% for recipe in data.recipes %}        
             <div class="card">
                 <figure>
                     <img src="{{recipe.image}}" alt="{{recipe.title}}">
                     <figcaption>
                         <p class="recipe_title">{{recipe.title}}</p>
-                        <p class="author">{{recipe.author}}</p>
+                        <p class="author">por {{recipe.author}}</p>
+                        <a href="#">Visualizar</a>
                     </figcaption>
                 </figure>          
             </div>

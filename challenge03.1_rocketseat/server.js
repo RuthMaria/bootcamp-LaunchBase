@@ -9,7 +9,7 @@ server.use(express.static(__dirname + '/public'))
 
 server.set('view engine', 'njk')
 
-nunjucks.configure('challenge03.1/views', {
+nunjucks.configure('challenge03.1_rocketseat/views', {
     express: server,
     autoescape: false,
     noCache: true

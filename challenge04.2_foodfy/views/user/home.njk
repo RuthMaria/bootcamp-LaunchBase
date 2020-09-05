@@ -1,4 +1,4 @@
-{% extends 'layout.njk' %}
+{% extends 'layoutUser.njk' %}
 
 {% block head %}
     <title>Home</title>
@@ -20,7 +20,7 @@
     <h1 class="section_title">Mais acessadas</h1>
 
     <section class="cards">      
-        {% for recipe in recipes %}        
+        {% for recipe in data.recipes %}        
             <div class="card">
                 <figure>
                     <img src="{{recipe.image}}" alt="{{recipe.title}}">

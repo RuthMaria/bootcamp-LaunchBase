@@ -9,7 +9,7 @@ server.use(express.static(__dirname + '/public'))
 
 server.set('view engine', 'njk')
 
-nunjucks.configure('challenge03.2/views', {
+nunjucks.configure('challenge03.2_foodfy/views', {
     express: server,
     autoescape: false,
     noCache: true

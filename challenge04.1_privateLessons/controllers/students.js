@@ -28,7 +28,7 @@ exports.create = ( req, res ) => {
 
 exports.show = ( req, res ) => {
     
-    const { id} =  req.params
+    const { id } =  req.params
 
     const foundstudent = data.students.find( student => student.id == id )
 

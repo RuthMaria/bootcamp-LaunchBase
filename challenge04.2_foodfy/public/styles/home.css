@@ -21,6 +21,15 @@ a {
     margin: 0 auto;
 }
 
+.header {
+    background-color: black;    
+}
+
+.nav {
+    width: 65%;    
+    margin: 0 auto;
+}
+
 nav {
     display: flex;
     padding: 36px 0;

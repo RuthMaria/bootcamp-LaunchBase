@@ -1,0 +1,51 @@
+.page-index {
+    width: 65%;    
+    margin: 0 auto;
+}
+
+.titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newRecipes {
+    font-size: 18px;
+    background-color: #6558C3;
+    border-radius: 8.57px;
+    color: white;
+    padding: 8px 16px;
+}
+
+.newRecipes:hover {
+    background-color: #5a4bc4;
+    box-shadow: 3px 2px 7px -5px black;
+}
+
+h1, .titles {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.cards, figure {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+a {
+    color: #6558C3;
+}
+
+.card img {
+    width: 172px;
+    height: 80px;
+    margin:20px 0;
+    border-radius: 8.57px;
+}
+
+.card img:hover {
+    border: 4px solid #f35e47;
+    cursor: pointer;
+}
