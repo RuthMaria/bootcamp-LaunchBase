@@ -14,7 +14,7 @@
             </p>
         </div>
     
-        <img src="images/chef.png" alt="">
+        <img src="images/chef.png" alt="" class="chef">
     </div>
     
     <h1 class="section_title">Mais acessadas</h1>
@@ -23,7 +23,7 @@
         {% for recipe in data.recipes %}        
             <div class="card">
                 <figure>
-                    <img src="{{recipe.image}}" alt="{{recipe.title}}">
+                    <img src="{{recipe.image}}" alt="{{recipe.title}}" class="img">
                     <figcaption>
                         <p class="recipe_title">{{recipe.title}}</p>
                         <p class="author">{{recipe.author}}</p>

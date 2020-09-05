@@ -1,3 +1,5 @@
+const currentPage = location.pathname
+
 const cards = document.querySelectorAll('.card')
 const hide = document.querySelectorAll('.hide')
 const datas = document.querySelectorAll('.data')
@@ -5,7 +7,8 @@ const content = document.querySelectorAll('.information')
 let = 0
 
 for (let i = 0; i < cards.length; i++) {    
-    cards[i].addEventListener('click', function () {     
+    cards[i].addEventListener('click', function () { 
+
         window.location.href = `/recipes/${i}`
     })
 }
