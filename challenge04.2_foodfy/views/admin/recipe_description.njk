@@ -1,4 +1,4 @@
-{% extends 'layoutUser.njk' %}
+{% extends 'layoutAdmin.njk' %}
 
 {% block head %}
     <title>Receita</title>
@@ -6,6 +6,12 @@
 {% endblock head %}
 
 {% block content %}
+
+    <div class="titles">
+        <h1>Receita: {{recipe.title}} </h1> 
+        <a href="#" class="editRecipes">Editar receita </a>
+    </div>
+
     <div class="card">
         <figure>
             <img src="{{recipe.image}}" alt="{{recipe.title}}">

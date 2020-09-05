@@ -8,8 +8,12 @@ let = 0
 
 for (let i = 0; i < cards.length; i++) {    
     cards[i].addEventListener('click', function () { 
-
-        window.location.href = `/recipes/${i}`
+        if(currentPage.includes("admin")){
+            window.location.href = `/admin/recipes/${i}`
+            
+        } else {
+            window.location.href = `/recipes/${i}`
+        }
     })
 }
 

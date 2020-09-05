@@ -10,7 +10,7 @@ exports.create = (req, res) => {
 }
 
 exports.show = (req, res) => {
-    const recipeIndex = req.params.index;
+    const recipeIndex = req.params.id;
 
     const recipe = data.recipes[recipeIndex]
 
