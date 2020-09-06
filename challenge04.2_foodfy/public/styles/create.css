@@ -1,0 +1,41 @@
+.fields {
+    width: 70%;
+}
+
+.item div:nth-child(1){
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;    
+    margin-top: 30px;
+}
+
+.item input {
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 940px;
+    height: 49px;
+    font-size: 16px;
+}
+
+.item span {
+    font-size: 16px;
+    color: #6558C3;
+    margin-top: 15px;
+    font-weight: bold;
+    display: block
+}
+
+.item span:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.item textarea {
+    width: 940px;
+    height: 257px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+

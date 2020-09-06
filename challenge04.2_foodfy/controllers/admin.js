@@ -6,7 +6,7 @@ exports.index = (req, res) => {
 }
 
 exports.create = (req, res) => {
-    
+    return res.render('admin/create')
 }
 
 exports.show = (req, res) => {
