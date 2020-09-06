@@ -189,7 +189,9 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 ## :date: Semana 02
 <br>
 
-No [desafio 04.1](challenge04.1_privateLessons) foi desenvolvido um site de aulas particulares, onde o desenvolvimento deste projeto foi dividido em 7 partes.
+<p> <strong>O Desafio 04 </strong> consistia em 8 partes, onde foi desenvolvido um site de aulas particulares e a criação de uma área administrativa para o Foodfy.</p><br>
+
+[Desafio 04.1](challenge04.1_privateLessons) - <strong> Site de aulas particulares </strong><br>
 
 <br>
 
@@ -222,6 +224,19 @@ No [desafio 04.1](challenge04.1_privateLessons) foi desenvolvido um site de aula
 #### RESULTADO 
 
 ![Video executando](git/video-challenge04.gif)
+
+<br><br>
+
+[Desafio 04.2](challenge04.2_foodfy) - <strong> Administrativa do Foodfy </strong><br>
+
+- [Parte 08](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-04/blob/master/desafios/04-admin-foodfy.md)
+  - Criar uma área administrativa para o Foodfy, que será responsável por cadastrar, editar e deletar os dados do arquivo.
+
+  <br>
+
+#### RESULTADO 
+
+![Video executando](git/video-challenge04-2.gif)
 
 <br>
 
@@ -337,6 +352,13 @@ Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master
   
 ```
 "nodemon": "nodemon challenge04.1_privateLessons/server.js",
+"browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
+```
+
+- challenge04.2_foodfy
+  
+```
+"nodemon": "nodemon challenge04.1_foodfy/server.js",
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
 ```
 

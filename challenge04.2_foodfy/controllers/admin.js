@@ -89,16 +89,12 @@ exports.delete = (req, res) => {
 
     const { id } = req.body
     
-    const position = data.recipes[id]
-
-    const filteredRecipe = data.recipes.filter( recipe => position != id )
-
-    data.recipes = filteredRecipe  
+    const  removedRecipe = data.recipes.splice(id, 1) 
     
-    fs.writeFile("challenge04/data.json", JSON.stringify(data, null, 2), err => {
+    fs.writeFile("challenge04.2_foodfy/data.json", JSON.stringify(data, null, 2), err => {
         if (err) {
-            return res.send("Write file error!")
+            return res.send(`Write file error! ${err}`)
         }
-        return res.redirect("/recipes")
+        return res.redirect("/admin/recipes")
     })
 }

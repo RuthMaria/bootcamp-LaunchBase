@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all -p nodemon browsersync",
-    "nodemon": "nodemon challenge04.2_foodfy/server.js",
+    "nodemon": "nodemon bootcamp-launchBase-desafio04/server.js",
     "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
   },
   "repository": {

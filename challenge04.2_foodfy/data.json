@@ -65,7 +65,7 @@
         "Em uma frigideira ou assador coloque o óleo quando estiver quente frite até ficarem douradas.",
         "Para servir fica bonito com salada, ou abuse da criatividade."
       ],
-      "information": ""
+      "information": "Nenhuma observação"
     },
     {
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png",
@@ -131,17 +131,21 @@
         "Despeje em assadeira retangular média, untada e leve ao forno médio (180°C), por aproximadamente 45 minutos. Depois de frio, polvilhe, com o",
         "açúcar de confeiteiro e corte em quadrados."
       ],
-      "information": ""
+      "information": "nenhuma observação"
     },
     {
-      "image": "https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80",
-      "title": "pudim de leite",
-      "author": "ruth",
+      "image": "https://images.unsplash.com/photo-1455480535992-2640934db358?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=682&q=80",
+      "title": "pudim de abobora",
+      "author": "larissa",
       "ingredients": [
-        "arroz,leite condensado"
+        "1 colher (sopa) de fermento em pó",
+        "manteiga para untar",
+        "açúcar de confeiteiro"
       ],
       "preparation": [
-        "junta,bate no liquidificador"
+        "1 colher (sopa) de fermento em pó",
+        "manteiga para untar",
+        "açúcar de confeiteiro"
       ],
       "information": "nenhuma observação"
     }
