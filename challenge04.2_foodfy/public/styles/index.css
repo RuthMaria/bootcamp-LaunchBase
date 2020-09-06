@@ -22,7 +22,7 @@ nav{
 .newRecipes {
     font-size: 18px;
     background-color: #6558C3;
-    border-radius: 8.57px;
+    border-radius: 4px;
     color: white;
     padding: 8px 16px;
 }
@@ -31,6 +31,18 @@ nav{
     background-color: #5a4bc4;
     box-shadow: 3px 2px 7px -5px black;
     color: white;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: #DC4747;
+}
+
+.delete:hover {
+    background-color: #db3c3c;
+    box-shadow: 3px 2px 7px -5px black;
+    color: white;
+    cursor: pointer;
 }
 
 h1, .titles {

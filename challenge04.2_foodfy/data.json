@@ -132,6 +132,18 @@
         "açúcar de confeiteiro e corte em quadrados."
       ],
       "information": ""
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80",
+      "title": "pudim de leite",
+      "author": "ruth",
+      "ingredients": [
+        "arroz,leite condensado"
+      ],
+      "preparation": [
+        "junta,bate no liquidificador"
+      ],
+      "information": "nenhuma observação"
     }
   ]
 }
