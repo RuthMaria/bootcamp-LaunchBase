@@ -227,7 +227,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br><br>
 
-[Desafio 04.2](challenge04.2_foodfy) - <strong> Administrativa do Foodfy </strong><br>
+[Desafio 04.2](challenge04.2_foodfy) - <strong> Administração do Foodfy </strong><br>
 
 - [Parte 08](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-04/blob/master/desafios/04-admin-foodfy.md)
   - Criar uma área administrativa para o Foodfy, que será responsável por cadastrar, editar e deletar os dados do arquivo.

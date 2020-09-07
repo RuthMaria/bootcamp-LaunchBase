@@ -67,12 +67,15 @@ exports.put = (req, res) => {
 
     let { image, title, author, ingredients, preparation, information, id } = req.body 
 
+    const filteredIngredientsWithoutSpaces = ingredients.filter( ingredient => ingredient.trim().length > 0 ) 
+    const filteredPreparationWithoutSpaces = preparation.filter( preparation => preparation.trim().length > 0 )
+
     data.recipes[id] = {
         image, 
         title, 
         author, 
-        ingredients, 
-        preparation, 
+        ingredients: filteredIngredientsWithoutSpaces, 
+        preparation: filteredPreparationWithoutSpaces, 
         information 
     }
 
