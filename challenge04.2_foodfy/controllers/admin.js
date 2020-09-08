@@ -67,8 +67,9 @@ exports.put = (req, res) => {
 
     let { image, title, author, ingredients, preparation, information, id } = req.body 
 
-    const filteredIngredientsWithoutSpaces = ingredients.filter( ingredient => ingredient.trim().length > 0 ) 
-    const filteredPreparationWithoutSpaces = preparation.filter( preparation => preparation.trim().length > 0 )
+    /* se tiver espaço vazio o trim() retorna false, com o valor false o filter() remove do array o espaço vazio*/
+    const filteredIngredientsWithoutSpaces = ingredients.filter( ingredient => ingredient.trim()) 
+    const filteredPreparationWithoutSpaces = preparation.filter( preparation => preparation.trim())
 
     data.recipes[id] = {
         image, 

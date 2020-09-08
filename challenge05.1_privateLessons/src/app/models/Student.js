@@ -54,7 +54,7 @@ module.exports = {
 
     update(data, callback){
 
-        const { avatar_url, fullname, email, birth, school_year, weekly_workload, id } = data
+        const { avatar_url, fullname, email, birth, school_year, weekly_workload, id, teacher } = data
 
         const query = `
             UPDATE students SET 
@@ -62,9 +62,10 @@ module.exports = {
                 fullname = ($2), 
                 email = ($3), 
                 birth = ($4), 
-                school_year = ($5), 
-                weekly_workload = ($6)
-            WHERE id = ($7)
+                school_year = ($5),                 
+                weekly_workload = ($6),
+                teacher_id = ($7)
+            WHERE id = ($8)
             RETURNING id
         `
 
@@ -75,9 +76,10 @@ module.exports = {
             date(birth).iso, 
             school_year, 
             weekly_workload, 
+            teacher, 
             id
         ]
-
+        
         db.query(query, values, (err, results) => {
             if(err)
                 throw `Database error! ${err}`

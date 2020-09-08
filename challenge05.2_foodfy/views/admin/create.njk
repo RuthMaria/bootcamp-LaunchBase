@@ -1,0 +1,22 @@
+{% extends 'layoutAdmin.njk' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/create.css">
+    <title>Receitas</title>
+{% endblock head %}
+
+{% block content %}      
+
+    <form action="/admin/recipes" method="post"> 
+        <div class="titles">
+            <h1>Criando receita</h1> 
+            <button type="submit" class="newRecipes">Salvar receita </button> 
+        </div>    
+
+        <div class="fields">
+            {% include 'admin/fields.njk' %}                
+        </div>                         
+    </form>
+    <script src="/scripts/recipes.js"></script>
+{% endblock content %}

@@ -7,6 +7,8 @@
   <a href="#semana02">Semana 02</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana03">Semana 03</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#semana04">Semana 04</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#semana05">Semana 05</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#semana06">Semana 06</a>&nbsp;&nbsp;&nbsp;<br>
   <a href="#executar">Como executar os projetos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
   <a href="#licença">Licença</a>
@@ -89,14 +91,14 @@ Abordou os principais elementos do [HTML](https://github.com/Rocketseat/bootcamp
 <p>O <strong>desafio 02</strong> consistia em 4 partes, onde eram propostos desafios. Nas partes 1, 2 e 3 tínhamos que criar uma página de apresentação da Rocketseat, onde o layout era livre e o aluno poderia exercitar a sua criatividade, apenas tinha que seguir algumas instruções. 
 Na parte 4 era dado o layout para construção de um site completo para uma empresa de receitas chamada Foodfy.<p><br>
 
-[Desafio 02.1](challenge02.1_rocketseat) - <strong>Site da Rocketseat</strong><br>
+[Desafio 02.1](challenge02.1_rocketseat) - <strong>Site da Rocketseat</strong><br><br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md)
-  -  Criação do menu;
+  -  Criação do menu
 - [Parte 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md)
-  - Página de descrição da Rocketseat;
+  - Página de descrição da Rocketseat
 - [Parte 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md)
-  - Página de cursos da rocketseat e iframes.
+  - Página de cursos da rocketseat e iframes
 
 <br>
 
@@ -106,10 +108,10 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <br><br>
 
-[Desafio 02.2](challenge02.2_foodfy) - <strong>Site do Foodfy</strong>
+[Desafio 02.2](challenge02.2_foodfy) - <strong>Site do Foodfy</strong><br><br>
 
 - [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md)
-  - Criação do layout do Foodfy.
+  - Criação do layout do Foodfy
 
 <br>
 
@@ -125,7 +127,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 <p> <strong>Desafio 03 </strong> consistia em 4 partes, onde foi realizado a refatoração do código do site da Rocketseat e do Foodfy.</p><br>
 
-[Desafio 03.1](challenge03.1_rocketseat) - <strong>Refatoração do site da rocketseat </strong><br>
+[Desafio 03.1](challenge03.1_rocketseat) - <strong>Refatoração do site da rocketseat </strong><br><br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md)
   - Criação do servidor
@@ -196,7 +198,7 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 <br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md)
-  - Criação de um header com dois links: teachers e students.
+  - Criação de um header com dois links: teachers e students
 
 - [Parte 02](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-2-card-teacher.md)
   - Utilizar o browser-sync
@@ -204,30 +206,30 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 
 - [Parte 03](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-3-form-and-routes-teacher.md)
   - Criar um formulário de cadastro do professor
-  - Criar uma rota do tipo post que realiza as validações e salva os dados enviados.
+  - Criar uma rota do tipo post que realiza as validações e salva os dados enviados
 
 - [Parte 04](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-4-show-edit-format-teacher.md)
-  - Criar duas rotas: uma para apresentar os dados do professor (show) e outra para a edição dos dados cadastrados (edit).
-  - Formatar os dados cadastrados para a correta exibição no HTML.
+  - Criar duas rotas: uma para apresentar os dados do professor (show) e outra para a edição dos dados cadastrados (edit)
+  - Formatar os dados cadastrados para a correta exibição no HTML
 
 - [Parte 05](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-5-put-delete-teacher.md)
-  - Implementar duas rotas: PUT e DELETE para a atualização e remoção, respectivamente, dos dados cadastrados de um professor.
+  - Implementar duas rotas: PUT e DELETE para a atualização e remoção, respectivamente, dos dados cadastrados de um professor
 
 - [Parte 06](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-6-list-teachers.md)
-  - Listar todos os professores salvos no arquivo json e apresentá-los em formato de tabela.
+  - Listar todos os professores salvos no arquivo json e apresentá-los em formato de tabela
 
 - [Parte 07](https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-7-students.md)
-  - Criar toda a estrutura de estudantes, baseado na estrutura de professores.
+  - Criar toda a estrutura de estudantes, baseado na estrutura de professores
 
 <br>
 
 #### RESULTADO 
 
-![Video executando](git/video-challenge04.gif)
+![Video executando](git/video-challenge04-1.gif)
 
 <br><br>
 
-[Desafio 04.2](challenge04.2_foodfy) - <strong> Administração do Foodfy </strong><br>
+[Desafio 04.2](challenge04.2_foodfy) - <strong> Administração do Foodfy </strong><br><br>
 
 - [Parte 08](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-04/blob/master/desafios/04-admin-foodfy.md)
   - Criar uma área administrativa para o Foodfy, que será responsável por cadastrar, editar e deletar os dados do arquivo.
@@ -245,32 +247,48 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 ## :date: Semana 03
 <br>
 
-No [desafio 05.1](challenge05.1_privateLessons) foi realizado a persistência dos dados do [desafio 04.1](challenge04.1_privateLessons) e adicionado o mecanismo de busca e a paginação. 
+O Desafio 05 </strong> consistia em 5 partes, onde foi realizado a persistência dos dados do site de [aulas particulares](challenge04.1_privateLessons) e do [foodfy](challenge04.2_foody).<br><br>
 
-Este desafio foi dividido em 4 partes:
+
+[Desafio 05.1](challenge05.1_privateLessons) - <strong> Site de aulas particulares <strong>
 
 <br>
 
 - [Parte 01](https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/blob/master/desafios/05-1-refatorando-aplicacao.md)
-  -  Refator o código da aplicação e preparar o ambiente para trabalhar com banco de dados.
+  -  Refator o código da aplicação e preparar o ambiente para trabalhar com banco de dados
 
 - [Parte 02](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-05/blob/master/desafios/05-2-interagindo-bd.md)
-  -  Refatorar os CRUDs dos professores e estudantes para que eles utilizem o banco de dados.
+  -  Refatorar os CRUDs dos professores e estudantes para que eles utilizem o banco de dados
 
 - [Parte 03](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-05/blob/master/desafios/05-3-relacionamentos-filtros-bd.md)
   - Criar um relacionamento entre professor e estudante
-  - Implementar filtros na listagem da tabela de professores.
+  - Implementar filtros na listagem da tabela de professores
+  - Criar um campo de busca de professores
 
 - [Parte 04](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-05/blob/master/desafios/05-4-paginacao-bd.md)
-  - Implementar a lógica de paginação dos resultados do BD.
+  - Implementar a lógica de paginação dos resultados do BD
 
 <br>
 
 #### RESULTADO 
 
-![Video executando](git/video-challenge05.gif)
+![Video executando](git/video-challenge05-1.gif)
+
+<br><br>
+
+[Desafio 05.2](challenge05.2_foodfy) - <strong> Site do Foodfy </strong><br><br>
+
+- [Parte 05](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-05/blob/master/desafios/05-persistindo-dados-foodfy.md)
+  - Criar um banco de dados
+  - Criar novas páginas de cadastro, listagem e edição de chefs
+  - Criar um campo de busca de receitas
+  - Adicionar a funcionalidade de paginação na listagem de receitas
 
 <br>
+
+#### RESULTADO 
+
+![Video executando](git/video-challenge05-2.gif)
 
 <a id="semana04"></a><br>
 

@@ -64,7 +64,7 @@
         <select name="teacher">
             <option value="option"> Selecione uma opção... </option>
             {% for teacher in teacherOptions %}
-                <option value={{teacher.id}} {% if student.teacher_id == teacher.id %} selected {% endif %}> 
+                <option value="{{teacher.id}}" {% if student.teacher_id == teacher.id %} selected {% endif %}> 
                     {{teacher.fullname}}
                 </option>
             {% endfor %}

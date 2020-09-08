@@ -18,10 +18,14 @@ module.exports = {
 
             callback(_teachers){
                 
+                let total
                 const teachers = ArraysTeachers(_teachers)
 
+                if(_teachers != null && _teachers.length != 0)
+                    total = Math.ceil(_teachers[0].total_teachers / limit)
+                
                 const pagination = {
-                    totalPages: Math.ceil(_teachers[0].total_teachers / limit),
+                    totalPages: total,
                     page
                 }
                           

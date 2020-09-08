@@ -113,6 +113,7 @@ module.exports = {
                        ORDER BY teachers.fullname ASC
                        LIMIT $1 OFFSET $2
                        `
+  
         db.query(query, [limit, offset], (err, results) => {
             if(err)
                 throw `Database error! ${err}`

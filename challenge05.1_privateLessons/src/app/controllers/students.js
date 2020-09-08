@@ -18,10 +18,14 @@ module.exports = {
 
             callback(_students){
                 
+                let total
                 const students = ArraysStudents(_students)
 
+                if(_students != null && _students.length != 0)
+                    total = Math.ceil(_students[0].total_students / limit)
+
                 const pagination = {
-                    totalPages: Math.ceil(_students[0].total_students / limit),
+                    totalPages: total,
                     page
                 }
                         

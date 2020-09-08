@@ -1,0 +1,36 @@
+{% extends 'layoutUser.njk' %}
+
+{% block head %}
+    <title>Home</title>
+{% endblock head %}
+
+{% block content %}  
+    <div class="jumbotron">
+        <div class="jumbotron_content">
+            <h1>As melhores receitas</h1>
+            <p>
+                Aprenda a construir os melhores pratos com receitas criadas por profissionais
+                do mundo inteiro.
+            </p>
+        </div>
+    
+        <img src="images/chef.png" alt="" class="chef">
+    </div>
+    
+    <h1 class="section_title">Mais acessadas</h1>
+
+    <section class="cards">      
+        {% for recipe in data.recipes %}        
+            <div class="card">
+                <figure>
+                    <img src="{{recipe.image}}" alt="{{recipe.title}}" class="img">
+                    <figcaption>
+                        <p class="recipe_title">{{recipe.title}}</p>
+                        <p class="author">{{recipe.author}}</p>
+                    </figcaption>
+                </figure>          
+            </div>
+        {% endfor %}  
+    </section>
+    <script src="scripts/recipes.js"></script>
+{% endblock content %}

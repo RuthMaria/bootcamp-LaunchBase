@@ -1,0 +1,55 @@
+{% extends 'layoutAdmin.njk' %}
+
+{% block head %}
+    <title>Receita</title>
+    <link rel="stylesheet" href="/styles/recipe_description.css">
+{% endblock head %}
+
+{% block content %}
+
+    <div class="titles">
+        <h1>Receita: {{recipe.title}} </h1> 
+        <a href="/admin/recipes/{{id}}/edit" class="editRecipes">Editar receita </a>
+    </div>
+
+    <div class="card">
+        <figure>
+            <img src="{{recipe.image}}" alt="{{recipe.title}}">
+            <figcaption>
+                <p class="recipe_title">{{recipe.title}}</p>
+                <p class="author">{{recipe.author}}</p>
+            </figcaption>
+        </figure>          
+    </div>
+
+    <div class="information">
+        <div class="title">
+            <h1>Ingredientes</h1><span class="hide" value='Esconder'>Esconder</span>
+        </div>
+        <ul class="data">
+            {% for ingredient in recipe.ingredients %}
+            <li>{{ingredient}}</li>
+            {% endfor %}            
+        </ul>
+    </div>
+
+    <div class="information">
+        <div class="title">
+            <h1>Modo de preparo</h1><span class="hide"> Esconder</span>
+        </div>
+        <ul class="data">
+            {% for mode in recipe.preparation %}
+                 <li>{{mode}}</li>
+            {% endfor %}            
+        </ul>
+    </div>
+
+     <div class="information">
+         <div class="title">
+            <h1>Informações adicionais</h1><span class="hide">Esconder</span>
+        </div>
+         <span class="data" >{{recipe.information}}</span>
+     </div>
+
+<script src="/scripts/recipes.js"></script>
+{% endblock content %}
