@@ -247,10 +247,10 @@ Na parte 4 era dado o layout para construção de um site completo para uma empr
 ## :date: Semana 03
 <br>
 
-O Desafio 05 </strong> consistia em 5 partes, onde foi realizado a persistência dos dados do site de [aulas particulares](challenge04.1_privateLessons) e do [foodfy](challenge04.2_foody).<br><br>
+O <strong> Desafio 05 </strong> consistia em 5 partes, onde foi realizado a persistência dos dados do site de [aulas particulares](challenge04.1_privateLessons) e do [foodfy](challenge04.2_foody).<br><br>
 
 
-[Desafio 05.1](challenge05.1_privateLessons) - <strong> Site de aulas particulares <strong>
+[Desafio 05.1](challenge05.1_privateLessons) - <strong> Site de aulas particulares </strong>
 
 <br>
 
@@ -335,6 +335,16 @@ npm install
 
 <br>
 
+#### ✔️ Challenge01_questions
+
+<br>
+
+- Baixar o nodejs
+- Digitar o comando referente a questão que deseja executar, por exemplo:
+```
+node technology.js
+```
+
 #### ✔️ Challenge02.1_rocketseat, challenge02.2_foodfy ou portfolio
 
 <br>
@@ -387,6 +397,14 @@ Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,src/app/views'"
 ```
  Em seguida, crie o [banco de dados](challenge05.1_privateLessons/src/config/querysSql_db.js) no postgres e [configure a conexão](challenge05.1_privateLessons/src/config/db.js).
+
+ - challenge05.2_foodfy
+
+```
+"nodemon": "nodemon challenge05.2_foodfy/src/server.js",
+"browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,src/app/views'"
+```
+ Em seguida, crie o [banco de dados](challenge05.2_foodfy/src/config/querysSql_db.js) no postgres e [configure a conexão](challenge05.2_foodf/src/config/db.js).
 
 <br>
 

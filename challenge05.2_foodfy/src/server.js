@@ -7,13 +7,13 @@ const server = express()
 const PORT = 5000
 
 server.use(express.urlencoded ( { extended: true }))
-server.use(express.static(__dirname + '/public'))
+server.use(express.static('challenge05.2_foodfy/public'))
 server.use(methodOverride('_method'))
 server.use(routes)
 
 server.set('view engine', 'njk')
 
-nunjucks.configure('challenge04.2_foodfy/views', {
+nunjucks.configure('challenge05.2_foodfy/src/app/views', {
     express: server,
     autoescape: false,
     noCache: true

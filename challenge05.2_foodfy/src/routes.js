@@ -1,7 +1,7 @@
 const express = require('express')
 const routes = express.Router()
-const admin = require("./controllers/admin")
-const user = require("./controllers/user")
+const admin = require("./app/controllers/admin")
+const user = require("./app/controllers/user")
 
 routes.get('/', user.home)
 routes.get('/about', user.about)
