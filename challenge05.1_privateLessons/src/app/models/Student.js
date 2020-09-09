@@ -39,7 +39,7 @@ module.exports = {
     },
 
     find(id, callback){
-        const query = `SELECT students.*, teachers.fullname AS teacher_name
+        const query = ` SELECT students.*, teachers.fullname AS teacher_name
                         FROM students
                         LEFT JOIN teachers ON (students.teacher_id = teachers.id) 
                         WHERE students.id = $1`

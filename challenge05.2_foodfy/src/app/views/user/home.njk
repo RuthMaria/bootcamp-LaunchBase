@@ -20,16 +20,23 @@
     <h1 class="section_title">Mais acessadas</h1>
 
     <section class="cards">      
-        {% for recipe in data.recipes %}        
-            <div class="card">
+        {% for recipe in recipes %}        
+            <a class="card" href="/recipes/{{recipe.id}}">
                 <figure>
                     <img src="{{recipe.image}}" alt="{{recipe.title}}" class="img">
                     <figcaption>
                         <p class="recipe_title">{{recipe.title}}</p>
-                        <p class="author">{{recipe.author}}</p>
+                        <p class="author"> por {{recipe.author}}</p>
                     </figcaption>
                 </figure>          
-            </div>
+            </a>
         {% endfor %}  
     </section>
+
+    <div class="pagination" 
+        data-page="{{pagination.page}}"
+        data-total="{{pagination.totalPages}}" 
+        data-filter={{filter}}>
+             
+    </div> 
 {% endblock content %}

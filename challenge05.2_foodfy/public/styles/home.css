@@ -6,6 +6,16 @@
     border: 0;
 }
 
+:root {
+    --green-color: rgb(4, 211, 97);  
+    --green-dark-color: rgba(4, 211, 97, 0.952);  
+    --orange-color:rgb(253, 149, 31);
+    --purple-color: #7159c1;
+    --purple-dark-color: #5f41c4;
+    --blue-color: rgb(17, 85, 204);
+    --blue-dark-color: rgba(4, 77, 204, 0.952);
+}
+
 body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
@@ -32,8 +42,51 @@ nav .logo {
     height: 26.9px;
 }
 
+header {
+    width: 940px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.header form {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.header form input {
+    border: 1px solid #eee;
+    padding: 6px 8px;
+    margin-right: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header form button {
+    display: inline-block;
+    background-color: var(--purple-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+}
+
+.header button:hover {
+    background-color: var(--purple-dark-color);
+    box-shadow: 3px 2px 7px -5px black;
+}
+
 .menu {
-    margin-left: 122.4px;
+    margin:0 85px;
     font-size: 16px;   
 }
 
@@ -116,6 +169,25 @@ nav .logo {
     color: #777777;
 }
 
+.pagination {
+    margin: 0;
+    align-self: end;
+    justify-self: center;
+}
+
+.pagination a,
+.pagination span {
+    color: var(--purple-color);
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.pagination a:hover {
+    background-color: var(--purple-color);
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+}
 
 footer {
     background-color: #EEEEEE;

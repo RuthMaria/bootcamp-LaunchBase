@@ -6,10 +6,9 @@
 {% endblock head %}
 
 {% block content %}
-
     <section class="cards">      
-        {% for recipe in data.recipes %}        
-            <div class="card">
+        {% for recipe in recipes %}        
+            <a class="card" href="/recipes/{{recipe.id}}">
                 <figure>
                     <img src="{{recipe.image}}" alt="{{recipe.title}}" class="img">
                     <figcaption>
@@ -17,7 +16,7 @@
                         <p class="author">{{recipe.author}}</p>
                     </figcaption>
                 </figure>          
-            </div>
+            </a>
         {% endfor %} 
     </section>    
 {% endblock content %}

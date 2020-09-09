@@ -15,12 +15,21 @@
         <header>
             <nav class="nav">
                 <a href="/"><img class="logo" src="/images/logo.png" alt="logo do foodfy"></a>
-                
-                <div class="menu">
-                    <a href="/about">Sobre</a>
-                    <a href="/recipes">Receitas</a>
-                    <a href="/admin/recipes">Admin</a>
+
+                <div class="header">
+                    <div class="menu">
+                        <a href="/about">Sobre</a>
+                        <a href="/recipes">Receitas</a>
+                        <a href="#">Chefs</a>
+                        <a href="/admin/recipes">Admin</a>
+                    </div>
+
+                    <form action="/students" method="get">
+                        <input type="text" name="filter" placeholder="Pesquisar receita" value={{filter}}>
+                        <button class="button" type="submit">Filtrar</button>        
+                    </form>
                 </div>
+                
             </nav>
         </header>
 

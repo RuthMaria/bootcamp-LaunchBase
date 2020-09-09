@@ -6,7 +6,7 @@ const user = require("./app/controllers/user")
 routes.get('/', user.home)
 routes.get('/about', user.about)
 routes.get('/recipes', user.index)
-routes.get('/recipes/:index', user.show)
+routes.get('/recipes/:id', user.show)
 
 routes.get("/admin/recipes", admin.index); 
 routes.get("/admin/recipes/create", admin.create); 
