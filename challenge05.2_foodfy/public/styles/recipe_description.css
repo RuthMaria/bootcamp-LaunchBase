@@ -1,3 +1,7 @@
+article {
+    width: 940px;
+}
+
 .titles{
     display: flex;
     justify-content: space-between;

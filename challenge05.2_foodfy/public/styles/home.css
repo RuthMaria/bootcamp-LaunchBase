@@ -42,18 +42,18 @@ nav .logo {
     height: 26.9px;
 }
 
-header {
+.head {
     width: 940px;
 }
 
-.header {
+.filter {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
 }
 
-.header form {
+.filter form {
     display: grid;
     grid-template-columns: 1fr 120px;
     justify-content: space-between;
@@ -61,7 +61,7 @@ header {
     grid-gap: 5px;
 }
 
-.header form input {
+.filter form input {
     border: 1px solid #eee;
     padding: 6px 8px;
     margin-right: 25px;
@@ -69,7 +69,7 @@ header {
     box-sizing: border-box;
 }
 
-.header form button {
+.filter form button {
     display: inline-block;
     background-color: var(--purple-color);
     padding: 8px 16px;
@@ -80,7 +80,7 @@ header {
     transition: background-color 0.2s;
 }
 
-.header button:hover {
+.filter button:hover {
     background-color: var(--purple-dark-color);
     box-shadow: 3px 2px 7px -5px black;
 }
@@ -95,8 +95,8 @@ header {
 }
 
 .menu a:hover {
-    border-bottom: 4px solid #FBDFDB;
-    transition: 200ms;
+    color: #fccec7;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     font-weight: bold;
 }
 
@@ -191,13 +191,10 @@ header {
 
 footer {
     background-color: #EEEEEE;
-    height: 62px;
+    height: 35px;
     margin-top: 50px;
-}
-
-footer p {
     font-size: 14px;
     color: #999999;
     text-align: center;
-    padding: 23px 0;
+    padding-top: 20px;
 }

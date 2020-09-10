@@ -29,15 +29,20 @@ module.exports = {
 
     foundChef(callback){
 
+        let filtered = ""
+
         let query = `SELECT chefs.name AS author
                     FROM chefs 
-                    LEFT JOIN recipes ON (chefs.id = recipes.chef_id)`
-                    
-        db.query(query, (err,results) => {
+                    LEFT JOIN recipes ON (chefs.id = recipes.chef_id)
+                    ${filtered}`
+
+        console.log(query)
+
+        db.query(query, (err, results) => {
             if(err)
                 throw `Database error! ${err}`
             
-                callback(results.rows)
+            callback(results.rows)
         })
     },
     

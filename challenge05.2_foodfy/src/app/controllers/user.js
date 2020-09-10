@@ -17,7 +17,7 @@ module.exports = {
             filter
         }
 
-        paginate(params,  _recipes => {
+        paginate(params, _recipes => {
                 
             let total
 
@@ -30,7 +30,7 @@ module.exports = {
             }
             
             foundChef(author => {
-                
+            
                 const recipes = ArraysRecipes(_recipes, author)
 
                 //console.log(recipes)
