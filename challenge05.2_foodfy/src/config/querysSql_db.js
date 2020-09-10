@@ -48,6 +48,21 @@ const insertChefs = `
         'Mayara Rysia',
         'https://avatars1.githubusercontent.com/u/10697959?s=460&u=3f493c6c586f256d6edbb694257ae97371588e4f&v=4',
         '2020-09-08'
+    ),
+    (
+        'Diego Fernandes',
+        'https://avatars2.githubusercontent.com/u/2254731?s=460&u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&v=4',
+        '2020-09-08'
+    ),
+    (
+        'Naelson Douglas',
+        'https://avatars0.githubusercontent.com/u/8750259?s=460&u=a2fd7fa5b2d00715e65c7eca1ecc28aa6b4a3f28&v=4',
+        '2020-09-08'
+    ),
+    (
+        'Mayk Brito',
+        'https://avatars2.githubusercontent.com/u/6643122?s=460&u=1e9e1f04b76fb5374e6a041f5e41dce83f3b5d92&v=4',
+        '2020-09-08'
     )
 `
 

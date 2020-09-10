@@ -1,0 +1,30 @@
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: 0;    
+    grid-gap: 5px;
+    margin-top: 25px;
+}
+
+.card .img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+}
+
+.card p {
+    font-size: 18px;
+    width: 150px;
+    margin-bottom: 5px;   
+}
+
+.card .author {
+    font-size: 14px;
+    color: #777777;
+}

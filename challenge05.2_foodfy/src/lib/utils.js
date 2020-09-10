@@ -11,19 +11,6 @@ module.exports = {
         }
     },
 
-    ArraysRecipes(_recipes, author){
-        const recipes = []
-
-        for(let i = 0; i < _recipes.length; i++){
-            recipes.push({
-                ..._recipes[i],
-               ...author[i]
-            })
-        }
-
-        return recipes
-    },
-
     date( timestamp ){
 
         const birthDate = new Date(timestamp)

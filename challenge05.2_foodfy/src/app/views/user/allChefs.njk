@@ -1,0 +1,22 @@
+{% extends 'layoutUser.njk' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/allChefs.css">
+    <title>Receitas</title>
+{% endblock head %}
+
+{% block content %}
+    <section id="cards">      
+        {% for chef in chefs %}        
+            <a class="card" href="/recipes/{{chef.id}}">
+                <figure>
+                    <img src="{{chef.avatar_url}}" alt="Avatar de {{chef.name}}" class="img">
+                    <figcaption>
+                        <p class="recipe_title">{{chef.name}}</p>
+                        <p class="author">{{chef.total_recipes}} receitas</p>
+                    </figcaption>
+                </figure>          
+            </a>
+        {% endfor %} 
+    </section>    
+{% endblock content %}

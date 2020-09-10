@@ -1,0 +1,22 @@
+{% extends 'layoutUser.njk' %}
+
+{% block head %}
+    <title>Receitas</title>
+{% endblock head %}
+
+{% block content %}
+    <h2 class="search">Buscando por "{{filter}}"</h2> 
+    <section class="cards">     
+        {% for recipe in recipes %}        
+            <a class="card" href="/recipes/{{recipe.id}}">
+                <figure>
+                    <img src="{{recipe.image}}" alt="{{recipe.title}}" class="img">
+                    <figcaption>
+                        <p class="recipe_title">{{recipe.title}}</p>
+                        <p class="author">{{recipe.author}}</p>
+                    </figcaption>
+                </figure>          
+            </a>
+        {% endfor %} 
+    </section>    
+{% endblock content %}
