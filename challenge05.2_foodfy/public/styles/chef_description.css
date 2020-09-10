@@ -1,0 +1,28 @@
+
+.chef {
+    text-align: center;
+    margin-top: 51px;
+}
+
+.chef img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.chef .chef_title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.chef .recipes {
+    font-size: 20px;
+    color: #777777;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 24px;
+}

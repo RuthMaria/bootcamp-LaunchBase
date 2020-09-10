@@ -8,7 +8,7 @@
 {% block content %}
     <section id="cards">      
         {% for chef in chefs %}        
-            <a class="card" href="/recipes/{{chef.id}}">
+            <a class="card" href="/recipes/chefs/{{chef.id}}">
                 <figure>
                     <img src="{{chef.avatar_url}}" alt="Avatar de {{chef.name}}" class="img">
                     <figcaption>
