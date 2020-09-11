@@ -17,7 +17,7 @@
     margin-bottom: 4px;
 }
 
-.chef .recipes {
+.chef .total_recipes {
     font-size: 20px;
     color: #777777;
     margin-bottom: 50px;
@@ -25,4 +25,33 @@
 
 h1 {
     font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.card p {
+    width: 250px
+}
+
+.card img {
+    width: 172px;
+    height: 80px;
+}
+
+.view {
+    color: #6558C3;
+    font-size: 14px;
+}
+
+.view:hover {
+    text-decoration: underline;
 }

@@ -56,12 +56,9 @@ module.exports = {
 
     searchChef(id, callback) {
 
-        let subQuery = `(SELECT * 
-                        FROM recipes)`
-
-        const query = `SELECT chefs.*, ${subQuery}, COUNT(recipes) AS total_recipes
+        const query = `SELECT chefs.*, COUNT(recipes) AS total_recipes
                        FROM chefs
-                       LEFT JOIN recipes ON (chefs.id = recipes.chef_id)                       
+                       JOIN recipes ON (chefs.id = recipes.chef_id)                       
                        WHERE chefs.id = $1
                        GROUP BY chefs.id`
 
@@ -70,6 +67,21 @@ module.exports = {
                 throw `Database error! ${err}`
             
                 callback(results.rows[0])
+        })
+    },
+
+    searchRecipes(id, callback) {
+
+        const query = `SELECT recipes.*
+                       FROM recipes
+                       JOIN chefs ON (chefs.id = recipes.chef_id)                       
+                       WHERE chefs.id = $1`
+
+        db.query(query, [id], (err,results) => {
+            if(err)
+                throw `Database error! ${err}`
+            
+                callback(results.rows)
         })
 
     }

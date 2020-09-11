@@ -11,19 +11,19 @@
             <img src="{{chef.avatar_url}}" alt="Avatar de {{chef.name}}" class="img">
             <figcaption>
                 <p class="chef_title">{{chef.name}}</p>
-                <p class="recipes">{{chef.total_recipes}} receitas</p>
+                <p class="total_recipes">{{chef.total_recipes}} receitas</p>
             </figcaption>
         </figure>          
         
         <h1> Receitas </h1>
 
         {% for recipe in recipes %}        
-            <div class="card">
-                <figure class="recipe">
+            <div class="recipes">
+                <figure class="card">
                     <img src="{{recipe.image}}" alt="{{recipe.title}}">
                     <figcaption>
                         <p class="recipe_title">{{recipe.title}}</p>
-                        <p class="author">por {{recipe.author}}</p>
+                        <p class="author">por {{chef.name}}</p>
                         <a href="/recipes/{{recipe.id}}">Visualizar</a>
                     </figcaption>
                 </figure>          
