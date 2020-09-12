@@ -8,7 +8,7 @@
 
 {% block content %}      
 
-    <form action="/admin/recipes" method="post"> 
+    <form action="/admin/chefs" method="post"> 
         <div class="titles">
             <h1>Criando chef</h1> 
             <button type="submit" class="newRecipes">Salvar chef </button> 
@@ -17,12 +17,12 @@
         <div class="fields">
             <div class="item">
                 <div> Nome</div>
-                <input type="text" name="title" value = "{{recipe.title}}">
+                <input type="text" name="name" value = "{{recipe.title}}">
             </div>
 
             <div class="item">
                 <div>Avatar</div>
-                <input type="url" name="image"  placeholder="https://" value = "{{recipe.image}}">
+                <input type="url" name="avatar_url"  placeholder="https://" value = "{{recipe.image}}">
             </div>                           
         </div>                         
     </form>

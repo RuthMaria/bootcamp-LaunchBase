@@ -1,6 +1,6 @@
-const { checkEmptyFields } = require("../../lib/utils")
-const { paginate, foundRecipe, foundChefs, searchChef, searchRecipes } = require('../models/User')
-//const admin = require('../models/admin')
+const { checkEmptyFields, date } = require("../../lib/utils")
+const { paginate, foundRecipe, foundChefs, searchChef, searchRecipes, searchChefAndCountRecipes } = require('../models/User')
+const { create } = require('../models/admin')
 
 module.exports = {
 
@@ -36,6 +36,7 @@ module.exports = {
     create (req, res){
         return res.render('admin/create')
     },
+
 
     show (req, res){
 
@@ -77,18 +78,40 @@ module.exports = {
 
     detailsChef( req, res) {
 
-        searchChef(req.params.id, chef => {
+       searchChefAndCountRecipes(req.params.id, chef => {
 
-            if( !chef )
-                return res.send('Chef not found!')
+            if( !chef ){
+                searchChef(req.params.id, chef => {
+                    if( !chef ){
+                        return res.send('Chef not found!')
+                    }
 
-            searchRecipes(req.params.id, recipes => {
-                return res.render('admin/chef_description',  { chef, recipes })
-            } )
+                    return res.render('admin/chef_description',  { chef })
+                })
+            } else {
+                searchRecipes(req.params.id, recipes => {
+                    return res.render('admin/chef_description',  { chef, recipes })
+                })
+            }           
         })
     },
 
     createChef( req, res ) {
         return res.render('admin/createChef')
-    }
+    },
+
+    post( req, res ) {
+
+        if(checkEmptyFields(req.body))
+            return res.send("Please, fill all fields!")
+
+        req.body.created_at = date().iso
+
+        console.log(req.body)
+
+        create(req.body, () => {
+            return res.redirect('/admin/chefs')
+        })
+        
+    },
 }

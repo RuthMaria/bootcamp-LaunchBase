@@ -1,4 +1,4 @@
-const { paginate, foundRecipe, foundChefs, searchChef, searchRecipes } = require('../models/User')
+const { paginate, foundRecipe, foundChefs, searchChef, searchChefAndCountRecipes, searchRecipes } = require('../models/User')
 
 module.exports = {
 
@@ -115,14 +115,21 @@ module.exports = {
 
     detailsChef( req, res) {
 
-        searchChef(req.params.id, chef => {
+        searchChefAndCountRecipes(req.params.id, chef => {
 
-            if( !chef )
-                return res.send('Chef not found!')
+            if( !chef ){
+                searchChef(req.params.id, chef => {
+                    if( !chef ){
+                        return res.send('Chef not found!')
+                    }
 
-            searchRecipes(req.params.id, recipes => {
-                return res.render('user/chef_description',  { chef, recipes })
-            } )
+                    return res.render('user/chef_description',  { chef })
+                })
+            } else {
+                searchRecipes(req.params.id, recipes => {
+                    return res.render('user/chef_description',  { chef, recipes })
+                })
+            }           
         })
     }
 }

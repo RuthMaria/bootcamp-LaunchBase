@@ -23,17 +23,21 @@
         
         <h1> Receitas </h1>
 
-        {% for recipe in recipes %}        
-            <div class="recipes">
-                <figure class="card">
-                    <img src="{{recipe.image}}" alt="{{recipe.title}}">
-                    <figcaption>
-                        <p class="recipe_title">{{recipe.title}}</p>
-                        <p class="author">por {{chef.name}}</p>
-                        <a class="view" href="/admin/recipes/{{recipe.id}}">Visualizar</a>
-                    </figcaption>
-                </figure>          
-            </div>
-        {% endfor %}
+        {% if recipes %}  
+            {% for recipe in recipes %}        
+                <div class="recipes">
+                    <figure class="card">
+                        <img src="{{recipe.image}}" alt="{{recipe.title}}">
+                        <figcaption>
+                            <p class="recipe_title">{{recipe.title}}</p>
+                            <p class="author">por {{chef.name}}</p>
+                            <a class="view" href="/admin/recipes/{{recipe.id}}">Visualizar</a>
+                        </figcaption>
+                    </figure>          
+                </div>
+            {% endfor %}
+        {% else %}
+            <h2>Não possui nenhuma receita</h2>
+        {% endif %}
     </section>    
 {% endblock content %}

@@ -11,13 +11,13 @@ module.exports = {
         }
     },
 
-    date( timestamp ){
+    date(){
 
-        const birthDate = new Date(timestamp)
+        const todayDate = new Date()
     
-        const year = birthDate.getUTCFullYear()
-        const month = `0${birthDate.getUTCMonth() + 1}`.slice(-2)
-        const day = `0${birthDate.getUTCDate()}`.slice(-2)
+        const year = todayDate.getUTCFullYear()
+        const month = `0${todayDate.getUTCMonth() + 1}`.slice(-2)
+        const day = `0${todayDate.getUTCDate()}`.slice(-2)
     
         return {
             day, 
