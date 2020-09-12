@@ -1,0 +1,30 @@
+{% extends 'layoutAdmin.njk' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/create.css">
+    <title>Receitas</title>
+{% endblock head %}
+
+{% block content %}      
+
+    <form action="/admin/recipes" method="post"> 
+        <div class="titles">
+            <h1>Criando chef</h1> 
+            <button type="submit" class="newRecipes">Salvar chef </button> 
+        </div>    
+
+        <div class="fields">
+            <div class="item">
+                <div> Nome</div>
+                <input type="text" name="title" value = "{{recipe.title}}">
+            </div>
+
+            <div class="item">
+                <div>Avatar</div>
+                <input type="url" name="image"  placeholder="https://" value = "{{recipe.image}}">
+            </div>                           
+        </div>                         
+    </form>
+ 
+{% endblock content %}

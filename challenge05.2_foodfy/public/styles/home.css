@@ -31,8 +31,12 @@ a {
     color: #111111 ;
 }
 
+#header {
+    margin-top: -20px;
+}
+
 .page-index {
-    width: 65%;    
+    width: 70%;    
     margin: 0 auto;
     min-height:100%;
     position:relative;
@@ -47,6 +51,20 @@ a {
 nav .logo {
     width: 90.6px;
     height: 26.9px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navAdmin {    
+    margin: 20px auto;
+    width: 70%;
+}
+
+#header {
+    background-color: black;
 }
 
 .head {
@@ -97,8 +115,23 @@ nav .logo {
     font-size: 16px;   
 }
 
+#links a {
+    font-size: 15px;
+    color: #999999;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .menu a {
     margin-right: 30px;
+}
+
+
+#links a.active {
+    color:#FFFFFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    transition: 700ms;
 }
 
 .menu a.active {
@@ -108,11 +141,17 @@ nav .logo {
     transition: 700ms
 }
 
+#links a.active:hover {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    text-decoration: none !important;
+}
+
 .menu a:hover {
     color: #fccec7;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     font-weight: bold;
-    transition: 700ms
+    transition: 700ms;
 }
 
 .jumbotron {

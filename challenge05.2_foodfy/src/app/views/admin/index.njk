@@ -13,14 +13,14 @@
     </div>   
 
     <section class="cards">         
-        {% for recipe in data.recipes %}        
+        {% for recipe in recipes %}        
             <div class="card">
                 <figure>
                     <img src="{{recipe.image}}" alt="{{recipe.title}}">
                     <figcaption>
                         <p class="recipe_title">{{recipe.title}}</p>
                         <p class="author">por {{recipe.author}}</p>
-                        <a class="view" href="#">Visualizar</a>
+                        <a class="view" href="/admin/recipes/{{recipe.id}}">Visualizar</a>
                     </figcaption>
                 </figure>          
             </div>

@@ -3,14 +3,19 @@ const hide = document.querySelectorAll('.hide')
 const content = document.querySelectorAll('.information')
 let = 0
 
-const menuItems = document.querySelectorAll('.menu a')
+const menuItemsUser = document.querySelectorAll('.menu a')
+const menuItemsAdmin = document.querySelectorAll('#links a')
 
-for (let item of menuItems) {
-    if (currentPage.includes(item.getAttribute('href'))) {
-        console.log("*************"+currentPage)
-        item.classList.add('active')
+function selectedMenu(menuItems){
+    for (let item of menuItems) {
+        if (currentPage.includes(item.getAttribute('href'))) {
+            item.classList.add('active')
+        }
     }
 }
+
+selectedMenu(menuItemsUser)
+selectedMenu(menuItemsAdmin)
 
 for (let element of hide) {
     element.addEventListener('click', function () {  

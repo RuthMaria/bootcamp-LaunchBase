@@ -1,3 +1,29 @@
+.titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, .titles {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.newRecipes {
+    font-size: 18px;
+    background-color: #6558C3;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 16px;
+}
+
+.newRecipes:hover {
+    background-color: #5a4bc4;
+    box-shadow: 3px 2px 7px -5px black;
+    color: white;
+    cursor: pointer;
+}
 
 .chef {
     text-align: center;
@@ -30,6 +56,7 @@ h1 {
 .view {
     font-size: 14px;
     color: #6558C3;
+    font-weight: bold;
 }
 
 .recipes {
