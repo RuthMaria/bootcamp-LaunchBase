@@ -3,6 +3,15 @@ const hide = document.querySelectorAll('.hide')
 const content = document.querySelectorAll('.information')
 let = 0
 
+const menuItems = document.querySelectorAll('.menu a')
+
+for (let item of menuItems) {
+    if (currentPage.includes(item.getAttribute('href'))) {
+        console.log("*************"+currentPage)
+        item.classList.add('active')
+    }
+}
+
 for (let element of hide) {
     element.addEventListener('click', function () {  
         if(element.innerText == 'Esconder') {     

@@ -4,7 +4,6 @@ section {
     grid-template-columns: repeat(4, 1fr);
     margin-right: 0;    
     grid-gap: 5px;
-    margin-top: 25px;
 }
 
 .card .img{

@@ -1,7 +1,6 @@
 
 .chef {
     text-align: center;
-    margin-top: 51px;
 }
 
 .chef img {
@@ -28,6 +27,11 @@ h1 {
     margin-bottom: 30px;
 }
 
+.view {
+    font-size: 14px;
+    color: #6558C3;
+}
+
 .recipes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -39,7 +43,7 @@ h1 {
 }
 
 .card p {
-    width: 250px
+    width: 250px;
 }
 
 .card img {

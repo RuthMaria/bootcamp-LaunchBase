@@ -28,7 +28,10 @@ module.exports = {
     
     foundRecipe(id, callback){
 
-        const query = `SELECT * FROM recipes WHERE recipes.id = $1`
+        const query = `SELECT recipes.*, chefs.name AS author 
+                       FROM recipes 
+                       JOIN chefs ON (chefs.id = recipes.chef_id)  
+                       WHERE recipes.id = $1`
 
         db.query(query, [id], (err,results) => {
             if(err)

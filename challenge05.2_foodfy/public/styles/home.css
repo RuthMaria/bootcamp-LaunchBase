@@ -21,6 +21,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+html, body {
+    height:100%;
+}
+
 a {
     text-decoration: none;
     color: #111111 ;
@@ -29,6 +34,8 @@ a {
 .page-index {
     width: 65%;    
     margin: 0 auto;
+    min-height:100%;
+    position:relative;
 }
 
 .nav {
@@ -44,10 +51,6 @@ nav .logo {
 
 .head {
     width: 940px;
-}
-
-.search {
-    margin: 35px 0;
 }
 
 .filter {
@@ -98,10 +101,18 @@ nav .logo {
     margin-right: 30px;
 }
 
+.menu a.active {
+    color: #fccec7;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    transition: 700ms
+}
+
 .menu a:hover {
     color: #fccec7;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     font-weight: bold;
+    transition: 700ms
 }
 
 .jumbotron {
