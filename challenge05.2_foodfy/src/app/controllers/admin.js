@@ -1,10 +1,10 @@
 const { checkEmptyFields, date } = require("../../lib/utils")
 const { paginate, foundRecipe, foundChefs, searchChef, searchRecipes, searchChefAndCountRecipes } = require('../models/User')
-const { create, update, _delete, chefsSelectOptions, createRecipe, searchRecipe, updateRecipe } = require('../models/admin')
+const { create, update, chefsSelectOptions, createRecipe, searchRecipe, updateRecipe, _deleteChef, _deleteRecipe } = require('../models/admin')
 
 module.exports = {
 
-    index(req, res){
+    index( req, res ){
         let { filter, page, limit } = req.query
 
         page = page || 1
@@ -33,14 +33,14 @@ module.exports = {
         })
     },
 
-    createRecipe (req, res){
+    createRecipe ( req, res ){
 
         chefsSelectOptions( chefs => {
             return res.render('admin/create', { chefs })
         })
     },
 
-    postRecipe(req, res){
+    postRecipe( req, res ){
 
         if(checkEmptyFields(req.body))
             return res.send("Please, fill all fields!")
@@ -52,7 +52,7 @@ module.exports = {
         })
     },
 
-    show (req, res){
+    show ( req, res ){
 
         foundRecipe(req.params.id, recipe => {
 
@@ -63,7 +63,7 @@ module.exports = {
         })
     },
 
-    editRecipe(req, res){
+    editRecipe( req, res ){
 
         searchRecipe(req.params.id, recipe => {
             if( !recipe ){
@@ -76,7 +76,7 @@ module.exports = {
         })
     },    
     
-    putRecipe(req, res){    
+    putRecipe( req, res ){    
 
         if(checkEmptyFields(req.body))
             return res.send("Please, fill all fields!")
@@ -88,8 +88,11 @@ module.exports = {
         })
     },
     
-    deleteRecipe(req, res){   
-
+    deleteRecipe( req, res ){   
+        
+        _deleteRecipe(req.body.id, () => {            
+            return res.redirect("/admin/recipes")
+        })               
     },
 
     allChefs( req, res) {
@@ -167,7 +170,7 @@ module.exports = {
                 return res.send("Chefs que possuem receitas não podem ser deletados")
 
             } else {
-                _delete(req.body.id, () => {            
+                _deleteChef(req.body.id, () => {            
                     return res.redirect("/admin/chefs")
                 })               
             }

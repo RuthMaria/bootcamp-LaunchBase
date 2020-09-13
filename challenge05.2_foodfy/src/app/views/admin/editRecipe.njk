@@ -8,21 +8,23 @@
 
 {% block content %}  
 
-<header class="headerEdit">
-    <h1>Editando chef</h1>
-    <div class="buttons_form">                   
-        <button form="second_form" class="button" id="delete" type="submit">Deletar</button>
-        <button form="first_form" type="submit" class="button"> Salvar </button> 
-    </div>
-</header>
+    <header class="headerEdit">
+        <h1>Editando chef</h1>
+        <div class="buttons_form">                   
+            <button form="second_form" class="button" id="delete" type="submit">Deletar</button>
+            <button form="first_form" type="submit" class="button"> Salvar </button> 
+        </div>
+    </header>
 
-<form id="first_form" action="/admin/recipes?_method=PUT" method="post">                                
-    {% include 'admin/fields.njk' %}               
-    <input type="hidden" name="id" value={{ recipe.id }}>
-</form>
+    <form id="first_form" action="/admin/recipes?_method=PUT" method="post">                                
+        {% include 'admin/fields.njk' %}               
+        <input type="hidden" name="id" value={{ recipe.id }}>
+    </form>
 
-<form id="second_form" action="/admin/recipes?_method=DELETE" method="post">
-    <input type="hidden" name="id" value={{ recipe.id }}>
-</form>
- 
+    <form id="second_form" action="/admin/recipes?_method=DELETE" method="post">
+        <input type="hidden" name="id" value={{ recipe.id }}>
+    </form>
+
+    {% include 'admin/confirm.njk' %} 
+
 {% endblock content %}

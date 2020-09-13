@@ -130,9 +130,21 @@ module.exports = {
 
     },
 
-    _delete(id, callback){
+    _deleteChef(id, callback){
 
         const query = 'DELETE FROM chefs WHERE  id = $1'
+
+        db.query(query, [id], (err, results) => {
+            if(err)
+                throw `Database error! ${err}`
+
+            callback()
+        })
+    },
+
+    _deleteRecipe(id, callback){
+
+        const query = 'DELETE FROM recipes WHERE id = $1'
 
         db.query(query, [id], (err, results) => {
             if(err)

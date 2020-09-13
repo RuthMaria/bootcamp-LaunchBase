@@ -8,31 +8,32 @@
 
 {% block content %}  
 
-<header class="headerEdit">
-    <h1>Editando chef</h1>
-    <div class="buttons_form">                  
-        <button form="second_form" class="button" id="delete" type="submit">Deletar</button>
-         <button form="first_form" type="submit" class="button"> Salvar </button> 
-    </div>
-</header>
-
-<form id="first_form" action="/admin/chefs?_method=PUT" method="post">                                
-    <div class="fields">
-        <div class="item">
-            <div> Nome</div>
-            <input type="text" name="name" value = "{{chef.name}}">
+    <header class="headerEdit">
+        <h1>Editando chef</h1>
+        <div class="buttons_form">                  
+            <button form="second_form" class="button" id="delete" type="submit">Deletar</button>
+            <button form="first_form" type="submit" class="button"> Salvar </button> 
         </div>
+    </header>
 
-        <div class="item">
-            <div>Avatar</div>
-            <input type="url" name="avatar_url"  placeholder="https://" value = "{{chef.avatar_url}}">
-        </div>                           
-    </div>               
-    <input type="hidden" name="id" value={{ chef.id }}>
-</form>
+    <form id="first_form" action="/admin/chefs?_method=PUT" method="post">                                
+        <div class="fields">
+            <div class="item">
+                <div> Nome</div>
+                <input type="text" name="name" value = "{{chef.name}}">
+            </div>
 
-<form id="second_form" action="/admin/chefs?_method=DELETE" method="post">
-    <input type="hidden" name="id" value={{ chef.id }}>
-</form>
- 
+            <div class="item">
+                <div>Avatar</div>
+                <input type="url" name="avatar_url"  placeholder="https://" value = "{{chef.avatar_url}}">
+            </div>                           
+        </div>               
+        <input type="hidden" name="id" value={{ chef.id }}>
+    </form>
+
+    <form id="second_form" action="/admin/chefs?_method=DELETE" method="post">
+        <input type="hidden" name="id" value={{ chef.id }}>
+    </form>
+    
+    {% include 'admin/confirm.njk' %} 
 {% endblock content %}
