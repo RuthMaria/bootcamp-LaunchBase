@@ -39,3 +39,40 @@
     border-radius: 4px;
 }
 
+
+.button {
+    background-color: var(--purple-color);
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px 16px;    
+    margin-top: 20px;
+    transition: background-color 0.2s;
+    width: 121px;
+    height: 37px;
+}
+
+.headerEdit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.buttons_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2px;
+    margin-left: 220px;
+}
+
+.button:hover {
+    background-color: #6346c4;
+    cursor: pointer;
+}
+
+#delete {
+    background-color: rgb(241, 52, 52);
+}
+
+#delete:hover {
+    background-color: rgb(241, 38, 38);
+}

@@ -1,0 +1,38 @@
+{% extends 'layoutAdmin.njk' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/create.css">
+    <title>Receitas</title>
+{% endblock head %}
+
+{% block content %}  
+
+<header class="headerEdit">
+    <h1>Editando chef</h1>
+    <div class="buttons_form">
+        <button form="first_form" type="submit" class="button"> Salvar </button>            
+        <button form="second_form" class="button" id="delete" type="submit">Deletar</button>
+    </div>
+</header>
+
+<form id="first_form" action="/admin/chefs?_method=PUT" method="post">                                
+    <div class="fields">
+        <div class="item">
+            <div> Nome</div>
+            <input type="text" name="name" value = "{{chef.name}}">
+        </div>
+
+        <div class="item">
+            <div>Avatar</div>
+            <input type="url" name="avatar_url"  placeholder="https://" value = "{{chef.avatar_url}}">
+        </div>                           
+    </div>               
+    <input type="hidden" name="id" value={{ chef.id }}>
+</form>
+
+<form id="second_form" action="/admin/chefs?_method=DELETE" method="post">
+    <input type="hidden" name="id" value={{ chef.id }}>
+</form>
+ 
+{% endblock content %}

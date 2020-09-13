@@ -20,7 +20,7 @@ module.exports = {
             avatar_url, 
             created_at
         ]
-        
+
         db.query(query, values, (err, results) => {
             if(err)
                 throw `Database error! ${err}`
@@ -28,6 +28,35 @@ module.exports = {
             callback()
         })
 
-    }
+    },
+
+    update(data, callback){
+
+        const { avatar_url, name, created_at, id } = data
+
+        const query = `
+            UPDATE chefs SET 
+                name = ($1), 
+                avatar_url = ($2),                
+                created_at = ($3)
+            WHERE id = ($4)
+            RETURNING id
+        `     
+
+        const values = [
+            name, 
+            avatar_url,
+            created_at, 
+            id
+        ]
+        
+        console.log("query "+query+"values"+values)
+        db.query(query, values, (err, results) => {
+            if(err)
+                throw `Database error! ${err}`
+
+            callback(results.rows[0])
+        })
+    },
 }
 

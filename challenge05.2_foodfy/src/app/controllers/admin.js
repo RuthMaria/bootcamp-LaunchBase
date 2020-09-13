@@ -1,6 +1,6 @@
 const { checkEmptyFields, date } = require("../../lib/utils")
 const { paginate, foundRecipe, foundChefs, searchChef, searchRecipes, searchChefAndCountRecipes } = require('../models/User')
-const { create } = require('../models/admin')
+const { create, update } = require('../models/admin')
 
 module.exports = {
 
@@ -37,7 +37,6 @@ module.exports = {
         return res.render('admin/create')
     },
 
-
     show (req, res){
 
         foundRecipe(req.params.id, recipe => {
@@ -49,23 +48,23 @@ module.exports = {
         })
     },
 
-    edit(req, res){
+    editRecipe(req, res){
    
     },
 
-    post(req, res){
-
-    if(checkEmptyFields(req.body))
-        return res.send("Please, fill all fields!")
-    },
-
-    put(req, res){    
+    postRecipe(req, res){
 
         if(checkEmptyFields(req.body))
             return res.send("Please, fill all fields!")
     },
+    
+    putRecipe(req, res){    
 
-    delete(req, res){   
+        if(checkEmptyFields(req.body))
+            return res.send("Please, fill all fields!")
+    },
+    
+    deleteRecipe(req, res){   
 
     },
 
@@ -100,6 +99,17 @@ module.exports = {
         return res.render('admin/createChef')
     },
 
+    editChef( req, res ) {
+
+        searchChef(req.params.id, chef => {
+            if( !chef ){
+                return res.send('Chef not found!')
+            }
+
+            return res.render('admin/editChef',  { chef })
+        })
+    },
+
     post( req, res ) {
 
         if(checkEmptyFields(req.body))
@@ -107,11 +117,21 @@ module.exports = {
 
         req.body.created_at = date().iso
 
-        console.log(req.body)
-
         create(req.body, () => {
             return res.redirect('/admin/chefs')
         })
         
+    },
+
+    putChef( req, res ) {
+
+        if(checkEmptyFields(req.body))
+            return res.send("Please, fill all fields!")
+        
+        req.body.created_at = date().iso
+
+        update(req.body, chef => {
+            return res.redirect(`/admin/chefs/${chef.id}`)
+        })
     },
 }
