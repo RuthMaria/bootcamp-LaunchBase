@@ -1,13 +1,14 @@
-const { paginate, foundRecipe, foundChefs, searchChef, searchChefAndCountRecipes, searchRecipes } = require('../models/User')
+const { allRecipesWithLimit, allRecipesAndChef, foundRecipe, foundChefs, searchChef, searchChefAndCountRecipes, searchRecipes } = require('../models/User')
 
 module.exports = {
 
-    home( req, res ) {
+    
+    home ( req, res ) {
 
         let { filter, page, limit } = req.query
 
         page = page || 1
-        limit = limit || 6
+        limit = limit || 3
         let offset = limit * (page - 1)
 
         const params = {
@@ -16,7 +17,7 @@ module.exports = {
             filter
         }
 
-        paginate(params, recipes => {
+        allRecipesWithLimit(params,  recipes => {
                 
             let total
 
@@ -27,83 +28,29 @@ module.exports = {
                 totalPages: total,
                 page
             }
-            
-            return res.render('user/home', { recipes, pagination, filter})           
+            return res.render('user/home', { recipes, filter})            
         })
     },
-
+    
     about( req, res ) {
         return res.render('user/about')
     },
 
-    index ( req, res ) {
+    allRecipes( req, res ) {
 
-        let { filter, page, limit } = req.query
-
-        page = page || 1
-        limit = limit || 9
-        let offset = limit * (page - 1)
-
-        const params = {
-            limit,
-            offset,
-            filter
-        }
-
-        paginate(params,  recipes => {
-                
-            let total
-
-            if(recipes != null && recipes.length != 0)
-                total = Math.ceil(recipes[0].totalrecipes / limit)
-
-            const pagination = {
-                totalPages: total,
-                page
-            }
-
-            return res.render('user/recipes', { recipes, pagination, filter})           
-        })
-    },
-
-    show ( req, res ){
-
-        foundRecipe(req.params.id, recipe => {
-
-            if( !recipe )
-                return res.send('Recipe not found!')
-
-            return res.render('user/recipe_description',  { recipe })
+        const {filter} = req.query
+        
+        allRecipesAndChef(filter, recipes => {            
+            return res.render('user/recipes', { recipes, filter})           
         })
     },
 
     searchRecipes( req, res) {
-        let { filter, page, limit } = req.query
-
-        page = page || 1
-        limit = limit || 9
-        let offset = limit * (page - 1)
-
-        const params = {
-            limit,
-            offset,
-            filter
-        }
-
-        paginate(params,  recipes => {
-                
-            let total
-
-            if(recipes != null && recipes.length != 0)
-                total = Math.ceil(recipes[0].totalrecipes / limit)
-
-            const pagination = {
-                totalPages: total,
-                page
-            }
-
-            return res.render('user/searchRecipes', { recipes, pagination, filter})          
-        })
+        const {filter} = req.query
+        
+        allRecipesAndChef(filter, recipes => {            
+            return res.render('user/searchRecipes', { recipes, filter})           
+        })        
     },
 
     allChefs( req, res) {
@@ -131,5 +78,16 @@ module.exports = {
                 })
             }           
         })
-    }
+    },   
+
+    detailsRecipe ( req, res ){
+
+        foundRecipe(req.params.id, recipe => {
+
+            if( !recipe )
+                return res.send('Recipe not found!')
+
+            return res.render('user/recipe_description',  { recipe })
+        })
+    },
 }

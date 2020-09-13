@@ -2,7 +2,28 @@ const db = require('../../config/db')
 
 module.exports = {
     
-    paginate(params, callback){
+    allRecipesAndChef(filter, callback){
+
+        let filterQuery = ""
+
+        if( filter ) {
+            filterQuery = `WHERE recipes.title ILIKE '%${filter}%'`            
+        } 
+        
+        const query = `SELECT recipes.*, chefs.name AS author
+                       FROM recipes
+                       LEFT JOIN chefs ON (chefs.id = recipes.chef_id)
+                       ${filterQuery}
+                       `
+        db.query(query, (err, results) => {
+            if(err)
+                throw `Database error! ${err}`
+            
+                callback(results.rows)
+        })
+    },
+
+    allRecipesWithLimit(params, callback){
 
         const { limit, offset, filter } = params
 

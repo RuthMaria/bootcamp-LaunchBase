@@ -77,7 +77,7 @@ function addPreparation() {
     .querySelector(".add-preparation")
     .addEventListener("click", addPreparation);
 
-   
+   /*
 function paginate(selectedPage, totalPages) {
 
     let pages = []
@@ -142,4 +142,4 @@ const pagination = document.querySelector('.pagination')
 
 if(pagination) {    
     createPagination(pagination)
-}
+}*/

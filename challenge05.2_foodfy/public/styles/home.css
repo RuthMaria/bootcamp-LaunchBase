@@ -131,27 +131,24 @@ nav {
     color:#FFFFFF;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     font-weight: bold;
-    transition: 700ms;
 }
 
 .menu a.active {
     color: #fccec7;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     font-weight: bold;
-    transition: 700ms
 }
 
 #links a.active:hover {
     color: #FFFFFF;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
-    text-decoration: none !important;
 }
 
 .menu a:hover {
     color: #fccec7;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     font-weight: bold;
-    transition: 700ms;
+    border-bottom: 1px solid white;
 }
 
 .jumbotron {

@@ -61,11 +61,11 @@ figure {
     align-items: center;
 }
 
-a {
+a.view {
     color: #6558C3;
 }
 
-a:hover {
+a.view:hover {
     color: #6558C3;
     border-bottom: 1px solid #6558C3;
 }

@@ -34,6 +34,7 @@
     <form id="second_form" action="/admin/chefs?_method=DELETE" method="post">
         <input type="hidden" name="id" value={{ chef.id }}>
     </form>
-    
+
     {% include 'admin/confirm.njk' %} 
+    
 {% endblock content %}
