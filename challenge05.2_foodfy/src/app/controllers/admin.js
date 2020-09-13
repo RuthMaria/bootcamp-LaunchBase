@@ -1,6 +1,6 @@
 const { checkEmptyFields, date } = require("../../lib/utils")
 const { paginate, foundRecipe, foundChefs, searchChef, searchRecipes, searchChefAndCountRecipes } = require('../models/User')
-const { create, update, _delete } = require('../models/admin')
+const { create, update, _delete, chefsSelectOptions, createRecipe, searchRecipe, updateRecipe } = require('../models/admin')
 
 module.exports = {
 
@@ -8,7 +8,7 @@ module.exports = {
         let { filter, page, limit } = req.query
 
         page = page || 1
-        limit = limit || 6
+        limit = limit || 10
         let offset = limit * (page - 1)
 
         const params = {
@@ -33,8 +33,23 @@ module.exports = {
         })
     },
 
-    create (req, res){
-        return res.render('admin/create')
+    createRecipe (req, res){
+
+        chefsSelectOptions( chefs => {
+            return res.render('admin/create', { chefs })
+        })
+    },
+
+    postRecipe(req, res){
+
+        if(checkEmptyFields(req.body))
+            return res.send("Please, fill all fields!")
+
+        req.body.created_at = date().iso
+
+        createRecipe(req.body, () => {
+            return res.redirect('/admin/recipes')
+        })
     },
 
     show (req, res){
@@ -49,19 +64,28 @@ module.exports = {
     },
 
     editRecipe(req, res){
-   
-    },
 
-    postRecipe(req, res){
+        searchRecipe(req.params.id, recipe => {
+            if( !recipe ){
+                return res.send('Recipe not found!')
+            }
 
-        if(checkEmptyFields(req.body))
-            return res.send("Please, fill all fields!")
-    },
+            chefsSelectOptions( chefs => {
+                return res.render('admin/editRecipe',  { recipe, chefs })
+            })
+        })
+    },    
     
     putRecipe(req, res){    
 
         if(checkEmptyFields(req.body))
             return res.send("Please, fill all fields!")
+    
+        req.body.created_at = date().iso
+
+        updateRecipe(req.body, recipe => {
+            return res.redirect(`/admin/recipes/${recipe.id}`)
+        })
     },
     
     deleteRecipe(req, res){   
@@ -110,7 +134,7 @@ module.exports = {
         })
     },
 
-    post( req, res ) {
+    postChef( req, res ) {
 
         if(checkEmptyFields(req.body))
             return res.send("Please, fill all fields!")

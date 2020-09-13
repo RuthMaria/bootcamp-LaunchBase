@@ -9,7 +9,7 @@
 
     <div class="titles">
         <h1>Receita: {{recipe.title}} </h1> 
-        <a href="/admin/recipes/{{id}}/edit" class="editRecipes">Editar receita </a>
+        <a href="/admin/recipes/{{recipe.id}}/edit" class="editRecipes">Editar receita </a>
     </div>
 
     <div class="card">
@@ -17,7 +17,7 @@
             <img src="{{recipe.image}}" alt="{{recipe.title}}">
             <figcaption>
                 <p class="recipe_title">{{recipe.title}}</p>
-                <p class="author">{{recipe.author}}</p>
+                <p class="author">por {{recipe.author}}</p>
             </figcaption>
         </figure>          
     </div>

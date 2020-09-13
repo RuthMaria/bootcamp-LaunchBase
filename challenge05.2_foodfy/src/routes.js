@@ -13,15 +13,15 @@ routes.get('/recipes/:id', user.show)
 
 
 routes.get("/admin/recipes", admin.index); 
-routes.get("/admin/recipes/create", admin.create); 
+routes.get("/admin/recipes/create", admin.createRecipe); 
 routes.get("/admin/recipes/:id", admin.show); 
 routes.get("/admin/recipes/:id/edit", admin.editRecipe); 
-
 routes.post("/admin/recipes", admin.postRecipe); 
 routes.put("/admin/recipes", admin.putRecipe); // Editar uma receita
 routes.delete("/admin/recipes", admin.deleteRecipe); // Deletar uma receita
+
 routes.get('/admin/chefs', admin.allChefs)
-routes.post('/admin/chefs', admin.post)
+routes.post('/admin/chefs', admin.postChef)
 routes.get('/admin/chefs/create', admin.createChef)
 routes.get('/admin/chefs/:id', admin.detailsChef)
 routes.get('/admin/chefs/:id/edit', admin.editChef)
