@@ -1,6 +1,6 @@
 const { checkEmptyFields, date } = require("../../lib/utils")
 const { paginate, foundRecipe, foundChefs, searchChef, searchRecipes, searchChefAndCountRecipes } = require('../models/User')
-const { create, update } = require('../models/admin')
+const { create, update, _delete } = require('../models/admin')
 
 module.exports = {
 
@@ -134,4 +134,20 @@ module.exports = {
             return res.redirect(`/admin/chefs/${chef.id}`)
         })
     },
+
+    deleteChef( req, res ){
+
+        searchChefAndCountRecipes(req.body.id, chef => {
+
+            if( chef ){               
+                return res.send("Chefs que possuem receitas não podem ser deletados")
+
+            } else {
+                _delete(req.body.id, () => {            
+                    return res.redirect("/admin/chefs")
+                })               
+            }
+        })
+        
+    }
 }

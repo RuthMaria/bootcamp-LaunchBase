@@ -23,8 +23,9 @@ routes.delete("/admin/recipes", admin.deleteRecipe); // Deletar uma receita
 routes.get('/admin/chefs', admin.allChefs)
 routes.post('/admin/chefs', admin.post)
 routes.get('/admin/chefs/create', admin.createChef)
-routes.put('/admin/chefs', admin.putChef)
 routes.get('/admin/chefs/:id', admin.detailsChef)
 routes.get('/admin/chefs/:id/edit', admin.editChef)
+routes.put('/admin/chefs', admin.putChef)
+routes.delete('/admin/chefs', admin.deleteChef)
 
 module.exports = routes

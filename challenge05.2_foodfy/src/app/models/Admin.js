@@ -50,12 +50,23 @@ module.exports = {
             id
         ]
         
-        console.log("query "+query+"values"+values)
         db.query(query, values, (err, results) => {
             if(err)
                 throw `Database error! ${err}`
 
             callback(results.rows[0])
+        })
+    },
+
+    _delete(id, callback){
+
+        const query = 'DELETE FROM chefs WHERE  id = $1'
+
+        db.query(query, [id], (err, results) => {
+            if(err)
+                throw `Database error! ${err}`
+
+            callback()
         })
     },
 }
