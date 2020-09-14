@@ -23,9 +23,10 @@
         
         <h1> Receitas </h1>
 
-        {% if recipes %}  
+        {% if recipes %}
+        <div class="recipes">    
             {% for recipe in recipes %}        
-                <div class="recipes">
+                <div>
                     <figure class="card">
                         <img src="{{recipe.image}}" alt="{{recipe.title}}">
                         <figcaption>
@@ -36,6 +37,7 @@
                     </figure>          
                 </div>
             {% endfor %}
+        <div>
         {% else %}
             <h2>Não possui nenhuma receita</h2>
         {% endif %}

@@ -122,15 +122,18 @@ nav {
     font-weight: bold;
 }
 
+#links a:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+
 .menu a {
     margin-right: 30px;
 }
 
-
 #links a.active {
     color:#FFFFFF;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
-    font-weight: bold;
+    font-weight: bold;    
 }
 
 .menu a.active {
@@ -142,13 +145,12 @@ nav {
 #links a.active:hover {
     color: #FFFFFF;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .menu a:hover {
-    color: #fccec7;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
-    font-weight: bold;
-    border-bottom: 1px solid white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #fccec7;
 }
 
 .jumbotron {

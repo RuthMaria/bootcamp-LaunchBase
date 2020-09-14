@@ -1,6 +1,6 @@
 const { checkEmptyFields, date } = require("../../lib/utils")
 const { allRecipesAndChef, foundRecipe, foundChefs, searchChef, searchRecipes, searchChefAndCountRecipes } = require('../models/User')
-const { create, update, chefsSelectOptions, createRecipe, searchRecipe, updateRecipe, _deleteChef, _deleteRecipe } = require('../models/admin')
+const { create, update, chefsSelectOptions, createRecipe, searchRecipe, updateRecipe, _deleteChef, _deleteRecipe } = require('../models/Admin')
 
 module.exports = {
 
