@@ -38,7 +38,7 @@ a {
 .page-index {
     width: 70%;    
     margin: 0 auto;
-    min-height:100%;
+    min-height:100vh;
     position:relative;
 }
 
@@ -223,9 +223,8 @@ nav {
 }
 
 .pagination {
-    margin: 0;
-    align-self: end;
-    justify-self: center;
+    text-align: center;
+    margin-top: 35px;
 }
 
 .pagination a,
@@ -245,7 +244,7 @@ nav {
 footer {
     background-color: #EEEEEE;
     height: 35px;
-    margin-top: 50px;
+    margin-top: 35px;
     font-size: 14px;
     color: #999999;
     text-align: center;

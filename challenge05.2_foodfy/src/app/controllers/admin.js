@@ -1,23 +1,43 @@
 const { checkEmptyFields, date } = require("../../lib/utils")
-const { allRecipesAndChef, foundRecipe, foundChefs, searchChef, searchRecipes, searchChefAndCountRecipes } = require('../models/User')
+const { paginate, foundRecipe, foundChefs, searchChef, searchRecipes, searchChefAndCountRecipes } = require('../models/User')
 const { create, update, chefsSelectOptions, createRecipe, searchRecipe, updateRecipe, _deleteChef, _deleteRecipe } = require('../models/Admin')
 
 module.exports = {
 
     allRecipes( req, res ){
 
-        const { filter } = req.query
+        let { filter, page, limit } = req.query
 
-        allRecipesAndChef(filter, recipes => {
-            
-            return res.render('admin/index', { recipes, filter})           
+        page = page || 1
+        limit = limit || 8
+        let offset = limit * (page - 1)
+
+        const params = {
+            limit,
+            offset,
+            filter
+        }
+
+        paginate(params,  recipes => {
+                
+            let total
+
+            if(recipes != null && recipes.length != 0)
+                total = Math.ceil(recipes[0].totalrecipes / limit)
+
+            const pagination = {
+                totalPages: total,
+                page
+            }
+
+            return res.render('admin/allRecipes', { recipes, pagination, filter})            
         })
     },
 
     createRecipe ( req, res ){
 
         chefsSelectOptions( chefs => {
-            return res.render('admin/create', { chefs })
+            return res.render('admin/createRecipe', { chefs })
         })
     },
 

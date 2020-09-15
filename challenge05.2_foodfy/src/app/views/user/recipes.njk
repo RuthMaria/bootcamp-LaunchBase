@@ -17,5 +17,14 @@
                 </figure>          
             </a>
         {% endfor %} 
-    </section>    
+    </section>  
+    
+    <div class="pagination" 
+    data-page="{{pagination.page}}"
+    data-total="{{pagination.totalPages}}" 
+    data-filter={{filter}}>
+            
+    </div>
+    <script src="../../../scripts/pagination.js"></script>
+
 {% endblock content %}

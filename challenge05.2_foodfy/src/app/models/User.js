@@ -23,7 +23,7 @@ module.exports = {
         })
     },
 
-    allRecipesWithLimit(params, callback){
+    paginate(params, callback){
 
         const { limit, offset, filter } = params
 
@@ -33,7 +33,9 @@ module.exports = {
             filterQuery = `WHERE recipes.title ILIKE '%${filter}%'`            
         } 
         
-        const query = `SELECT recipes.*, chefs.name AS author
+        let subQuery = `(SELECT COUNT(*) FROM recipes ${filterQuery}) AS totalrecipes`
+        
+        const query = `SELECT recipes.*, chefs.name AS author, ${subQuery}
                        FROM recipes
                        LEFT JOIN chefs ON (chefs.id = recipes.chef_id)
                        ${filterQuery}
