@@ -396,7 +396,7 @@ Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master
 "nodemon": "nodemon challenge05.1_privateLessons/src/server.js",
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,src/app/views'"
 ```
- Em seguida, crie o [banco de dados](challenge05.1_privateLessons/src/config/querysSql_db.js) no postgres e [configure a conexão](challenge05.1_privateLessons/src/config/db.js).
+ Em seguida, crie o [banco de dados](challenge05.1_privateLessons/src/config/querysSql_db.sql) no postgres e [configure a conexão](challenge05.1_privateLessons/src/config/db.js).
 
  - challenge05.2_foodfy
 
@@ -404,7 +404,7 @@ Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master
 "nodemon": "nodemon challenge05.2_foodfy/src/server.js",
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,src/app/views'"
 ```
- Em seguida, crie o [banco de dados](challenge05.2_foodfy/src/config/querysSql_db.js) no postgres e [configure a conexão](challenge05.2_foodf/src/config/db.js).
+ Em seguida, crie o [banco de dados](challenge05.2_foodfy/src/config/querysSql_db.sql) no postgres e [configure a conexão](challenge05.2_foodf/src/config/db.js).
 
 <br>
 
