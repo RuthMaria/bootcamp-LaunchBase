@@ -1,0 +1,28 @@
+.delete {
+    background-color: lightgray;
+}
+
+.edit{
+    background-color: var(--secondary-color);
+}
+
+.delete:hover {
+    background-color: rgb(223, 62, 62);
+}
+
+.edit:hover {
+    background-color: #065ac1;
+}
+
+form .item span {
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    color: white;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
