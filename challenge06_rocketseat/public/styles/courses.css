@@ -1,0 +1,151 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.cards {
+    margin: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    text-align: center;
+}
+
+.card {
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 64px;
+    border-radius: 8px;
+    border: 2px solid rgb(11, 10, 13);
+    height: 75vh;    
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+#starter:hover {
+    border: 2px solid var(--purple-color);
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    margin-top: -10px;
+}
+
+#launchbase:hover {
+    border: 2px solid var(--orange-color);
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    margin-top: -10px;
+}
+
+#gostack:hover {
+    border: 2px solid var(--green-color);
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    margin-top: -10px;
+}
+
+.card .card_numbers {
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.card #card_number_01 {    
+    color: var(--purple-color);
+    border: 2px solid var(--purple-color);
+}
+
+.card #card_number_02 {    
+    color: var(--orange-color);
+    border: 2px solid var(--orange-color);
+}
+
+.card #card_number_03 {    
+    color: var(--green-color);
+    border: 2px solid var(--green-color);
+}
+
+.card .card_image {
+    margin: 65px auto 45px; 
+}
+
+.card .card_content {
+    line-height: 26px;
+    color: rgb(135, 134, 139);
+    font-size: 16px;
+    max-width: 270px;
+}
+
+.card .card_content #purple_color{
+    color: var(--purple-color);
+    font-weight: bold;
+}
+
+.card .card_content #orange_color{
+    color: var(--orange-color);
+    font-weight: bold;
+}
+
+.card .card_content #green_color{
+    color: var(--green-color);
+    font-weight: bold;
+}
+
+.card .card-modules {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 35px;
+}
+
+.card .card-price {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.card #price_starter {
+    color: var(--purple-color);
+    text-decoration: none;
+    border: 2px solid var(--purple-color);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.card #price_launchbase {
+    color: var(--orange-color);
+}
+
+.card #price_gostack{
+    color: var(--green-color);
+}
+
+#info {
+    display: none;
+}
+
+.card .card_info {
+    font-size: 15px;
+    margin-top: 35px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card #orange_info {    
+    background: var(--orange-color);
+}
+
+.card #green_info {    
+    background: var(--green-color);
+}
+
+.card .card_info p {
+    text-decoration: none;
+    color: black;
+}
+
+.card .card_info span {
+    font-weight: bold;
+}
+
+
+iframe{
+    width: 100%;
+    height: 90%; 
+    position: absolute;
+    top: 8%;
+}

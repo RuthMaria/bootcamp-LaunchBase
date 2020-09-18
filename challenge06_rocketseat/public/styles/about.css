@@ -1,0 +1,107 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:root {
+    --green-color: rgb(4, 211, 97);  
+    --purple-color: rgb(113, 89, 193);
+    --orange-color:rgb(253, 149, 31);
+}
+
+body {
+    background-color: #282a36;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    
+}
+
+header {
+    padding: 32px;/*32*/
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.links a:hover {
+    color: var(--green-color);
+    transition: 1s;
+}
+
+#wrapper {
+    text-align: center;
+    margin: 32px;
+}
+
+#wrapper .logo {
+    border-radius: 50%;
+    height: 250px;
+    border: 4px solid var(--green-color);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+#wrapper h1 {
+    margin: 15px;
+    font-size: 34px;
+    color: var(--green-color);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+#wrapper p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 34px;
+}
+
+#wrapper .technology {
+    color: var(--orange-color);
+    margin-top: 40px;
+}
+
+#wrapper .technologies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 500px;
+    margin: 40px auto;
+    gap: 20px; /*dá um espaço entre os elementos do grid*/
+}
+
+#wrapper .technologies img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+#links-footer {
+    margin-bottom: 23px;
+}
+
+#links-footer a {
+    border-bottom: 3px solid var(--green-color);
+    margin: 0 10px;
+}
+
+#links-footer a:hover {
+    color: var(--green-color);
+}
+
+footer p{
+    color: white;
+}

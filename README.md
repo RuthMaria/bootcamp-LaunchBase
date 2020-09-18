@@ -290,6 +290,17 @@ O <strong> Desafio 05 </strong> consistia em 5 partes, onde foi realizado a pers
 
 ![Video executando](git/video-challenge05-2.gif)
 
+<br><br>
+
+O [Desafio 06](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-06/blob/master/desafios/06-1-mini-desafios.md) consistia em uma sequência de mini desafios para o fortalecimento dos conceitos de DBML, footer, funções assíncronas e máscaras de Input.<br><br>
+
+- [Parte 01](challenge06_rocketseat/database.sql) - <strong> DBML </strong><br>
+  -  Criar no site [dbdiagram.io](https://dbdiagram.io/home) a modelagem de um banco de dados que represente um sistema de locação de carros.
+
+
+- [Parte 02]() - <strong> Footer </strong><br>
+  - Implementar um footer no resultado final do desafio 03.
+
 <a id="semana04"></a><br>
 
 ## :date: Semana 04
