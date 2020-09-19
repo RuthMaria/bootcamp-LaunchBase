@@ -2,7 +2,7 @@
 const Mask = {
     apply(input, func){
         setTimeout(function () {
-            input.value = Mask[func](input.value) // mesma coisa que Mask.formatBRL.value
+            input.value = Mask[func](input.value) // mesma coisa que Mask.formatBRL(input.value)
         }, 1)
     },
 

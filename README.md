@@ -294,12 +294,22 @@ O <strong> Desafio 05 </strong> consistia em 5 partes, onde foi realizado a pers
 
 O [Desafio 06](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-06/blob/master/desafios/06-1-mini-desafios.md) consistia em uma sequência de mini desafios para o fortalecimento dos conceitos de DBML, footer, funções assíncronas e máscaras de Input.<br><br>
 
-- [Parte 01](challenge06_rocketseat/database.sql) - <strong> DBML </strong><br>
+- [Parte 01](challenge06_rocketseat/anotherChallenges/database.sql) - <strong> DBML </strong><br>
   -  Criar no site [dbdiagram.io](https://dbdiagram.io/home) a modelagem de um banco de dados que represente um sistema de locação de carros.
 
 
-- [Parte 02]() - <strong> Footer </strong><br>
+- [Parte 02](challenge06_rocketseat) - <strong> Footer </strong><br>
   - Implementar um footer no resultado final do desafio 03.
+
+  #### RESULTADO 
+
+![Footer](git/footer.png)
+
+<br>
+
+- [Parte 03](challenge06_rocketseat/anotherChallenges/asyncFunction.js) - <strong> Funções assíncronas </strong><br>
+  - Implementar uma função que receba como parâmetro um número e após x milissegundos mostre no console o dobro do parâmetro recebido.
+
 
 <a id="semana04"></a><br>
 
@@ -417,6 +427,13 @@ Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master
 ```
  Em seguida, crie o [banco de dados](challenge05.2_foodfy/src/config/querysSql_db.sql) no postgres e [configure a conexão](challenge05.2_foodf/src/config/db.js).
 
+
+- challenge06_rocketseat
+  
+```
+"nodemon": "nodemon challenge06_rocketseat/server.js",
+"browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
+```
 <br>
 
 - Rodar o projeto

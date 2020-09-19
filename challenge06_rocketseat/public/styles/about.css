@@ -102,6 +102,15 @@ header {
     color: var(--green-color);
 }
 
-footer p{
-    color: white;
+footer {
+    opacity: 0;
+}
+
+.footer{
+    opacity: 1;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: block;
+    line-height: 26px;
 }
