@@ -307,8 +307,8 @@ O [Desafio 06](https://github.com/rocketseat-education/bootcamp-launchbase-desaf
 
 <br>
 
-- [Parte 03](challenge06_rocketseat/anotherChallenges/asyncFunction.js) - <strong> Funções assíncronas </strong><br>
-  - Implementar uma função que receba como parâmetro um número e após x milissegundos mostre no console o dobro do parâmetro recebido.
+- Parte 03 - <strong> Funções assíncronas </strong><br>
+  - Implementar uma função que receba como parâmetro um número e após x milissegundos mostre no console o dobro do parâmetro recebido, mas tem que fazer utilizando o conceito de [callback](challenge06_rocketseat/anotherChallenges/callback.js), [Promise](challenge06_rocketseat/anotherChallenges/promise.js) e [async/await](challenge06_rocketseat/anotherChallenges/asyncAwait.js).
 
 
 <a id="semana04"></a><br>
