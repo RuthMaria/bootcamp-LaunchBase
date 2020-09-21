@@ -302,14 +302,21 @@ O [Desafio 06](https://github.com/rocketseat-education/bootcamp-launchbase-desaf
   - Implementar um footer no resultado final do desafio 03.
 
   #### RESULTADO 
-
-![Footer](git/footer.png)
+<img src="git/footer.png" width="350" height="250">
+<br>
 
 <br>
 
 - Parte 03 - <strong> Funções assíncronas </strong><br>
   - Implementar uma função que receba como parâmetro um número e após x milissegundos mostre no console o dobro do parâmetro recebido, mas tem que fazer utilizando o conceito de [callback](challenge06_rocketseat/anotherChallenges/callback.js), [Promise](challenge06_rocketseat/anotherChallenges/promise.js) e [async/await](challenge06_rocketseat/anotherChallenges/asyncAwait.js).
+  - Implementar uma função que receba dois parâmetros, o primeiro será o valor a ser dobrado e o segundo o valor a ser somado ao dobro do primeiro, também utilizando o conceito de [callback](challenge06_rocketseat/anotherChallenges/callbackSum.js), [Promise](challenge06_rocketseat/anotherChallenges/promiseSum.js) e [async/await](challenge06_rocketseat/anotherChallenges/asyncAwaitSum.js).
+  
+  <br>
 
+- Parte 04 - <strong> Mascara de input </strong><br>
+  - Implementar uma mascara de input para [CPF](challenge06_rocketseat/anotherChallenges/cpf.html)
+
+<br>
 
 <a id="semana04"></a><br>
 

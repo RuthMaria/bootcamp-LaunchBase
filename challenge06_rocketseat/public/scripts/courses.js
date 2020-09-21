@@ -7,4 +7,3 @@ for (let card of cards) {
         window.location.href = `/courses/${course}` 
     })
 }
-
