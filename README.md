@@ -302,9 +302,7 @@ O [Desafio 06](https://github.com/rocketseat-education/bootcamp-launchbase-desaf
   - Implementar um footer no resultado final do desafio 03.
 
   #### RESULTADO 
-<img src="git/footer.png" width="350" height="250">
-<br>
-
+![imagem do footer](git/footer.png)
 <br>
 
 - Parte 03 - <strong> Funções assíncronas </strong><br>
@@ -441,6 +439,12 @@ Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master
 "nodemon": "nodemon challenge06_rocketseat/server.js",
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
 ```
+
+- launchstore
+
+```
+"nodemon": "nodemon launchstore/src/server.js",
+"browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,src/app/views'"
 <br>
 
 - Rodar o projeto
