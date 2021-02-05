@@ -27,7 +27,7 @@
 ## :books: Sobre
 
 <p align="justify">
-O LaunchBase 2.0 é um treinamento no formato de bootcamp online que tem duração de 6 semanas. É ofertado pela Rocketseat e tem o objetivo de guiar o aluno pelas ferramentas e conceitos mais modernos de desenvolvimento que permitirá construir as melhores aplicações e avançar na direção certa no desenvolvimento web.
+O LaunchBase 2.0 é um treinamento no formato de bootcamp online. É ofertado pela Rocketseat e tem o objetivo de guiar o aluno pelas ferramentas e conceitos mais modernos de desenvolvimento que permitirá construir as melhores aplicações e avançar na direção certa no desenvolvimento web.
 </p><br>
 
 ## ⚒️ Tecnologias utilizadas
@@ -316,27 +316,6 @@ O [Desafio 06](https://github.com/rocketseat-education/bootcamp-launchbase-desaf
 
 <br>
 
-<a id="semana04"></a><br>
-
-## :date: Semana 04
-<br>
-
-
-<br>
-
-<a id="semana05"></a><br>
-
-## :date: Semana 05
-<br>
-
-<br>
-
-<a id="semana06"></a><br>
-
-## :date: Semana 06
-<br>
-
-
 <a id="executar"></a><br>
 
 ## 🚀 Como executar o projeto
@@ -445,7 +424,7 @@ Substituia as linhas [07](https://github.com/RuthMaria/launchBase2.0/blob/master
 ```
 "nodemon": "nodemon launchstore/src/server.js",
 "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,src/app/views'"
-<br>
+```
 
 - Rodar o projeto
 ```
